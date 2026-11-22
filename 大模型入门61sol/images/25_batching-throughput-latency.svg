@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc"><title id="title">合批的权衡：总吞吐与单请求延迟</title><desc id="desc">教学模型展示批次增大时总吞吐上升并趋于饱和，而较长计算步与等待组批可能推高延迟。曲线不代表真实服务测量。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="640" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 25</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >合批的权衡：总吞吐与单请求延迟</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >同一组简化成本模型，分别看单位时间产出和尾部延迟</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<line x1="91" y1="471" x2="437" y2="471" stroke="#d9dfdf" stroke-width="1" />
+<text x="79" y="476" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >0</text>
+<line x1="91" y1="412.75" x2="437" y2="412.75" stroke="#d9dfdf" stroke-width="1" />
+<text x="79" y="417.75" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >800</text>
+<line x1="91" y1="354.5" x2="437" y2="354.5" stroke="#d9dfdf" stroke-width="1" />
+<text x="79" y="359.5" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >1600</text>
+<line x1="91" y1="296.25" x2="437" y2="296.25" stroke="#d9dfdf" stroke-width="1" />
+<text x="79" y="301.25" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >2400</text>
+<line x1="91" y1="238" x2="437" y2="238" stroke="#d9dfdf" stroke-width="1" />
+<text x="79" y="243" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >3200</text>
+<line x1="91" y1="471" x2="91" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="91" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >0</text>
+<line x1="177.5" y1="471" x2="177.5" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="177.5" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >16</text>
+<line x1="264" y1="471" x2="264" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="264" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >32</text>
+<line x1="437" y1="471" x2="437" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="437" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >64</text>
+<line x1="91" y1="238" x2="91" y2="471" stroke="#647079" stroke-width="1.5" />
+<line x1="91" y1="471" x2="437" y2="471" stroke="#647079" stroke-width="1.5" />
+<text x="264" y="524" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >批次大小 B</text>
+<text x="91" y="221" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >总吞吐（token / s）</text>
+<line x1="589" y1="471" x2="935" y2="471" stroke="#d9dfdf" stroke-width="1" />
+<text x="577" y="476" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >0</text>
+<line x1="589" y1="424.4" x2="935" y2="424.4" stroke="#d9dfdf" stroke-width="1" />
+<text x="577" y="429.4" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >10</text>
+<line x1="589" y1="377.8" x2="935" y2="377.8" stroke="#d9dfdf" stroke-width="1" />
+<text x="577" y="382.8" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >20</text>
+<line x1="589" y1="331.2" x2="935" y2="331.2" stroke="#d9dfdf" stroke-width="1" />
+<text x="577" y="336.2" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >30</text>
+<line x1="589" y1="284.6" x2="935" y2="284.6" stroke="#d9dfdf" stroke-width="1" />
+<text x="577" y="289.6" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >40</text>
+<line x1="589" y1="238" x2="935" y2="238" stroke="#d9dfdf" stroke-width="1" />
+<text x="577" y="243" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >50</text>
+<line x1="589" y1="471" x2="589" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="589" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >0</text>
+<line x1="675.5" y1="471" x2="675.5" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="675.5" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >16</text>
+<line x1="762" y1="471" x2="762" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="762" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >32</text>
+<line x1="935" y1="471" x2="935" y2="476" stroke="#647079" stroke-width="1.5" />
+<text x="935" y="495" font-size="15" fill="#647079" text-anchor="middle" font-weight="400" >64</text>
+<line x1="589" y1="238" x2="589" y2="471" stroke="#647079" stroke-width="1.5" />
+<line x1="589" y1="471" x2="935" y2="471" stroke="#647079" stroke-width="1.5" />
+<text x="762" y="524" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >批次大小 B</text>
+<text x="589" y="221" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >P95 延迟示意（ms / step）</text>
+<text x="91" y="179" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >更多 token 分摊固定开销</text>
+<text x="589" y="179" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >计算步长 + 等待组批</text>
+<path d="M96.406,457.131 L101.813,444.523 L107.219,433.011 L112.625,422.458 L118.031,412.75 L123.438,403.788 L128.844,395.491 L134.25,387.786 L139.656,380.612 L145.063,373.917 L150.469,367.653 L155.875,361.781 L161.281,356.265 L166.688,351.074 L172.094,346.179 L177.5,341.556 L182.906,337.182 L188.313,333.039 L193.719,329.109 L199.125,325.375 L204.531,321.823 L209.938,318.44 L215.344,315.215 L220.75,312.136 L226.156,309.194 L231.563,306.38 L236.969,303.686 L242.375,301.104 L247.781,298.628 L253.188,296.25 L258.594,293.966 L264,291.769 L269.406,289.656 L274.813,287.62 L280.219,285.659 L285.625,283.768 L291.031,281.943 L296.438,280.181 L301.844,278.479 L307.25,276.833 L312.656,275.242 L318.063,273.702 L323.469,272.21 L328.875,270.766 L334.281,269.365 L339.688,268.008 L345.094,266.69 L350.5,265.412 L355.906,264.17 L361.313,262.964 L366.719,261.792 L372.125,260.653 L377.531,259.545 L382.938,258.466 L388.344,257.417 L393.75,256.395 L399.156,255.399 L404.563,254.429 L409.969,253.484 L415.375,252.563 L420.781,251.664 L426.188,250.787 L431.594,249.931 L437,249.095" stroke="#227d82" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M594.406,446.535 L599.813,443.506 L605.219,440.477 L610.625,437.448 L616.031,434.419 L621.438,431.39 L626.844,428.361 L632.25,425.332 L637.656,422.303 L643.063,419.274 L648.469,416.245 L653.875,413.216 L659.281,410.187 L664.688,407.158 L670.094,404.129 L675.5,401.1 L680.906,398.071 L686.313,395.042 L691.719,392.013 L697.125,388.984 L702.531,385.955 L707.938,382.926 L713.344,379.897 L718.75,376.868 L724.156,373.839 L729.563,370.81 L734.969,367.781 L740.375,364.752 L745.781,361.723 L751.188,358.694 L756.594,355.665 L762,352.636 L767.406,349.607 L772.813,346.578 L778.219,343.549 L783.625,340.52 L789.031,337.491 L794.438,334.462 L799.844,331.433 L805.25,328.404 L810.656,325.375 L816.063,322.346 L821.469,319.317 L826.875,316.288 L832.281,313.259 L837.688,310.23 L843.094,307.201 L848.5,304.172 L853.906,301.143 L859.313,298.114 L864.719,295.085 L870.125,292.056 L875.531,289.027 L880.938,285.998 L886.344,282.969 L891.75,279.94 L897.156,276.911 L902.563,273.882 L907.969,270.853 L913.375,267.824 L918.781,264.795 L924.188,261.766 L929.594,258.737 L935,255.708" stroke="#b76343" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="96.406" cy="457.131" r="3.5" fill="#227d82" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="594.406" cy="446.535" r="3.5" fill="#b76343" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="101.813" cy="444.523" r="3.5" fill="#227d82" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="599.813" cy="443.506" r="3.5" fill="#b76343" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="112.625" cy="422.458" r="3.5" fill="#227d82" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="610.625" cy="437.448" r="3.5" fill="#b76343" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="134.25" cy="387.786" r="3.5" fill="#227d82" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="632.25" cy="425.332" r="3.5" fill="#b76343" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="177.5" cy="341.556" r="3.5" fill="#227d82" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="675.5" cy="401.1" r="3.5" fill="#b76343" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="264" cy="291.769" r="3.5" fill="#227d82" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="762" cy="352.636" r="3.5" fill="#b76343" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="437" cy="249.095" r="3.5" fill="#227d82" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="935" cy="255.708" r="3.5" fill="#b76343" stroke="#ffffff" stroke-width="1.5"/>
+<text x="91" y="550" font-size="17" fill="#227d82" text-anchor="start" font-weight="400" >step(B) = 5 + 0.25B ms</text>
+<text x="589" y="550" font-size="16" fill="#b76343" text-anchor="start" font-weight="400" >P95 示意 = step(B) + 0.4(B−1) ms</text>
+<line x1="40" y1="568" x2="960" y2="568" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="597" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >以上是教学成本模型，不是硬件实测，也不是某服务的价格或延迟保证。</text>
+<text x="40" y="622" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >实际 P95 取决于到达负载、调度、序列长度与硬件；合批并非在所有条件下都会增加延迟。</text></svg>

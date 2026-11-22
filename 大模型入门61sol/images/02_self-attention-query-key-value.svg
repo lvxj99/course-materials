@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="title desc"><title id="title">一次注意力读取：先匹配，再汇总</title><desc id="desc">注意力先把 Query 与 Key 的匹配分数变为归一化权重，再按权重汇总 Value。例中输出严格等于 [0.7, 0.4]。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="580" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 02</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >一次注意力读取：先匹配，再汇总</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >固定一个 Query，观察它怎样从三个 Value 中读取信息</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="45" y="214" width="145" height="64" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="117.5" y="239.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >当前 Query</text>
+<text x="117.5" y="264.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >qₜ</text>
+<rect x="252" y="180" width="115" height="44" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="309.5" y="208" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Key k1</text>
+<line x1="190" y1="246" x2="252" y2="202" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<line x1="367" y1="202" x2="424" y2="202" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="424" y="180" width="123" height="44" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="485.5" y="208" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >α1 = 0.6</text>
+<rect x="611" y="180" width="138" height="44" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="680" y="208" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >v1 = [1,0]</text>
+<line x1="547" y1="202" x2="591" y2="202" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="594" y="209" font-size="23" fill="#647079" text-anchor="start" font-weight="400" >×</text>
+<line x1="749" y1="202" x2="806" y2="310" stroke="#b76343" stroke-width="3.3" marker-end="url(#arrow-b76343)"/>
+<rect x="252" y="287" width="115" height="44" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="309.5" y="315" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Key k2</text>
+<line x1="190" y1="246" x2="252" y2="309" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<line x1="367" y1="309" x2="424" y2="309" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="424" y="287" width="123" height="44" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="485.5" y="315" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >α2 = 0.3</text>
+<rect x="611" y="287" width="138" height="44" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="680" y="315" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >v2 = [0,1]</text>
+<line x1="547" y1="309" x2="591" y2="309" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="594" y="316" font-size="23" fill="#647079" text-anchor="start" font-weight="400" >×</text>
+<line x1="749" y1="309" x2="806" y2="310" stroke="#b76343" stroke-width="2.4" marker-end="url(#arrow-b76343)"/>
+<rect x="252" y="394" width="115" height="44" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="309.5" y="422" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Key k3</text>
+<line x1="190" y1="246" x2="252" y2="416" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<line x1="367" y1="416" x2="424" y2="416" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="424" y="394" width="123" height="44" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="485.5" y="422" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >α3 = 0.1</text>
+<rect x="611" y="394" width="138" height="44" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="680" y="422" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >v3 = [1,1]</text>
+<line x1="547" y1="416" x2="591" y2="416" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="594" y="423" font-size="23" fill="#647079" text-anchor="start" font-weight="400" >×</text>
+<line x1="749" y1="416" x2="806" y2="310" stroke="#b76343" stroke-width="1.8" marker-end="url(#arrow-b76343)"/>
+<text x="248" y="160" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >① 点积比较</text>
+<text x="424" y="160" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >② softmax</text>
+<text x="613" y="160" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >③ 加权求和</text>
+<circle cx="831" cy="310" r="25" fill="#faeee7" stroke="#b76343" stroke-width="1.5"/>
+<text x="831" y="318" font-size="25" fill="#b76343" text-anchor="middle" font-weight="400" >Σ</text>
+<line x1="856" y1="310" x2="897" y2="310" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="929" y="303" font-size="25" fill="#26343b" text-anchor="middle" font-weight="400" >oₜ</text>
+<text x="929" y="332" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >[0.7, 0.4]</text>
+<text x="424" y="473" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >0.6 × [1, 0] + 0.3 × [0, 1] + 0.1 × [1, 1] = [0.7, 0.4]</text>
+<line x1="40" y1="508" x2="960" y2="508" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="537" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >权重总和为 1；每个 Value 是向量，汇总结果也是向量。</text>
+<text x="40" y="562" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >数值为手工构造的教学例子；Query、Key、Value 的投影参数由训练学习。</text></svg>

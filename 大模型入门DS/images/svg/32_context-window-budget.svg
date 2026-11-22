@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380">
+<rect width="960" height="380" fill="#ffffff"/>
+
+<text x="40.00" y="34.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#44525e" font-weight="600">一次请求的上下文预算：所有内容都要放进同一个窗口</text>
+<rect x="60.00" y="110.00" width="39.52" height="64.00" rx="2" fill="#eef4f8" stroke="#7c8a97" stroke-width="0.8"/>
+<rect x="101.02" y="110.00" width="367.64" height="64.00" rx="2" fill="#edf3f9" stroke="#3a6ea5" stroke-width="0.8"/>
+<rect x="470.16" y="110.00" width="183.07" height="64.00" rx="2" fill="#f0eef8" stroke="#6f63a5" stroke-width="0.8"/>
+<rect x="654.73" y="110.00" width="19.01" height="64.00" rx="2" fill="#fbf3df" stroke="#b98b2e" stroke-width="0.8"/>
+<rect x="675.23" y="110.00" width="223.27" height="64.00" rx="2" fill="#e9f5f2" stroke="#2f8b7f" stroke-width="0.8"/>
+<text x="285.59" y="138.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5" font-weight="600">检索到的片段</text>
+<text x="285.59" y="156.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#44525e">3600 tokens</text>
+<text x="562.44" y="138.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#6f63a5" font-weight="600">对话历史</text>
+<text x="562.44" y="156.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#44525e">1800 tokens</text>
+<text x="787.62" y="138.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#2f8b7f" font-weight="600">为生成预留</text>
+<text x="787.62" y="156.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#44525e">2192 tokens</text>
+<line x1="80.51" y1="176.00" x2="80.51" y2="190.00" stroke="#7c8a97" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="80.51" y="200.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#7c8a97">系统提示 400</text>
+<line x1="664.98" y1="176.00" x2="664.98" y2="190.00" stroke="#b98b2e" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="664.98" y="200.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#b98b2e">问题 200</text>
+<line x1="60.00" y1="110.00" x2="900.00" y2="110.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<line x1="60.00" y1="174.00" x2="900.00" y2="174.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<line x1="60.00" y1="110.00" x2="60.00" y2="174.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<line x1="900.00" y1="110.00" x2="900.00" y2="174.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="900.00" y="100.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="end" fill="#44525e">窗口上限 8192</text>
+<rect x="650.00" y="226.00" width="290.00" height="88.00" rx="6" fill="#faeeee" stroke="#eccbcd" stroke-width="1"/>
+<text x="666.00" y="250.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.8" text-anchor="start" fill="#b04a4e" font-weight="600">超出窗口怎么办？</text>
+<text x="666.00" y="270.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="start" fill="#44525e">截断历史、摘要已读内容、少取几个片段，</text>
+<text x="666.00" y="286.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="start" fill="#44525e">或改用检索按需取用；长上下文并不能</text>
+<text x="666.00" y="302.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="start" fill="#44525e">替代检索。</text>
+<text x="60.00" y="236.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e">同一窗口里，材料、历史与生成空间互相挤占：</text>
+<text x="60.00" y="256.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">材料越多，能留给生成的余地越小；</text>
+<text x="60.00" y="276.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">把无关内容放进来反而会干扰回答。</text>
+<text x="60.00" y="348.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">计费与限长按 token 数计算，不同 tokenizer 的切分方式不同，所以“能放多少页”只能按 token 估算。</text>
+</svg>

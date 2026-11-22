@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="770" viewBox="0 0 1000 770" role="img" aria-labelledby="title desc"><title id="title">RLHF 里的不同模型，各自估计什么？</title><desc id="desc">五种逻辑角色分别负责行动、未来估计、评分、参考正则和采样概率比。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="770" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 11</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >RLHF 里的不同模型，各自估计什么？</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >Actor、Critic、Reward、Reference，加上本轮采样的 Old policy</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="49" y="200" width="209" height="76" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="153.5" y="228.25" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >Actor πθ</text>
+<text x="153.5" y="259.75" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >当前可训练策略</text>
+<line x1="258" y1="238" x2="337" y2="238" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="345" y="200" width="223" height="76" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="456.5" y="229" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >生成回答 y</text>
+<text x="456.5" y="259" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >保留各 token 前缀</text>
+<line x1="568" y1="238" x2="669" y2="238" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="677" y="200" width="270" height="76" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="812" y="230.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >Reward model / Verifier</text>
+<text x="812" y="257.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >完整回答 → 任务分</text>
+<rect x="49" y="357" width="209" height="83" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="153.5" y="390.25" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Old πold</text>
+<text x="153.5" y="418.75" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >本轮采样 logprob</text>
+<rect x="345" y="357" width="223" height="83" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="456.5" y="389.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >Critic Vφ</text>
+<text x="456.5" y="419.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >前缀 → 预计回报</text>
+<rect x="677" y="357" width="270" height="83" rx="6" fill="#f0edf6" stroke="#7d6a9b" />
+<text x="812" y="390.25" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Reference πref</text>
+<text x="812" y="418.75" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >回答 → 参考 logprob</text>
+<line x1="456" y1="276" x2="456" y2="357" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<path d="M568,254 L618,254 L618,397 L677,397" stroke="#7d6a9b" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-7d6a9b)"/>
+<path d="M153,276 L153,309 L79,309 L79,357" stroke="#647079" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)" stroke-dasharray="5 5"/>
+<text x="252" y="327" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >采样时保存</text>
+<rect x="192" y="547" width="616" height="78" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="500" y="577" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >PPO 更新：概率比 × advantage；参考 KL 控制行为偏离</text>
+<text x="500" y="607" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >Critic 另用回报目标训练</text>
+<path d="M153,440 L153,515 L304,515 L304,547" stroke="#4c75a0" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-4c75a0)"/>
+<line x1="456" y1="440" x2="456" y2="547" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<path d="M812,440 L812,515 L701,515 L701,547" stroke="#7d6a9b" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-7d6a9b)"/>
+<path d="M947,238 L965,238 L965,489 L568,489 L568,547" stroke="#b76343" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b76343)"/>
+<path d="M192,586 L29,586 L29,238 L49,238" stroke="#227d82" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-227d82)" stroke-dasharray="5 5"/>
+<text x="500" y="665" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >πold 随采样轮次刷新；πref 在当前训练阶段保持固定。</text>
+<line x1="40" y1="698" x2="960" y2="698" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="727" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >Critic 预测当前策略继续行动的回报；Reward 评价完成后的结果。</text>
+<text x="40" y="752" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >图中按职责分开绘制；实现时可以共享骨干，并把旧概率保存为数据。</text></svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc"><title id="title">Prefill 与 Decode：历史 K、V 可以复用</title><desc id="desc">Prefill 并行计算提示各位置并建立缓存；Decode 只计算新位置的 Q、K、V，新 Q 读取已缓存与新追加的 K、V。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="650" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 09</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >Prefill 与 Decode：历史 K、V 可以复用</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >示意单层、单头；实际每一层分别维护自己的 KV cache</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<text x="49" y="177" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >① Prefill：一起处理已知提示</text>
+<rect x="57" y="199" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="92.5" y="225" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >A</text>
+<rect x="136" y="199" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="171.5" y="225" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >B</text>
+<rect x="215" y="199" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="250.5" y="225" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >C</text>
+<line x1="174" y1="239" x2="174" y2="274" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="68" y="277" width="212" height="51" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="174" y="308.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >并行计算 Q、K、V</text>
+<line x1="174" y1="328" x2="174" y2="366" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="56" y="359" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >写入缓存</text>
+<rect x="57" y="378" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="92.5" y="404" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >K₁</text>
+<rect x="136" y="378" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="171.5" y="404" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >K₂</text>
+<rect x="215" y="378" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="250.5" y="404" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >K₃</text>
+<rect x="57" y="430" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="92.5" y="456" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >V₁</text>
+<rect x="136" y="430" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="171.5" y="456" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >V₂</text>
+<rect x="215" y="430" width="71" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="250.5" y="456" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >V₃</text>
+<line x1="332" y1="165" x2="332" y2="519" stroke="#d9dfdf" stroke-width="1.5" />
+<text x="370" y="177" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >② Decode：只计算新位置</text>
+<rect x="379" y="200" width="124" height="43" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="441" y="227.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >新 token D</text>
+<line x1="503" y1="221" x2="559" y2="221" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="562" y="200" width="214" height="43" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="669" y="227.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >得到 q₄、k₄、v₄</text>
+<rect x="391" y="313" width="76" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="429" y="339" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >K₁</text>
+<rect x="475" y="313" width="76" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="513" y="339" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >K₂</text>
+<rect x="559" y="313" width="76" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="597" y="339" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >K₃</text>
+<rect x="643" y="313" width="76" height="40" rx="6" fill="#eaeef4" stroke="#4c75a0" />
+<text x="681" y="339" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >k₄</text>
+<rect x="391" y="365" width="76" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="429" y="391" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >V₁</text>
+<rect x="475" y="365" width="76" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="513" y="391" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >V₂</text>
+<rect x="559" y="365" width="76" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="597" y="391" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >V₃</text>
+<rect x="643" y="365" width="76" height="40" rx="6" fill="#f6ece8" stroke="#b76343" />
+<text x="681" y="391" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >v₄</text>
+<text x="506" y="435" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >复用历史</text>
+<text x="682" y="435" font-size="18" fill="#b76343" text-anchor="middle" font-weight="400" >追加</text>
+<rect x="638" y="307" width="88" height="104" rx="5" fill="none" stroke="#227d82" />
+<path d="M704,243 L704,271 L682,271 L682,307" stroke="#4c75a0" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-4c75a0)"/>
+<path d="M776,221 L839,221 L839,293" stroke="#227d82" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-227d82)"/>
+<rect x="786" y="296" width="150" height="110" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="861" y="332" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >新 q₄ 读取</text>
+<text x="861" y="357" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >全部 K、V</text>
+<text x="861" y="382" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >含当前第 4 项</text>
+<line x1="727" y1="335" x2="786" y2="335" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<line x1="727" y1="387" x2="786" y2="379" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<line x1="861" y1="406" x2="861" y2="457" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="861" y="483" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >预测第 5 个 token</text>
+<text x="500" y="544" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >缓存量 ≈ 2 B L T Hₖᵥ dₕₑₐd b</text>
+<line x1="40" y1="578" x2="960" y2="578" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="607" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >历史 Query 通常不用缓存；追加新位置不会改变因果模型中历史位置的表示。</text>
+<text x="40" y="632" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >例：B=1，L=32，T=8192，Hₖᵥ=8，dₕₑₐd=128，b=2 字节 ⇒ KV 张量约 1 GiB。</text></svg>

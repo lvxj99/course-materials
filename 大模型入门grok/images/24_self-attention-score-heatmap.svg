@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="433" viewBox="0 0 960 433" role="img">
+<title>自注意力权重热图</title>
+<desc>learning 作为 Query 时最关注 machine。</desc>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="mk1F2A30" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#1F2A30"/></marker><marker id="mk3E9B96" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#3E9B96"/></marker><marker id="mk4C78A8" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4C78A8"/></marker><marker id="mk4E8C46" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4E8C46"/></marker><marker id="mk8A847C" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8A847C"/></marker><marker id="mk8E6899" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8E6899"/></marker><marker id="mkC4922A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C4922A"/></marker><marker id="mkC9C4BC" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C9C4BC"/></marker><marker id="mkD4544E" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#D4544E"/></marker><marker id="mkE07B2A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#E07B2A"/></marker></defs>
+<text x="28.0" y="32.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">同一句话里的自注意力</text>
+<text x="28.0" y="54.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">行是 Query，列是 Key。格子里是 softmax 之后的权重，不是点积原值。</text>
+<text x="125.3" y="86.0" fill="#526068" fill-opacity="1.0" font-size="12.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">I</text>
+<text x="183.3" y="86.0" fill="#526068" fill-opacity="1.0" font-size="12.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">love</text>
+<text x="241.3" y="86.0" fill="#526068" fill-opacity="1.0" font-size="12.0" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">machine</text>
+<text x="299.3" y="86.0" fill="#526068" fill-opacity="1.0" font-size="12.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">learning</text>
+<text x="86.3" y="133.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">I</text>
+<rect x="98.3" y="106.0" width="54.0" height="54.0" rx="3" fill="#86a0bb" fill-opacity="1.0" stroke="none"/>
+<text x="125.3" y="133.0" fill="#FFFFFF" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.55</text>
+<rect x="156.3" y="106.0" width="54.0" height="54.0" rx="3" fill="#c2ccd4" fill-opacity="1.0" stroke="none"/>
+<text x="183.3" y="133.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.25</text>
+<rect x="214.3" y="106.0" width="54.0" height="54.0" rx="3" fill="#e0e2e1" fill-opacity="1.0" stroke="none"/>
+<text x="241.3" y="133.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.10</text>
+<rect x="272.3" y="106.0" width="54.0" height="54.0" rx="3" fill="#e0e2e1" fill-opacity="1.0" stroke="none"/>
+<text x="299.3" y="133.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.10</text>
+<text x="86.3" y="191.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">love</text>
+<rect x="98.3" y="164.0" width="54.0" height="54.0" rx="3" fill="#ccd4d9" fill-opacity="1.0" stroke="none"/>
+<text x="125.3" y="191.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.20</text>
+<rect x="156.3" y="164.0" width="54.0" height="54.0" rx="3" fill="#9aafc3" fill-opacity="1.0" stroke="none"/>
+<text x="183.3" y="191.0" fill="#FFFFFF" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.45</text>
+<rect x="214.3" y="164.0" width="54.0" height="54.0" rx="3" fill="#d6dbdd" fill-opacity="1.0" stroke="none"/>
+<text x="241.3" y="191.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.15</text>
+<rect x="272.3" y="164.0" width="54.0" height="54.0" rx="3" fill="#ccd4d9" fill-opacity="1.0" stroke="none"/>
+<text x="299.3" y="191.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.20</text>
+<text x="86.3" y="249.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">machine</text>
+<rect x="98.3" y="222.0" width="54.0" height="54.0" rx="3" fill="#eaeae6" fill-opacity="1.0" stroke="none"/>
+<text x="125.3" y="249.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.05</text>
+<rect x="156.3" y="222.0" width="54.0" height="54.0" rx="3" fill="#e0e2e1" fill-opacity="1.0" stroke="none"/>
+<text x="183.3" y="249.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.10</text>
+<rect x="214.3" y="222.0" width="54.0" height="54.0" rx="3" fill="#c2ccd4" fill-opacity="1.0" stroke="none"/>
+<text x="241.3" y="249.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.25</text>
+<rect x="272.3" y="222.0" width="54.0" height="54.0" rx="3" fill="#7c99b6" fill-opacity="1.0" stroke="none"/>
+<text x="299.3" y="249.0" fill="#FFFFFF" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.60</text>
+<text x="86.3" y="307.0" fill="#E07B2A" fill-opacity="1.0" font-size="13" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="end" dominant-baseline="middle">learning</text>
+<rect x="98.3" y="280.0" width="54.0" height="54.0" rx="3" fill="#eaeae6" fill-opacity="1.0" stroke="none"/>
+<text x="125.3" y="307.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.05</text>
+<rect x="156.3" y="280.0" width="54.0" height="54.0" rx="3" fill="#e0e2e1" fill-opacity="1.0" stroke="none"/>
+<text x="183.3" y="307.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.10</text>
+<rect x="214.3" y="280.0" width="54.0" height="54.0" rx="3" fill="#86a0bb" fill-opacity="1.0" stroke="none"/>
+<text x="241.3" y="307.0" fill="#FFFFFF" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.55</text>
+<rect x="272.3" y="280.0" width="54.0" height="54.0" rx="3" fill="#b8c5d0" fill-opacity="1.0" stroke="none"/>
+<text x="299.3" y="307.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">0.30</text>
+<rect x="96.8" y="278.5" width="231.0" height="57.0" rx="4" fill="none" fill-opacity="1.0" stroke="#E07B2A" stroke-width="2" stroke-opacity="1.0"/>
+<rect x="346.3" y="104.0" width="12.0" height="6.1" rx="0" fill="#2e6095" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="109.7" width="12.0" height="6.1" rx="0" fill="#346497" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="115.4" width="12.0" height="6.1" rx="0" fill="#386799" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="121.1" width="12.0" height="6.1" rx="0" fill="#3e6b9c" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="126.8" width="12.0" height="6.1" rx="0" fill="#426f9e" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="132.5" width="12.0" height="6.1" rx="0" fill="#4872a0" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="138.2" width="12.0" height="6.1" rx="0" fill="#4c76a2" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="143.9" width="12.0" height="6.1" rx="0" fill="#527aa4" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="149.6" width="12.0" height="6.1" rx="0" fill="#567da6" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="155.3" width="12.0" height="6.1" rx="0" fill="#5c81a8" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="161.0" width="12.0" height="6.1" rx="0" fill="#6085ab" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="166.7" width="12.0" height="6.1" rx="0" fill="#6688ad" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="172.4" width="12.0" height="6.1" rx="0" fill="#6a8caf" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="178.1" width="12.0" height="6.1" rx="0" fill="#7090b1" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="183.8" width="12.0" height="6.1" rx="0" fill="#7593b3" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="189.5" width="12.0" height="6.1" rx="0" fill="#7997b5" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="195.2" width="12.0" height="6.1" rx="0" fill="#7e9bb7" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="200.9" width="12.0" height="6.1" rx="0" fill="#849eba" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="206.6" width="12.0" height="6.1" rx="0" fill="#88a2bc" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="212.3" width="12.0" height="6.1" rx="0" fill="#8ea6be" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="218.0" width="12.0" height="6.1" rx="0" fill="#92a9c0" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="223.7" width="12.0" height="6.1" rx="0" fill="#98adc2" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="229.4" width="12.0" height="6.1" rx="0" fill="#9cb1c4" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="235.1" width="12.0" height="6.1" rx="0" fill="#a2b4c7" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="240.8" width="12.0" height="6.1" rx="0" fill="#a6b8c9" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="246.5" width="12.0" height="6.1" rx="0" fill="#acbccb" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="252.2" width="12.0" height="6.1" rx="0" fill="#b0bfcd" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="257.9" width="12.0" height="6.1" rx="0" fill="#b6c3cf" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="263.6" width="12.0" height="6.1" rx="0" fill="#bac7d1" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="269.3" width="12.0" height="6.1" rx="0" fill="#c0cad3" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="275.0" width="12.0" height="6.1" rx="0" fill="#c4ced6" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="280.7" width="12.0" height="6.1" rx="0" fill="#cad2d8" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="286.4" width="12.0" height="6.1" rx="0" fill="#ced5da" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="292.1" width="12.0" height="6.1" rx="0" fill="#d4d9dc" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="297.8" width="12.0" height="6.1" rx="0" fill="#d8ddde" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="303.5" width="12.0" height="6.1" rx="0" fill="#dee0e0" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="309.2" width="12.0" height="6.1" rx="0" fill="#e2e4e2" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="314.9" width="12.0" height="6.1" rx="0" fill="#e8e8e5" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="320.6" width="12.0" height="6.1" rx="0" fill="#ecebe7" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="326.3" width="12.0" height="6.1" rx="0" fill="#f2efe9" fill-opacity="1.0" stroke="none"/>
+<rect x="346.3" y="104.0" width="12.0" height="228.0" rx="2" fill="none" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<text x="364.3" y="108.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">1</text>
+<text x="364.3" y="332.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">0</text>
+<rect x="520.0" y="150.0" width="400.0" height="86.0" rx="6" fill="#E07B2A" fill-opacity="0.12" stroke="#E07B2A" stroke-width="1.15" stroke-opacity="1.0"/>
+<text x="532.0" y="166.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">橙色框：正在更新 learning 的表示</text>
+<text x="532.0" y="184.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">这一行最关注 machine，权重 0.55</text>
+<text x="532.0" y="202.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">0.05 + 0.10 + 0.55 + 0.30 = 1</text>
+<text x="532.0" y="220.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">machine 那一行也反过来最关注 learning</text>
+<text x="28.0" y="384.0" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">数字是为了看清结构安排的示意权重，不是某个已训练模型的输出。这里没有遮住任何位置。</text>
+<text x="28.0" y="401.5" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">交叉注意力的图也是这种矩阵，只是行来自解码器、列来自编码器，因此不必是方阵。</text>
+</svg>

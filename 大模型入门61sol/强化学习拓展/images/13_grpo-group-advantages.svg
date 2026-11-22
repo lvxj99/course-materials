@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc"><title id="title">GRPO：同一道题，让候选互相作参照</title><desc id="desc">同题候选奖励经组内标准化得到相对优势，用于加权各回答的生成 token。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="650" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 13</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >GRPO：同一道题，让候选互相作参照</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >示例组大小 G = 4；使用总体标准差，忽略防除零小量</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="43" y="286" width="118" height="70" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="102" y="312" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >同一题</text>
+<text x="102" y="342" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >Prompt x</text>
+<path d="M161,321 L195,321 L195,211 L237,211" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="244" y="185" width="175" height="50" rx="6" fill="#e9f2f3" stroke="#227d82" />
+<text x="331.5" y="216" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >候选回答 1</text>
+<line x1="419" y1="210" x2="478" y2="210" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="486" y="185" width="130" height="50" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="551" y="216" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >R1 = 1</text>
+<line x1="616" y1="210" x2="721" y2="210" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<rect x="729" y="185" width="210" height="50" rx="6" fill="#e9f2f3" stroke="#227d82" />
+<text x="834" y="216" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >Â1 = +1</text>
+<path d="M161,321 L195,321 L195,295 L237,295" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="244" y="269" width="175" height="50" rx="6" fill="#f8efec" stroke="#b76343" />
+<text x="331.5" y="300" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >候选回答 2</text>
+<line x1="419" y1="294" x2="478" y2="294" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="486" y="269" width="130" height="50" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="551" y="300" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >R2 = 0</text>
+<line x1="616" y1="294" x2="721" y2="294" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<rect x="729" y="269" width="210" height="50" rx="6" fill="#f8efec" stroke="#b76343" />
+<text x="834" y="300" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >Â2 = −1</text>
+<path d="M161,321 L195,321 L195,379 L237,379" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="244" y="353" width="175" height="50" rx="6" fill="#e9f2f3" stroke="#227d82" />
+<text x="331.5" y="384" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >候选回答 3</text>
+<line x1="419" y1="378" x2="478" y2="378" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="486" y="353" width="130" height="50" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="551" y="384" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >R3 = 1</text>
+<line x1="616" y1="378" x2="721" y2="378" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<rect x="729" y="353" width="210" height="50" rx="6" fill="#e9f2f3" stroke="#227d82" />
+<text x="834" y="384" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >Â3 = +1</text>
+<path d="M161,321 L195,321 L195,463 L237,463" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="244" y="437" width="175" height="50" rx="6" fill="#f8efec" stroke="#b76343" />
+<text x="331.5" y="468" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >候选回答 4</text>
+<line x1="419" y1="462" x2="478" y2="462" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="486" y="437" width="130" height="50" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="551" y="468" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >R4 = 0</text>
+<line x1="616" y1="462" x2="721" y2="462" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<rect x="729" y="437" width="210" height="50" rx="6" fill="#f8efec" stroke="#b76343" />
+<text x="834" y="468" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >Â4 = −1</text>
+<text x="500" y="568" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >均值 R̄ = 0.5，标准差 sR = 0.5；Âᵢ = (Rᵢ − R̄) / sR</text>
+<line x1="40" y1="578" x2="960" y2="578" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="607" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >同一回答的生成 token 共用终局优势；再通过 PPO 风格概率比与裁剪更新。</text>
+<text x="40" y="632" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >全对或全错时，这个相对奖励项为零；KL 等其他项仍可能更新。</text></svg>

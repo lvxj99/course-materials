@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="title desc"><title id="title">多头注意力：并行读取，再混合</title><desc id="desc">多个注意力头独立投影并读取，将各头输出沿特征维拼接，再经 Wₒ 映射回模型维度 d。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="580" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 04</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >多头注意力：并行读取，再混合</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >各头有独立投影参数；每一头都完成同一种缩放点积注意力</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="45" y="289" width="120" height="70" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="105" y="317.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >输入 X</text>
+<text x="105" y="342.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >T × d</text>
+<path d="M165,324 L196,324 L196,196 L230,196" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="230" y="166" width="200" height="60" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="330" y="189.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >头 1：独立投影</text>
+<text x="330" y="214.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >Qᵢ, Kᵢ, Vᵢ</text>
+<line x1="430" y1="196" x2="475" y2="196" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="475" y="166" width="225" height="60" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="587.5" y="189.5" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >softmax(QᵢKᵢᵀ / √dₖ + M)Vᵢ</text>
+<text x="587.5" y="214.5" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >输出 T × dᵥ</text>
+<path d="M700,196 L738,196 L738,324 L779,324" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<path d="M165,324 L196,324 L196,313 L230,313" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="230" y="283" width="200" height="60" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="330" y="306.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >头 2：独立投影</text>
+<text x="330" y="331.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >Qᵢ, Kᵢ, Vᵢ</text>
+<line x1="430" y1="313" x2="475" y2="313" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="475" y="283" width="225" height="60" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="587.5" y="306.5" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >softmax(QᵢKᵢᵀ / √dₖ + M)Vᵢ</text>
+<text x="587.5" y="331.5" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >输出 T × dᵥ</text>
+<path d="M700,313 L738,313 L738,324 L779,324" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<path d="M165,324 L196,324 L196,430 L230,430" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="230" y="400" width="200" height="60" rx="6" fill="#f0edf6" stroke="#d9dfdf" />
+<text x="330" y="423.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >头 3：独立投影</text>
+<text x="330" y="448.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >Qᵢ, Kᵢ, Vᵢ</text>
+<line x1="430" y1="430" x2="475" y2="430" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="475" y="400" width="225" height="60" rx="6" fill="#f0edf6" stroke="#d9dfdf" />
+<text x="587.5" y="423.5" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >softmax(QᵢKᵢᵀ / √dₖ + M)Vᵢ</text>
+<text x="587.5" y="448.5" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >输出 T × dᵥ</text>
+<path d="M700,430 L738,430 L738,324 L779,324" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<rect x="779" y="284" width="92" height="80" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="825" y="317.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >拼接</text>
+<text x="825" y="342.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >Concat</text>
+<line x1="871" y1="324" x2="907" y2="324" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="910" y="284" width="55" height="80" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="937.5" y="317.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >Wₒ</text>
+<text x="937.5" y="342.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >投影</text>
+<text x="820" y="400" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >T × (h dᵥ)</text>
+<text x="936" y="400" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >T × d</text>
+<line x1="40" y1="508" x2="960" y2="508" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="537" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >图示 h = 3；常见等宽设置 dₖ = dᵥ = d / h。</text>
+<text x="40" y="562" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >不同头可以学到不同关系，但不预先指定“语法头”“语义头”等固定职责。</text></svg>

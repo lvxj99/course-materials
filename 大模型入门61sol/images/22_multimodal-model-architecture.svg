@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc"><title id="title">多模态：把不同输入接到同一语言模型</title><desc id="desc">文字经分词与嵌入，图像、音频、视频经各自编码与连接模块，把表示接入 LLM；图中展示常见的多模态理解模式。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="660" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 22</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >多模态：把不同输入接到同一语言模型</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >一种常见连接方式；并不代表所有多模态模型都使用相同接口</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="49" y="181" width="93" height="51" rx="6" fill="#e9f2f3" stroke="#227d82" />
+<text x="95.5" y="212.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >文字</text>
+<line x1="142" y1="207" x2="188" y2="207" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="195" y="181" width="259" height="51" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="324.5" y="212.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >Tokenizer + Embedding</text>
+<line x1="454" y1="207" x2="490" y2="207" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="498" y="189" width="14" height="35" rx="2" fill="#bdd8da" stroke="#ffffff" />
+<rect x="517" y="189" width="14" height="35" rx="2" fill="#a7cbcd" stroke="#ffffff" />
+<rect x="536" y="189" width="14" height="35" rx="2" fill="#91bec1" stroke="#ffffff" />
+<rect x="555" y="189" width="14" height="35" rx="2" fill="#7ab1b4" stroke="#ffffff" />
+<rect x="574" y="189" width="14" height="35" rx="2" fill="#64a4a8" stroke="#ffffff" />
+<path d="M595,206 L636,206 L636,341 L675,341" stroke="#227d82" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-227d82)"/>
+<rect x="49" y="270" width="93" height="51" rx="6" fill="#edf1f6" stroke="#4c75a0" />
+<text x="95.5" y="301.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >图像</text>
+<line x1="142" y1="296" x2="188" y2="296" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="195" y="270" width="259" height="51" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="324.5" y="301.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >视觉编码器 → 连接层</text>
+<line x1="454" y1="296" x2="490" y2="296" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="498" y="278" width="14" height="35" rx="2" fill="#c9d6e3" stroke="#ffffff" />
+<rect x="517" y="278" width="14" height="35" rx="2" fill="#b7c8d9" stroke="#ffffff" />
+<rect x="536" y="278" width="14" height="35" rx="2" fill="#a6bad0" stroke="#ffffff" />
+<rect x="555" y="278" width="14" height="35" rx="2" fill="#94acc6" stroke="#ffffff" />
+<rect x="574" y="278" width="14" height="35" rx="2" fill="#829ebd" stroke="#ffffff" />
+<path d="M595,295 L636,295 L636,341 L675,341" stroke="#4c75a0" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-4c75a0)"/>
+<rect x="49" y="359" width="93" height="51" rx="6" fill="#f8efec" stroke="#b76343" />
+<text x="95.5" y="390.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >音频</text>
+<line x1="142" y1="385" x2="188" y2="385" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="195" y="359" width="259" height="51" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="324.5" y="390.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >音频编码器 → 连接层</text>
+<line x1="454" y1="385" x2="490" y2="385" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="498" y="367" width="14" height="35" rx="2" fill="#e9d0c7" stroke="#ffffff" />
+<rect x="517" y="367" width="14" height="35" rx="2" fill="#e2c1b4" stroke="#ffffff" />
+<rect x="536" y="367" width="14" height="35" rx="2" fill="#dbb1a1" stroke="#ffffff" />
+<rect x="555" y="367" width="14" height="35" rx="2" fill="#d4a18e" stroke="#ffffff" />
+<rect x="574" y="367" width="14" height="35" rx="2" fill="#cd927b" stroke="#ffffff" />
+<path d="M595,384 L636,384 L636,341 L675,341" stroke="#b76343" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b76343)"/>
+<rect x="49" y="448" width="93" height="51" rx="6" fill="#f2f0f5" stroke="#7d6a9b" />
+<text x="95.5" y="479.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >视频</text>
+<line x1="142" y1="474" x2="188" y2="474" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="195" y="448" width="259" height="51" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="324.5" y="479.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >帧编码 + 时空位置</text>
+<line x1="454" y1="474" x2="490" y2="474" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="498" y="456" width="14" height="35" rx="2" fill="#d8d2e1" stroke="#ffffff" />
+<rect x="517" y="456" width="14" height="35" rx="2" fill="#cbc3d7" stroke="#ffffff" />
+<rect x="536" y="456" width="14" height="35" rx="2" fill="#beb5cd" stroke="#ffffff" />
+<rect x="555" y="456" width="14" height="35" rx="2" fill="#b1a6c3" stroke="#ffffff" />
+<rect x="574" y="456" width="14" height="35" rx="2" fill="#a497b9" stroke="#ffffff" />
+<path d="M595,473 L636,473 L636,341 L675,341" stroke="#7d6a9b" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-7d6a9b)"/>
+<rect x="682" y="266" width="158" height="153" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="761" y="323.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >LLM backbone</text>
+<text x="761" y="348.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >融合上下文</text>
+<text x="761" y="373.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >生成下个 token</text>
+<line x1="840" y1="341" x2="880" y2="341" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="886" y="289" width="72" height="104" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="922" y="322" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >文</text>
+<text x="922" y="347" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >本</text>
+<text x="922" y="372" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >输出</text>
+<text x="492" y="578" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >特征投影对齐维度，联合训练学习模态之间的对应关系</text>
+<line x1="40" y1="588" x2="960" y2="588" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="617" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >视频通常还需要时间信息；有些架构用交叉注意力而非把所有模态直接拼接。</text>
+<text x="40" y="642" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >生成语音或图像通常还需专门的输出头、解码器或生成模块，此图聚焦多模态理解。</text></svg>

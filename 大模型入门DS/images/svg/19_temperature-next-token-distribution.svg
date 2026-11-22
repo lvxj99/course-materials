@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440">
+<rect width="960" height="440" fill="#ffffff"/>
+
+<text x="40.00" y="30.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.6" text-anchor="start" fill="#7c8a97">同一组 logits，三种温度：softmax(z / τ)</text>
+<text x="56.00" y="74.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="13" text-anchor="start" fill="#1f2a33" font-weight="600">τ = 0.5</text>
+<text x="124.00" y="74.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">分布很尖</text>
+<line x1="70.00" y1="213.00" x2="292.00" y2="213.00" stroke="#dde5ec" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="2 3"/>
+<line x1="70.00" y1="100.00" x2="292.00" y2="100.00" stroke="#dde5ec" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="2 3"/>
+<line x1="70.00" y1="326.00" x2="292.00" y2="326.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="66.00" y="329.50" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="end" fill="#7c8a97">0.0</text>
+<text x="66.00" y="216.50" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="end" fill="#7c8a97">0.5</text>
+<text x="66.00" y="103.50" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="end" fill="#7c8a97">1.0</text>
+<rect x="76.00" y="123.21" width="32.00" height="202.79" rx="2" fill="#5a81a6" stroke="none" stroke-width="1"/>
+<text x="92.00" y="117.21" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.90</text>
+<text x="92.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">的</text>
+<rect x="121.00" y="307.60" width="32.00" height="18.40" rx="2" fill="#acc1d4" stroke="none" stroke-width="1"/>
+<text x="137.00" y="301.60" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.08</text>
+<text x="137.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">了</text>
+<rect x="166.00" y="322.29" width="32.00" height="3.71" rx="2" fill="#c0d0df" stroke="none" stroke-width="1"/>
+<text x="182.00" y="316.29" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.02</text>
+<text x="182.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">是</text>
+<rect x="211.00" y="324.80" width="32.00" height="1.20" rx="2" fill="#c8d6e3" stroke="none" stroke-width="1"/>
+<text x="227.00" y="318.80" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">&lt;0.01</text>
+<text x="227.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">在</text>
+<rect x="256.00" y="324.80" width="32.00" height="1.20" rx="2" fill="#ccd9e6" stroke="none" stroke-width="1"/>
+<text x="272.00" y="318.80" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">&lt;0.01</text>
+<text x="272.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">和</text>
+<text x="176.00" y="374.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.6" text-anchor="middle" fill="#7c8a97">首位 0.90，几乎总是选「的」</text>
+<text x="360.00" y="74.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="13" text-anchor="start" fill="#1f2a33" font-weight="600">τ = 1.0</text>
+<text x="428.00" y="74.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">原始分布</text>
+<line x1="374.00" y1="213.00" x2="596.00" y2="213.00" stroke="#dde5ec" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="2 3"/>
+<line x1="374.00" y1="100.00" x2="596.00" y2="100.00" stroke="#dde5ec" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="2 3"/>
+<line x1="374.00" y1="326.00" x2="596.00" y2="326.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<rect x="380.00" y="178.67" width="32.00" height="147.33" rx="2" fill="#6b8fb0" stroke="none" stroke-width="1"/>
+<text x="396.00" y="172.67" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.65</text>
+<text x="396.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">的</text>
+<rect x="425.00" y="281.62" width="32.00" height="44.38" rx="2" fill="#99b2c9" stroke="none" stroke-width="1"/>
+<text x="441.00" y="275.62" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.20</text>
+<text x="441.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">了</text>
+<rect x="470.00" y="306.06" width="32.00" height="19.94" rx="2" fill="#abc0d3" stroke="none" stroke-width="1"/>
+<text x="486.00" y="300.06" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.09</text>
+<text x="486.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">是</text>
+<rect x="515.00" y="316.10" width="32.00" height="9.90" rx="2" fill="#b6c8d9" stroke="none" stroke-width="1"/>
+<text x="531.00" y="310.10" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.04</text>
+<text x="531.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">在</text>
+<rect x="560.00" y="321.55" width="32.00" height="4.45" rx="2" fill="#becfde" stroke="none" stroke-width="1"/>
+<text x="576.00" y="315.55" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.02</text>
+<text x="576.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">和</text>
+<line x1="508.50" y1="326.00" x2="508.50" y2="96.00" stroke="#c2703a" stroke-width="1.2" stroke-linecap="butt" stroke-dasharray="4 3"/>
+<text x="513.50" y="92.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.3" text-anchor="start" fill="#c2703a" font-weight="600">top-k = 3</text>
+<text x="480.00" y="374.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.6" text-anchor="middle" fill="#7c8a97">前 3 个累计 0.94</text>
+<text x="664.00" y="74.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="13" text-anchor="start" fill="#1f2a33" font-weight="600">τ = 2.0</text>
+<text x="732.00" y="74.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">分布变平</text>
+<line x1="678.00" y1="213.00" x2="900.00" y2="213.00" stroke="#dde5ec" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="2 3"/>
+<line x1="678.00" y1="100.00" x2="900.00" y2="100.00" stroke="#dde5ec" stroke-width="0.8" stroke-linecap="butt" stroke-dasharray="2 3"/>
+<line x1="678.00" y1="326.00" x2="900.00" y2="326.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<rect x="684.00" y="229.82" width="32.00" height="96.18" rx="2" fill="#7f9dbb" stroke="none" stroke-width="1"/>
+<text x="700.00" y="223.82" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.43</text>
+<text x="700.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">的</text>
+<rect x="729.00" y="273.21" width="32.00" height="52.79" rx="2" fill="#94aec6" stroke="none" stroke-width="1"/>
+<text x="745.00" y="267.21" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.23</text>
+<text x="745.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">了</text>
+<rect x="774.00" y="290.62" width="32.00" height="35.38" rx="2" fill="#9fb6cc" stroke="none" stroke-width="1"/>
+<text x="790.00" y="284.62" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.16</text>
+<text x="790.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">是</text>
+<rect x="819.00" y="301.07" width="32.00" height="24.93" rx="2" fill="#a6bcd1" stroke="none" stroke-width="1"/>
+<text x="835.00" y="295.07" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.11</text>
+<text x="835.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">在</text>
+<rect x="864.00" y="309.29" width="32.00" height="16.71" rx="2" fill="#aec2d5" stroke="none" stroke-width="1"/>
+<text x="880.00" y="303.29" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.2" text-anchor="middle" fill="#44525e">0.07</text>
+<text x="880.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e">和</text>
+<text x="784.00" y="374.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.6" text-anchor="middle" fill="#7c8a97">首位 0.43，五个候选差距缩小</text>
+<text x="40.00" y="402.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.3" text-anchor="start" fill="#7c8a97">贪心解码 = 取 argmax；采样 = 按概率抽；top-k 只保留前 k 个；top-p 保留累计概率达到阈值的最小集合。</text>
+<text x="40.00" y="420.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.3" text-anchor="start" fill="#7c8a97">温度不改变候选的排序（z/τ 单调、softmax 保序），只改变分布的平缓程度；过低容易重复，过高容易跑题。</text>
+</svg>

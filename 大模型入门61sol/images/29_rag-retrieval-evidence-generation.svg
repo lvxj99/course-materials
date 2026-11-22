@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="675" viewBox="0 0 1000 675" role="img" aria-labelledby="title desc"><title id="title">RAG：先找到证据，再带着证据回答</title><desc id="desc">先将资料切分并保留出处，查询时检索相关片段，将问题与片段一起交给 LLM，生成可对应原文的回答与引用。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="675" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 29</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >RAG：先找到证据，再带着证据回答</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >把知识放进当前上下文；检索结果的质量决定了模型能读到什么</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<text x="49" y="176" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >资料准备</text>
+<rect x="49" y="202" width="161" height="61" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="129.5" y="226" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >原始资料</text>
+<text x="129.5" y="251" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >保留版本与出处</text>
+<line x1="210" y1="232" x2="256" y2="232" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="263" y="202" width="178" height="61" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="352" y="226" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >切分 + 索引</text>
+<text x="352" y="251" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >关键词 / 向量</text>
+<line x1="441" y1="232" x2="486" y2="232" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="493" y="202" width="178" height="61" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="582" y="226" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >可检索资料库</text>
+<text x="582" y="251" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >片段 + 来源</text>
+<text x="49" y="329" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >回答问题</text>
+<rect x="49" y="362" width="161" height="61" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="129.5" y="398.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >用户问题</text>
+<line x1="210" y1="392" x2="255" y2="392" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="263" y="362" width="178" height="61" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="352" y="398.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >检索 + 筛选</text>
+<path d="M582,263 L582,314 L352,314 L352,362" stroke="#4c75a0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-4c75a0)"/>
+<line x1="441" y1="392" x2="486" y2="392" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="493" y="345" width="178" height="95" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="582" y="373.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >上下文</text>
+<text x="582" y="398.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >问题 + 证据片段</text>
+<text x="582" y="423.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >来源标识</text>
+<line x1="671" y1="392" x2="715" y2="392" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="722" y="362" width="105" height="61" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="774.5" y="398.5" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >LLM</text>
+<line x1="827" y1="392" x2="866" y2="392" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="874" y="345" width="82" height="95" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="915" y="373.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >回答</text>
+<text x="915" y="398.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >+</text>
+<text x="915" y="423.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >引用</text>
+<path d="M128,423 L128,487 L581,487 L581,440" stroke="#647079" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<text x="344" y="514" font-size="19" fill="#647079" text-anchor="middle" font-weight="400" >原问题与检索片段一起进入上下文</text>
+<text x="499" y="573" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >资料可以独立更新；普通 RAG 推理不需要同步修改模型权重</text>
+<line x1="40" y1="603" x2="960" y2="603" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="632" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >引用必须确实支持对应结论；检索不到、文档过期或片段缺失时，应说明证据不足。</text>
+<text x="40" y="657" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >补充上下文与微调解决不同问题，也可以结合使用。</text></svg>

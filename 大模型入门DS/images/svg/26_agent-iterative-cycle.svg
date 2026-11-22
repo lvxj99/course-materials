@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+<rect width="960" height="540" fill="#ffffff"/>
+
+<text x="40.00" y="34.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#44525e" font-weight="600">围绕目标反复「规划 → 执行 → 观察」，直到任务完成</text>
+<rect x="344.00" y="200.00" width="152.00" height="80.00" rx="10" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="420.00" y="228.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="14" text-anchor="middle" fill="#6f63a5" font-weight="600">LLM</text>
+<text x="420.00" y="248.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#6f63a5">理解 · 生成</text>
+<text x="420.00" y="266.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="middle" fill="#7c8a97">决定下一步做什么</text>
+<rect x="325.00" y="69.00" width="190.00" height="62.00" rx="8" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="420.00" y="94.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#3a6ea5" font-weight="600">① 感知</text>
+<text x="420.00" y="113.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.3" text-anchor="middle" fill="#44525e">读入任务、文件、环境状态</text>
+<rect x="515.00" y="209.00" width="190.00" height="62.00" rx="8" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="610.00" y="234.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#6f63a5" font-weight="600">② 规划</text>
+<text x="610.00" y="253.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.3" text-anchor="middle" fill="#44525e">拆解步骤、选择工具</text>
+<rect x="325.00" y="349.00" width="190.00" height="62.00" rx="8" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="1"/>
+<text x="420.00" y="374.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#c2703a" font-weight="600">③ 执行</text>
+<text x="420.00" y="393.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.3" text-anchor="middle" fill="#44525e">调用工具、运行代码</text>
+<rect x="135.00" y="209.00" width="190.00" height="62.00" rx="8" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="1"/>
+<text x="230.00" y="234.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#2f8b7f" font-weight="600">④ 观察</text>
+<text x="230.00" y="253.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.3" text-anchor="middle" fill="#44525e">检查结果、更新状态</text>
+<path d="M 516.00 112.00 Q 577.88 142.16 599.29 202.20" fill="none" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter"/>
+<polygon points="601.00,207.00 602.49,200.10 595.48,202.60" fill="#7c8a97"/>
+<path d="M 601.00 273.00 Q 577.88 337.84 520.58 365.77" fill="none" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter"/>
+<polygon points="516.00,368.00 523.02,368.71 519.76,362.03" fill="#7c8a97"/>
+<path d="M 324.00 368.00 Q 262.12 337.84 240.71 277.80" fill="none" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter"/>
+<polygon points="239.00,273.00 237.51,279.90 244.52,277.40" fill="#7c8a97"/>
+<path d="M 239.00 207.00 Q 262.12 142.16 319.42 114.23" fill="none" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="miter"/>
+<polygon points="324.00,112.00 316.98,111.29 320.24,117.97" fill="#7c8a97"/>
+<rect x="740.00" y="170.00" width="190.00" height="150.00" rx="8" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="756.00" y="194.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="start" fill="#44525e" font-weight="600">工具与执行环境</text>
+<rect x="752.00" y="206.00" width="166.00" height="22.00" rx="4" fill="#ffffff" stroke="#dde5ec" stroke-width="1"/>
+<text x="835.00" y="221.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#44525e">搜索 / 浏览器</text>
+<rect x="752.00" y="233.00" width="166.00" height="22.00" rx="4" fill="#ffffff" stroke="#dde5ec" stroke-width="1"/>
+<text x="835.00" y="248.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#44525e">文件读写</text>
+<rect x="752.00" y="260.00" width="166.00" height="22.00" rx="4" fill="#ffffff" stroke="#dde5ec" stroke-width="1"/>
+<text x="835.00" y="275.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#44525e">Python / shell</text>
+<rect x="752.00" y="287.00" width="166.00" height="22.00" rx="4" fill="#ffffff" stroke="#dde5ec" stroke-width="1"/>
+<text x="835.00" y="302.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.8" text-anchor="middle" fill="#44525e">数据库 / API</text>
+<text x="40.00" y="452.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e">例：给定一份数据和分析目标 → 读文件 → 写并运行分析脚本 → 检查输出 → 修正 → 整理成报告。</text>
+<text x="40.00" y="474.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">与单次问答的区别：模型的动作会改变外部状态，下一步要依据真实结果调整；失败也提供信息。</text>
+</svg>

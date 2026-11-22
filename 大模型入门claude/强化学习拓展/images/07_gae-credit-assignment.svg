@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc"><title id="title">GAE：让终局反馈沿时间往前传</title><desc id="desc">GAE 从后往前递推，把最终奖励通过 TD 误差传播到早期动作。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="640" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 07</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >GAE：让终局反馈沿时间往前传</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >γ = 1，λ = 0.9；用一条三步轨迹完整计算</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<text x="205" y="180" font-size="21" fill="#647079" text-anchor="middle" font-weight="400" >时刻 t = 0</text>
+<rect x="100" y="211" width="210" height="52" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="205" y="243" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >V(s0) = 0.4</text>
+<text x="205" y="306" font-size="22" fill="#b76343" text-anchor="middle" font-weight="400" >r1 = 0</text>
+<rect x="100" y="340" width="210" height="52" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="205" y="372" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >δ0 = 0.1</text>
+<rect x="100" y="448" width="210" height="60" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="205" y="484" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >Â0 = 0.514</text>
+<line x1="205" y1="392" x2="205" y2="448" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<line x1="310" y1="237" x2="390" y2="237" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="495" y="180" font-size="21" fill="#647079" text-anchor="middle" font-weight="400" >时刻 t = 1</text>
+<rect x="390" y="211" width="210" height="52" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="495" y="243" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >V(s1) = 0.5</text>
+<text x="495" y="306" font-size="22" fill="#b76343" text-anchor="middle" font-weight="400" >r2 = 0</text>
+<rect x="390" y="340" width="210" height="52" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="495" y="372" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >δ1 = 0.1</text>
+<rect x="390" y="448" width="210" height="60" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="495" y="484" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >Â1 = 0.460</text>
+<line x1="495" y1="392" x2="495" y2="448" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<line x1="600" y1="237" x2="680" y2="237" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="785" y="180" font-size="21" fill="#647079" text-anchor="middle" font-weight="400" >时刻 t = 2</text>
+<rect x="680" y="211" width="210" height="52" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="785" y="243" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >V(s2) = 0.6</text>
+<text x="785" y="306" font-size="22" fill="#b76343" text-anchor="middle" font-weight="400" >r3 = 1</text>
+<rect x="680" y="340" width="210" height="52" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="785" y="372" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >δ2 = 0.4</text>
+<rect x="680" y="448" width="210" height="60" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="785" y="484" font-size="24" fill="#26343b" text-anchor="middle" font-weight="400" >Â2 = 0.400</text>
+<line x1="785" y1="392" x2="785" y2="448" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<line x1="680" y1="478" x2="600" y2="478" stroke="#227d82" stroke-width="2.5" marker-end="url(#arrow-227d82)"/>
+<line x1="390" y1="478" x2="310" y2="478" stroke="#227d82" stroke-width="2.5" marker-end="url(#arrow-227d82)"/>
+<text x="640" y="431" font-size="18" fill="#227d82" text-anchor="middle" font-weight="400" >× 0.9</text>
+<text x="350" y="431" font-size="18" fill="#227d82" text-anchor="middle" font-weight="400" >× 0.9</text>
+<line x1="40" y1="568" x2="960" y2="568" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="597" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >δₜ = rₜ₊₁ + V(sₜ₊₁) − V(sₜ)，终止 V(s₃)=0；Âₜ = δₜ + 0.9 Âₜ₊₁。</text>
+<text x="40" y="622" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >λ=1 时得到 [0.6, 0.5, 0.4]，等于终局回报 1 减去各位置价值。</text></svg>

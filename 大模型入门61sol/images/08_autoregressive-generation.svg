@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title id="title">自回归生成：把刚选出的 token 接回去</title><desc id="desc">从起始标记开始，每次把新选出的 token 加入已有上下文，重新预测下一个 token，直到结束标记或长度上限。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="625" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 08</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >自回归生成：把刚选出的 token 接回去</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >每一行是一次模型调用；后一步的输入依赖前一步选出的结果</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<text x="48" y="200" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >步骤 1</text>
+<rect x="132" y="174" width="93" height="40" rx="6" fill="#e4eff0" stroke="#227d82" />
+<text x="178.5" y="200" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >〈BOS〉</text>
+<line x1="551" y1="194" x2="602" y2="194" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="605" y="174" width="118" height="40" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="664" y="200" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >同一个模型</text>
+<line x1="723" y1="194" x2="769" y2="194" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="780" y="174" width="154" height="40" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="857" y="200" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >我</text>
+<path d="M858,214 L858,235 L278,235 L278,257" stroke="#b76343" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b76343)"/>
+<text x="48" y="283" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >步骤 2</text>
+<rect x="132" y="257" width="93" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="178.5" y="283" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >〈BOS〉</text>
+<rect x="233" y="257" width="93" height="40" rx="6" fill="#e4eff0" stroke="#227d82" />
+<text x="279.5" y="283" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >我</text>
+<line x1="551" y1="277" x2="602" y2="277" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="605" y="257" width="118" height="40" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="664" y="283" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >同一个模型</text>
+<line x1="723" y1="277" x2="769" y2="277" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="780" y="257" width="154" height="40" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="857" y="283" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >喜欢</text>
+<path d="M858,297 L858,318 L379,318 L379,340" stroke="#b76343" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b76343)"/>
+<text x="48" y="366" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >步骤 3</text>
+<rect x="132" y="340" width="93" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="178.5" y="366" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >〈BOS〉</text>
+<rect x="233" y="340" width="93" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="279.5" y="366" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >我</text>
+<rect x="334" y="340" width="93" height="40" rx="6" fill="#e4eff0" stroke="#227d82" />
+<text x="380.5" y="366" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >喜欢</text>
+<line x1="551" y1="360" x2="602" y2="360" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="605" y="340" width="118" height="40" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="664" y="366" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >同一个模型</text>
+<line x1="723" y1="360" x2="769" y2="360" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="780" y="340" width="154" height="40" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="857" y="366" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >学习</text>
+<path d="M858,380 L858,401 L480,401 L480,423" stroke="#b76343" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b76343)"/>
+<text x="48" y="449" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >步骤 4</text>
+<rect x="132" y="423" width="93" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="178.5" y="449" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >〈BOS〉</text>
+<rect x="233" y="423" width="93" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="279.5" y="449" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >我</text>
+<rect x="334" y="423" width="93" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="380.5" y="449" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >喜欢</text>
+<rect x="435" y="423" width="93" height="40" rx="6" fill="#e4eff0" stroke="#227d82" />
+<text x="481.5" y="449" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >学习</text>
+<line x1="551" y1="443" x2="602" y2="443" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="605" y="423" width="118" height="40" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="664" y="449" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >同一个模型</text>
+<line x1="723" y1="443" x2="769" y2="443" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="780" y="423" width="154" height="40" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="857" y="449" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >〈EOS〉</text>
+<line x1="40" y1="553" x2="960" y2="553" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="582" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >模型输出词表分布，再按贪心或采样规则选出一个 token；生成结束标记后停止。</text>
+<text x="40" y="607" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >图中按词分组只是教学示意，真实切分由 tokenizer 决定；各步共用同一组模型权重。</text></svg>

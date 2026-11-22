@@ -1,0 +1,678 @@
+[
+  {
+    "id": 1,
+    "file": "01_original-transformer-architecture.svg",
+    "title": "Transformer：两条序列，三种注意力",
+    "caption": "编码器用双向自注意力形成原文表示；解码器先做因果自注意力，再用交叉注意力读取原文。原始 Transformer 使用 Post-Norm。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 850,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 17,
+      "heading": "## 7. Transformer 为什么成为大模型的重要基础？",
+      "reference": "![原始 Transformer 编码器—解码器架构](images/01_original-transformer-architecture.png)"
+    },
+    "currentLocation": {
+      "line": 17,
+      "heading": "## 7. Transformer 为什么成为大模型的重要基础？",
+      "reference": "![原始 Transformer 编码器—解码器架构](images/01_original-transformer-architecture.svg)"
+    }
+  },
+  {
+    "id": 24,
+    "file": "24_self-attention-score-heatmap.svg",
+    "title": "自注意力热图：一行就是一次读取",
+    "caption": "高亮 learning 作为 Query 的一行；其对 machine 的归一化权重为 0.60。图中是人工构造的注意力权重，不是真实模型观测。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "手工教学热图；每行和为 1。",
+    "height": 610,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 36,
+      "heading": "### 7.1 先用直觉认识 Query、Key、Value",
+      "reference": "![自注意力分数热图：高亮当前词与其他词的关联](images/24_self-attention-score-heatmap.png)"
+    },
+    "currentLocation": {
+      "line": 36,
+      "heading": "### 7.1 先用直觉认识 Query、Key、Value",
+      "reference": "![自注意力分数热图：高亮当前词与其他词的关联](images/24_self-attention-score-heatmap.svg)"
+    }
+  },
+  {
+    "id": 2,
+    "file": "02_self-attention-query-key-value.svg",
+    "title": "一次注意力读取：先匹配，再汇总",
+    "caption": "注意力先把 Query 与 Key 的匹配分数变为归一化权重，再按权重汇总 Value。例中输出严格等于 [0.7, 0.4]。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "手工数值例；权重归一化与加权和经代码验证。",
+    "height": 580,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 60,
+      "heading": "### 7.2 从一次加权求和到多头注意力",
+      "reference": "![用 Query、Key、Value 直观理解自注意力的匹配与汇总](images/02_self-attention-query-key-value.png)"
+    },
+    "currentLocation": {
+      "line": 60,
+      "heading": "### 7.2 从一次加权求和到多头注意力",
+      "reference": "![用 Query、Key、Value 直观理解自注意力的匹配与汇总](images/02_self-attention-query-key-value.svg)"
+    }
+  },
+  {
+    "id": 3,
+    "file": "03_scaled-dot-product-attention-matrices.svg",
+    "title": "把每个位置的读取，合成矩阵运算",
+    "caption": "形状依次为 (T×dₖ)(dₖ×T)→T×T，经逐行 softmax 后乘 T×dᵥ 的 V，输出 T×dᵥ。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 585,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 70,
+      "heading": "### 7.2 从一次加权求和到多头注意力",
+      "reference": "![缩放点积注意力中的矩阵形状与计算](images/03_scaled-dot-product-attention-matrices.png)"
+    },
+    "currentLocation": {
+      "line": 70,
+      "heading": "### 7.2 从一次加权求和到多头注意力",
+      "reference": "![缩放点积注意力中的矩阵形状与计算](images/03_scaled-dot-product-attention-matrices.svg)"
+    }
+  },
+  {
+    "id": 28,
+    "file": "28_causal-mask-and-shifted-targets.svg",
+    "title": "因果掩码：并行计算，也不会偷看答案",
+    "caption": "因果掩码禁止读取未来输入。示例中“喜欢”所在行可读取 BOS、我、喜欢，并预测“学习”；训练目标与输入错开一位。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "补充图：澄清训练并行和生成串行的区别。",
+    "height": 610,
+    "section": "Transformer",
+    "originalPlaceholder": false,
+    "originalLocation": null,
+    "currentLocation": {
+      "line": 78,
+      "heading": "### 7.2 从一次加权求和到多头注意力",
+      "reference": "![因果掩码：并行计算，也不会偷看答案](images/28_causal-mask-and-shifted-targets.svg)"
+    }
+  },
+  {
+    "id": 4,
+    "file": "04_scaled-dot-product-and-multi-head-attention.svg",
+    "title": "多头注意力：并行读取，再混合",
+    "caption": "多个注意力头独立投影并读取，将各头输出沿特征维拼接，再经 Wₒ 映射回模型维度 d。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 580,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 90,
+      "heading": "### 7.2 从一次加权求和到多头注意力",
+      "reference": "![缩放点积注意力与多头注意力的组合方式](images/04_scaled-dot-product-and-multi-head-attention.png)"
+    },
+    "currentLocation": {
+      "line": 94,
+      "heading": "### 7.2 从一次加权求和到多头注意力",
+      "reference": "![缩放点积注意力与多头注意力的组合方式](images/04_scaled-dot-product-and-multi-head-attention.svg)"
+    }
+  },
+  {
+    "id": 5,
+    "file": "05_positional-encoding-and-rope.svg",
+    "title": "位置如何进入模型：相加，或旋转",
+    "caption": "加法位置编码把 pₜ 加到输入；RoPE 在二维子空间旋转 Q、K，使点积显式依赖相对位移 s−t。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762",
+      "https://arxiv.org/abs/2104.09864"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 640,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 144,
+      "heading": "### 7.3 Positional Encoding：顺序从哪里来？",
+      "reference": "![位置编码与 RoPE 如何把位置信息注入注意力](images/05_positional-encoding-and-rope.png)"
+    },
+    "currentLocation": {
+      "line": 150,
+      "heading": "### 7.3 Positional Encoding：顺序从哪里来？",
+      "reference": "![位置编码与 RoPE 如何把位置信息注入注意力](images/05_positional-encoding-and-rope.svg)"
+    }
+  },
+  {
+    "id": 6,
+    "file": "06_transformer-block-residual-norm.svg",
+    "title": "一个 Pre-Norm Block 的两次残差更新",
+    "caption": "Pre-Norm Block 的注意力和 FFN 都先做归一化，再通过残差相加更新表示。注意力交换位置信息，FFN 变换每个位置的特征。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762",
+      "https://arxiv.org/abs/2002.04745"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 610,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 168,
+      "heading": "### 7.4 从注意力到完整的 Transformer",
+      "reference": "![Transformer Block 中注意力、FFN、残差连接与 Norm 的更新流程](images/06_transformer-block-residual-norm.png)"
+    },
+    "currentLocation": {
+      "line": 174,
+      "heading": "### 7.4 从注意力到完整的 Transformer",
+      "reference": "![Transformer Block 中注意力、FFN、残差连接与 Norm 的更新流程](images/06_transformer-block-residual-norm.svg)"
+    }
+  },
+  {
+    "id": 7,
+    "file": "07_transformer-architectures-encoder-decoder.svg",
+    "title": "三类 Transformer：信息能流向哪里？",
+    "caption": "Encoder-only 双向理解输入；Encoder–decoder 通过交叉注意力连接输入和输出；Decoder-only 沿同一序列因果生成。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 625,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 185,
+      "heading": "### 7.4 从注意力到完整的 Transformer",
+      "reference": "![Encoder-only、Encoder-decoder 和 Decoder-only 三类架构](images/07_transformer-architectures-encoder-decoder.png)"
+    },
+    "currentLocation": {
+      "line": 191,
+      "heading": "### 7.4 从注意力到完整的 Transformer",
+      "reference": "![Encoder-only、Encoder-decoder 和 Decoder-only 三类架构](images/07_transformer-architectures-encoder-decoder.svg)"
+    }
+  },
+  {
+    "id": 8,
+    "file": "08_autoregressive-generation.svg",
+    "title": "自回归生成：把刚选出的 token 接回去",
+    "caption": "从起始标记开始，每次把新选出的 token 加入已有上下文，重新预测下一个 token，直到结束标记或长度上限。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 625,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 195,
+      "heading": "### 7.5 Transformer 的并行处理、生成与计算成本",
+      "reference": "![自回归生成：从起始标记逐步生成直到结束标记](images/08_autoregressive-generation.png)"
+    },
+    "currentLocation": {
+      "line": 201,
+      "heading": "### 7.5 Transformer 的并行处理、生成与计算成本",
+      "reference": "![自回归生成：从起始标记逐步生成直到结束标记](images/08_autoregressive-generation.svg)"
+    }
+  },
+  {
+    "id": 9,
+    "file": "09_parallel-processing-and-kv-cache.svg",
+    "title": "Prefill 与 Decode：历史 K、V 可以复用",
+    "caption": "Prefill 并行计算提示各位置并建立缓存；Decode 只计算新位置的 Q、K、V，新 Q 读取已缓存与新追加的 K、V。",
+    "refs": [
+      "https://huggingface.co/docs/transformers/main/cache_explanation"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 650,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 205,
+      "heading": "### 7.5 Transformer 的并行处理、生成与计算成本",
+      "reference": "![并行处理与 KV cache 的生成过程](images/09_parallel-processing-and-kv-cache.png)"
+    },
+    "currentLocation": {
+      "line": 211,
+      "heading": "### 7.5 Transformer 的并行处理、生成与计算成本",
+      "reference": "![并行处理与 KV cache 的生成过程](images/09_parallel-processing-and-kv-cache.svg)"
+    }
+  },
+  {
+    "id": 25,
+    "file": "25_batching-throughput-latency.svg",
+    "title": "合批的权衡：总吞吐与单请求延迟",
+    "caption": "教学模型展示批次增大时总吞吐上升并趋于饱和，而较长计算步与等待组批可能推高延迟。曲线不代表真实服务测量。",
+    "refs": [],
+    "note": "合成成本模型；每步生成 B 个 token；不把手工曲线解释为实测分位数。",
+    "height": 640,
+    "section": "Transformer",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 232,
+      "heading": "#### 推理服务中的合批（Batching）",
+      "reference": "![合批可提升吞吐，但会推高 P95 latency](images/25_batching-throughput-latency.png)"
+    },
+    "currentLocation": {
+      "line": 235,
+      "heading": "#### 推理服务中的合批（Batching）",
+      "reference": "![合批可提升吞吐，但会推高 P95 latency](images/25_batching-throughput-latency.svg)"
+    }
+  },
+  {
+    "id": 10,
+    "file": "10_autoencoder-reconstruction.svg",
+    "title": "Autoencoder：用一个瓶颈，重建整个输入",
+    "caption": "编码器把 784 维输入映射到示例中的 16 维潜在向量，解码器再重建输入；两者通过重建损失联合训练。",
+    "refs": [
+      "https://www.deeplearningbook.org/contents/autoencoders.html"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 580,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 258,
+      "heading": "### 8.1 Autoencoder：通过重建学习表示",
+      "reference": "![Autoencoder 通过重建学习紧凑表示](images/10_autoencoder-reconstruction.png)"
+    },
+    "currentLocation": {
+      "line": 261,
+      "heading": "### 8.1 Autoencoder：通过重建学习表示",
+      "reference": "![Autoencoder 通过重建学习紧凑表示](images/10_autoencoder-reconstruction.svg)"
+    }
+  },
+  {
+    "id": 11,
+    "file": "11_denoising-autoencoder.svg",
+    "title": "去噪自编码器：输入受扰动，目标保持干净",
+    "caption": "先对干净样本 x 加噪得到 x̃，模型根据 x̃ 预测干净图像；重建损失以原始 x 为目标。",
+    "refs": [
+      "https://www.deeplearningbook.org/contents/autoencoders.html"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 605,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 266,
+      "heading": "### 8.1 Autoencoder：通过重建学习表示",
+      "reference": "![去噪自编码器从扰动输入重建干净图像](images/11_denoising-autoencoder.png)"
+    },
+    "currentLocation": {
+      "line": 269,
+      "heading": "### 8.1 Autoencoder：通过重建学习表示",
+      "reference": "![去噪自编码器从扰动输入重建干净图像](images/11_denoising-autoencoder.svg)"
+    }
+  },
+  {
+    "id": 12,
+    "file": "12_masked-autoencoder-mae.svg",
+    "title": "MAE：只编码可见部分，再补全被遮住的内容",
+    "caption": "MAE 编码器只处理 25% 可见 patch；解码器接收其编码与 75% mask token，按原位置重建，损失在遮挡位置计算。",
+    "refs": [
+      "https://arxiv.org/abs/2111.06377"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 665,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 272,
+      "heading": "### 8.1 Autoencoder：通过重建学习表示",
+      "reference": "![Masked Autoencoder 通过遮住大部分 patch 学表示](images/12_masked-autoencoder-mae.png)"
+    },
+    "currentLocation": {
+      "line": 275,
+      "heading": "### 8.1 Autoencoder：通过重建学习表示",
+      "reference": "![Masked Autoencoder 通过遮住大部分 patch 学表示](images/12_masked-autoencoder-mae.svg)"
+    }
+  },
+  {
+    "id": 13,
+    "file": "13_vae-latent-sampling.svg",
+    "title": "VAE：编码成分布，再通过采样解码",
+    "caption": "VAE 训练时由编码器给出均值和标准差，经重参数化采样后解码，同时最小化重建负对数似然与 KL；生成时直接从先验采样。",
+    "refs": [
+      "https://arxiv.org/abs/1312.6114"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 685,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 298,
+      "heading": "### 8.2 VAE：让潜在表示成为可以采样的空间",
+      "reference": "![VAE 将潜在空间约束为可采样的概率分布](images/13_vae-latent-sampling.png)"
+    },
+    "currentLocation": {
+      "line": 302,
+      "heading": "### 8.2 VAE：让潜在表示成为可以采样的空间",
+      "reference": "![VAE 将潜在空间约束为可采样的概率分布](images/13_vae-latent-sampling.svg)"
+    }
+  },
+  {
+    "id": 14,
+    "file": "14_gan-generator-discriminator.svg",
+    "title": "GAN：判别来源，也把梯度传回生成器",
+    "caption": "GAN 交替训练判别器与生成器；更新生成器时保持判别器权重不变，但保留经过判别器传向生成器的梯度。",
+    "refs": [
+      "https://arxiv.org/abs/1406.2661"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 625,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 312,
+      "heading": "### 8.3 GAN：通过样本之间的比较学习生成",
+      "reference": "![GAN 用判别器为生成器提供学习反馈](images/14_gan-generator-discriminator.png)"
+    },
+    "currentLocation": {
+      "line": 316,
+      "heading": "### 8.3 GAN：通过样本之间的比较学习生成",
+      "reference": "![GAN 用判别器为生成器提供学习反馈](images/14_gan-generator-discriminator.svg)"
+    }
+  },
+  {
+    "id": 15,
+    "file": "15_diffusion-forward-reverse-process.svg",
+    "title": "Diffusion：训练学去噪，生成走反向采样",
+    "caption": "训练用已知噪声构造不同噪声等级的输入并训练噪声预测器；生成从独立的新噪声出发，经模型与采样器多步更新产生新样本。",
+    "refs": [
+      "https://arxiv.org/abs/2006.11239"
+    ],
+    "note": "解析构造的灰度示意；未训练扩散模型，也未将插值图像声称为真实采样。",
+    "height": 715,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 342,
+      "heading": "### 8.4 Diffusion&Flow Matching 从噪声中恢复图像",
+      "reference": "![Diffusion 的前向加噪与反向去噪过程](images/15_diffusion-forward-reverse-process.png)"
+    },
+    "currentLocation": {
+      "line": 347,
+      "heading": "### 8.4 Diffusion 与 Flow Matching：从噪声走向图像",
+      "reference": "![Diffusion 的前向加噪与反向去噪过程](images/15_diffusion-forward-reverse-process.svg)"
+    }
+  },
+  {
+    "id": 16,
+    "file": "16_flow-matching-vs-diffusion.svg",
+    "title": "Diffusion 与 Flow Matching：比较路径，也比较训练目标",
+    "caption": "对比随机反向 SDE 与 Flow Matching 的确定性 ODE；扩散模型亦有概率流 ODE，Flow Matching 可拟合多种路径，因此不能把两者简单等同于曲线与直线。",
+    "refs": [
+      "https://arxiv.org/abs/2210.02747",
+      "https://arxiv.org/abs/2011.13456"
+    ],
+    "note": "路径为低维概念示意，不用于比较生成质量或计算效率。",
+    "height": 705,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 360,
+      "heading": "### 8.4 Diffusion&Flow Matching 从噪声中恢复图像",
+      "reference": "![Flow Matching 与 Diffusion 的路径对比](images/16_flow-matching-vs-diffusion.png)"
+    },
+    "currentLocation": {
+      "line": 373,
+      "heading": "### 8.4 Diffusion 与 Flow Matching：从噪声走向图像",
+      "reference": "![Flow Matching 与 Diffusion 的路径对比](images/16_flow-matching-vs-diffusion.svg)"
+    }
+  },
+  {
+    "id": 27,
+    "file": "27_agent-environment-reinforcement-loop.svg",
+    "title": "强化学习：动作改变环境，反馈改变策略",
+    "caption": "Agent 按策略选择动作 aₜ，环境返回奖励 rₜ₊₁ 和下一状态 sₜ₊₁；强化学习优化期望折扣回报。",
+    "refs": [
+      "http://incompleteideas.net/book/the-book-2nd.html"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 605,
+    "section": "生成与强化学习",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 398,
+      "heading": "### 8.6 强化学习：当反馈来自行动",
+      "reference": "![Agent 与 environment 交互的强化学习回路](images/27_agent-environment-reinforcement-loop.png)"
+    },
+    "currentLocation": {
+      "line": 409,
+      "heading": "### 8.6 强化学习：当反馈来自行动",
+      "reference": "![Agent 与 environment 交互的强化学习回路](images/27_agent-environment-reinforcement-loop.svg)"
+    }
+  },
+  {
+    "id": 17,
+    "file": "17_bpe-tokenization.svg",
+    "title": "BPE：统计相邻符号对，逐轮合并",
+    "caption": "在给定带频次的小语料上，依次合并 e+s、es+t、est+词尾；每轮选中的相邻对都出现 9 次，合并结果加入词表。",
+    "refs": [
+      "https://arxiv.org/abs/1508.07909"
+    ],
+    "note": "明确词频、边界与并列选择的教学 BPE；计数由程序复核。",
+    "height": 660,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 498,
+      "heading": "### 9.1 Tokenization 与 embedding：把文字变成模型输入",
+      "reference": "![BPE 通过合并高频对构造子词词表](images/17_bpe-tokenization.png)"
+    },
+    "currentLocation": {
+      "line": 502,
+      "heading": "### 9.1 Tokenization 与 embedding：把文字变成模型输入",
+      "reference": "![BPE 通过合并高频对构造子词词表](images/17_bpe-tokenization.svg)"
+    }
+  },
+  {
+    "id": 18,
+    "file": "18_tokenization-and-embedding.svg",
+    "title": "从文字到向量：token id 是查表索引",
+    "caption": "Tokenizer 将文本分成 token 并给出 id；Embedding 层以 id 为行索引查表，组成 T×d 的向量矩阵。id 和向量均为教学示例。",
+    "refs": [
+      "https://arxiv.org/abs/1706.03762",
+      "https://arxiv.org/abs/1508.07909"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 625,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 504,
+      "heading": "### 9.1 Tokenization 与 embedding：把文字变成模型输入",
+      "reference": "![文本先分词，再查表得到 token id 和 embedding](images/18_tokenization-and-embedding.png)"
+    },
+    "currentLocation": {
+      "line": 508,
+      "heading": "### 9.1 Tokenization 与 embedding：把文字变成模型输入",
+      "reference": "![文本先分词，再查表得到 token id 和 embedding](images/18_tokenization-and-embedding.svg)"
+    }
+  },
+  {
+    "id": 19,
+    "file": "19_temperature-next-token-distribution.svg",
+    "title": "温度：同一组 logits，不同的概率集中程度",
+    "caption": "固定 logits=[2,1,0,−1]，比较温度 0.5、1、2 下严格计算的 softmax 概率。温度越高，分布越平坦。",
+    "refs": [],
+    "note": "解析计算；概率和为 1，显示百分比四舍五入。",
+    "height": 615,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 530,
+      "heading": "### 9.2 从概率分布到一次具体回答",
+      "reference": "![温度参数如何改变下一个 token 的概率分布](images/19_temperature-next-token-distribution.png)"
+    },
+    "currentLocation": {
+      "line": 534,
+      "heading": "### 9.2 从概率分布到一次具体回答",
+      "reference": "![温度参数如何改变下一个 token 的概率分布](images/19_temperature-next-token-distribution.svg)"
+    }
+  },
+  {
+    "id": 20,
+    "file": "20_training-to-usage-workflow.svg",
+    "title": "从预训练到使用：区分数据、信号与参数更新",
+    "caption": "预训练建立基础能力，SFT 学习示范；DPO、基于奖励模型的 RL 和 RLVR 提供不同后训练路径，之后在固定权重下使用模型。",
+    "refs": [
+      "https://arxiv.org/abs/2305.18290",
+      "https://arxiv.org/abs/2203.02155"
+    ],
+    "note": "概念示意，由代码绘制。",
+    "height": 720,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 562,
+      "heading": "## 10. 一个可用的大模型，通常怎样训练出来？",
+      "reference": "![从预训练、后训练到实际使用模型的流程](images/20_training-to-usage-workflow.png)"
+    },
+    "currentLocation": {
+      "line": 573,
+      "heading": "## 10. 一个可用的大模型，通常怎样训练出来？",
+      "reference": "![从预训练、后训练到实际使用模型的流程](images/20_training-to-usage-workflow.svg)"
+    }
+  },
+  {
+    "id": 21,
+    "file": "21_three-scaling-laws.svg",
+    "title": "扩展能力的三处计算预算",
+    "caption": "预训练、后训练和推理时计算在不同阶段增加预算；前两者调整参数，后者通常在固定参数下加深求解或增加候选与验证。",
+    "refs": [
+      "https://arxiv.org/abs/2203.15556",
+      "https://arxiv.org/abs/2408.03314"
+    ],
+    "note": "只作阶段与机制比较，不伪造 scaling-law 拟合曲线。",
+    "height": 625,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 641,
+      "heading": "### 11.1 推理时计算：为难题安排更多求解步骤",
+      "reference": "![预训练、后训练和 test-time scaling 三类扩展路径](images/21_three-scaling-laws.png)"
+    },
+    "currentLocation": {
+      "line": 652,
+      "heading": "### 11.1 推理时计算：为难题安排更多求解步骤",
+      "reference": "![预训练、后训练和 test-time scaling 三类扩展路径](images/21_three-scaling-laws.svg)"
+    }
+  },
+  {
+    "id": 22,
+    "file": "22_multimodal-model-architecture.svg",
+    "title": "多模态：把不同输入接到同一语言模型",
+    "caption": "文字经分词与嵌入，图像、音频、视频经各自编码与连接模块，把表示接入 LLM；图中展示常见的多模态理解模式。",
+    "refs": [],
+    "note": "通用架构示意，不冒充特定商用模型的内部结构。",
+    "height": 660,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 657,
+      "heading": "### 11.2 多模态：让模型一起阅读文字、图像、音频和视频",
+      "reference": "![多模态模型如何把不同模态编码并接入 LLM backbone](images/22_multimodal-model-architecture.png)"
+    },
+    "currentLocation": {
+      "line": 668,
+      "heading": "### 11.2 多模态：让模型一起阅读文字、图像、音频和视频",
+      "reference": "![多模态模型如何把不同模态编码并接入 LLM backbone](images/22_multimodal-model-architecture.svg)"
+    }
+  },
+  {
+    "id": 23,
+    "file": "23_mixture-of-experts-layer.svg",
+    "title": "MoE：每个 token 只调用少数专家",
+    "caption": "四个 FFN 专家中为当前 token 选中两个，以归一化权重 0.65 和 0.35 汇总输出。专家不是预先指定的领域知识库。",
+    "refs": [
+      "https://arxiv.org/abs/2401.04088"
+    ],
+    "note": "4 专家 top-2 的教学设置，不使用具体模型的参数量作泛化结论。",
+    "height": 660,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 667,
+      "heading": "### 11.3 更强与更省：把容量、训练和生成效率分开考虑",
+      "reference": "![Mixture of Experts 层中的路由和加权汇总](images/23_mixture-of-experts-layer.png)"
+    },
+    "currentLocation": {
+      "line": 678,
+      "heading": "### 11.3 更强与更省：把容量、训练和生成效率分开考虑",
+      "reference": "![Mixture of Experts 层中的路由和加权汇总](images/23_mixture-of-experts-layer.svg)"
+    }
+  },
+  {
+    "id": 29,
+    "file": "29_rag-retrieval-evidence-generation.svg",
+    "title": "RAG：先找到证据，再带着证据回答",
+    "caption": "先将资料切分并保留出处，查询时检索相关片段，将问题与片段一起交给 LLM，生成可对应原文的回答与引用。",
+    "refs": [
+      "https://arxiv.org/abs/2005.11401"
+    ],
+    "note": "补充图：展示资料准备、查询检索与有依据回答之间的数据流。",
+    "height": 675,
+    "section": "语言模型与应用",
+    "originalPlaceholder": false,
+    "originalLocation": null,
+    "currentLocation": {
+      "line": 702,
+      "heading": "### 11.4 长上下文与检索：让回答用上当前需要的资料",
+      "reference": "![RAG：先找到证据，再带着证据回答](images/29_rag-retrieval-evidence-generation.svg)"
+    }
+  },
+  {
+    "id": 26,
+    "file": "26_agent-iterative-cycle.svg",
+    "title": "Agent：让工具结果决定下一步",
+    "caption": "模型根据目标与当前观测选择工具动作，执行环境返回结果，再检查证据、更新上下文并继续，直到满足完成条件。",
+    "refs": [],
+    "note": "概念性系统流程，不把推理阶段的循环误画成参数训练。",
+    "height": 640,
+    "section": "语言模型与应用",
+    "originalPlaceholder": true,
+    "originalLocation": {
+      "line": 709,
+      "heading": "### 11.5 从回答问题，走向完成任务",
+      "reference": "![Agent 的感知—推理—规划—执行—观察循环](images/26_agent-iterative-cycle.png)"
+    },
+    "currentLocation": {
+      "line": 726,
+      "heading": "### 11.5 从回答问题，走向完成任务",
+      "reference": "![Agent 的感知—推理—规划—执行—观察循环](images/26_agent-iterative-cycle.svg)"
+    }
+  },
+  {
+    "id": 30,
+    "file": "30_bellman-backup-example.svg",
+    "title": "贝尔曼递推：眼前奖励 + 下一状态价值",
+    "caption": "固定动作后，对各后继状态的即时奖励与折扣价值按转移概率加权。例中 γ=0.9，Qπ(s,a)=4.175。",
+    "refs": [
+      "http://incompleteideas.net/book/the-book-2nd.html"
+    ],
+    "note": "补充图：手工 MDP 数值例，经计算验证。",
+    "height": 630,
+    "section": "生成与强化学习",
+    "originalPlaceholder": false,
+    "originalLocation": null,
+    "currentLocation": {
+      "line": 802,
+      "heading": "## A.7 贝尔曼方程：把长期回报拆成眼前一步",
+      "reference": "![贝尔曼递推：眼前奖励 + 下一状态价值](images/30_bellman-backup-example.svg)"
+    }
+  }
+]

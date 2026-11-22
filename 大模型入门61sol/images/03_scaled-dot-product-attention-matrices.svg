@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="585" viewBox="0 0 1000 585" role="img" aria-labelledby="title desc"><title id="title">把每个位置的读取，合成矩阵运算</title><desc id="desc">形状依次为 (T×dₖ)(dₖ×T)→T×T，经逐行 softmax 后乘 T×dᵥ 的 V，输出 T×dᵥ。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="585" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 03</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >把每个位置的读取，合成矩阵运算</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >示例尺寸 T = 4，dₖ = 3，dᵥ = 2；颜色只用于区分矩阵</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="61" y="209" width="24" height="24" rx="2" fill="#d9e8e9" stroke="#ffffff" />
+<rect x="88" y="209" width="24" height="24" rx="2" fill="#afd0d2" stroke="#ffffff" />
+<rect x="115" y="209" width="24" height="24" rx="2" fill="#86b8ba" stroke="#ffffff" />
+<rect x="61" y="236" width="24" height="24" rx="2" fill="#9bc4c6" stroke="#ffffff" />
+<rect x="88" y="236" width="24" height="24" rx="2" fill="#71abae" stroke="#ffffff" />
+<rect x="115" y="236" width="24" height="24" rx="2" fill="#d9e8e9" stroke="#ffffff" />
+<rect x="61" y="263" width="24" height="24" rx="2" fill="#5c9fa3" stroke="#ffffff" />
+<rect x="88" y="263" width="24" height="24" rx="2" fill="#c4dcdd" stroke="#ffffff" />
+<rect x="115" y="263" width="24" height="24" rx="2" fill="#9bc4c6" stroke="#ffffff" />
+<rect x="61" y="290" width="24" height="24" rx="2" fill="#afd0d2" stroke="#ffffff" />
+<rect x="88" y="290" width="24" height="24" rx="2" fill="#86b8ba" stroke="#ffffff" />
+<rect x="115" y="290" width="24" height="24" rx="2" fill="#5c9fa3" stroke="#ffffff" />
+<text x="101.5" y="189" font-size="25" fill="#227d82" text-anchor="middle" font-weight="400" >Q</text>
+<text x="101.5" y="345" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >T × dₖ</text>
+<text x="158" y="270" font-size="25" fill="#26343b" text-anchor="start" font-weight="400" >×</text>
+<rect x="195" y="209" width="24" height="24" rx="2" fill="#dee7ed" stroke="#ffffff" />
+<rect x="222" y="209" width="24" height="24" rx="2" fill="#bdcddb" stroke="#ffffff" />
+<rect x="249" y="209" width="24" height="24" rx="2" fill="#9cb3ca" stroke="#ffffff" />
+<rect x="276" y="209" width="24" height="24" rx="2" fill="#7a99b8" stroke="#ffffff" />
+<rect x="195" y="236" width="24" height="24" rx="2" fill="#acc0d2" stroke="#ffffff" />
+<rect x="222" y="236" width="24" height="24" rx="2" fill="#8ba6c1" stroke="#ffffff" />
+<rect x="249" y="236" width="24" height="24" rx="2" fill="#dee7ed" stroke="#ffffff" />
+<rect x="276" y="236" width="24" height="24" rx="2" fill="#bdcddb" stroke="#ffffff" />
+<rect x="195" y="263" width="24" height="24" rx="2" fill="#7a99b8" stroke="#ffffff" />
+<rect x="222" y="263" width="24" height="24" rx="2" fill="#cddae4" stroke="#ffffff" />
+<rect x="249" y="263" width="24" height="24" rx="2" fill="#acc0d2" stroke="#ffffff" />
+<rect x="276" y="263" width="24" height="24" rx="2" fill="#8ba6c1" stroke="#ffffff" />
+<text x="249" y="189" font-size="25" fill="#4c75a0" text-anchor="middle" font-weight="400" >Kᵀ</text>
+<text x="249" y="318" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >dₖ × T</text>
+<line x1="319" y1="261" x2="361" y2="261" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="380" y="209" width="24" height="24" rx="2" fill="#e4e6ec" stroke="#ffffff" />
+<rect x="407" y="209" width="24" height="24" rx="2" fill="#cdcada" stroke="#ffffff" />
+<rect x="434" y="209" width="24" height="24" rx="2" fill="#b5aec7" stroke="#ffffff" />
+<rect x="461" y="209" width="24" height="24" rx="2" fill="#9e91b5" stroke="#ffffff" />
+<rect x="380" y="236" width="24" height="24" rx="2" fill="#c1bcd0" stroke="#ffffff" />
+<rect x="407" y="236" width="24" height="24" rx="2" fill="#a9a0be" stroke="#ffffff" />
+<rect x="434" y="236" width="24" height="24" rx="2" fill="#e4e6ec" stroke="#ffffff" />
+<rect x="461" y="236" width="24" height="24" rx="2" fill="#cdcada" stroke="#ffffff" />
+<rect x="380" y="263" width="24" height="24" rx="2" fill="#9e91b5" stroke="#ffffff" />
+<rect x="407" y="263" width="24" height="24" rx="2" fill="#d8d8e3" stroke="#ffffff" />
+<rect x="434" y="263" width="24" height="24" rx="2" fill="#c1bcd0" stroke="#ffffff" />
+<rect x="461" y="263" width="24" height="24" rx="2" fill="#a9a0be" stroke="#ffffff" />
+<rect x="380" y="290" width="24" height="24" rx="2" fill="#cdcada" stroke="#ffffff" />
+<rect x="407" y="290" width="24" height="24" rx="2" fill="#b5aec7" stroke="#ffffff" />
+<rect x="434" y="290" width="24" height="24" rx="2" fill="#9e91b5" stroke="#ffffff" />
+<rect x="461" y="290" width="24" height="24" rx="2" fill="#d8d8e3" stroke="#ffffff" />
+<text x="434" y="189" font-size="25" fill="#7d6a9b" text-anchor="middle" font-weight="400" >S</text>
+<text x="434" y="345" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >T × T</text>
+<text x="434" y="380" font-size="18" fill="#7d6a9b" text-anchor="middle" font-weight="400" >S = QKᵀ / √dₖ + M</text>
+<line x1="504" y1="261" x2="570" y2="261" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="537" y="198" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >逐行</text>
+<text x="537" y="222" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >softmax</text>
+<rect x="591" y="209" width="24" height="24" rx="2" fill="#227d82" stroke="#ffffff" />
+<rect x="618" y="209" width="24" height="24" rx="2" fill="#f2f7f7" stroke="#ffffff" />
+<rect x="645" y="209" width="24" height="24" rx="2" fill="#f2f7f7" stroke="#ffffff" />
+<rect x="672" y="209" width="24" height="24" rx="2" fill="#f2f7f7" stroke="#ffffff" />
+<rect x="591" y="236" width="24" height="24" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="618" y="236" width="24" height="24" rx="2" fill="#75aeb1" stroke="#ffffff" />
+<rect x="645" y="236" width="24" height="24" rx="2" fill="#f2f7f7" stroke="#ffffff" />
+<rect x="672" y="236" width="24" height="24" rx="2" fill="#f2f7f7" stroke="#ffffff" />
+<rect x="591" y="263" width="24" height="24" rx="2" fill="#c8dfe0" stroke="#ffffff" />
+<rect x="618" y="263" width="24" height="24" rx="2" fill="#b4d2d4" stroke="#ffffff" />
+<rect x="645" y="263" width="24" height="24" rx="2" fill="#8ababd" stroke="#ffffff" />
+<rect x="672" y="263" width="24" height="24" rx="2" fill="#f2f7f7" stroke="#ffffff" />
+<rect x="591" y="290" width="24" height="24" rx="2" fill="#ddebeb" stroke="#ffffff" />
+<rect x="618" y="290" width="24" height="24" rx="2" fill="#c8dfe0" stroke="#ffffff" />
+<rect x="645" y="290" width="24" height="24" rx="2" fill="#b4d2d4" stroke="#ffffff" />
+<rect x="672" y="290" width="24" height="24" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<text x="645" y="189" font-size="25" fill="#227d82" text-anchor="middle" font-weight="400" >A</text>
+<text x="645" y="345" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >T × T</text>
+<text x="716" y="270" font-size="25" fill="#26343b" text-anchor="start" font-weight="400" >×</text>
+<rect x="750" y="209" width="24" height="24" rx="2" fill="#ebe5e1" stroke="#ffffff" />
+<rect x="777" y="209" width="24" height="24" rx="2" fill="#dfc8bd" stroke="#ffffff" />
+<rect x="750" y="236" width="24" height="24" rx="2" fill="#d9b9ab" stroke="#ffffff" />
+<rect x="777" y="236" width="24" height="24" rx="2" fill="#cd9b87" stroke="#ffffff" />
+<rect x="750" y="263" width="24" height="24" rx="2" fill="#c88c75" stroke="#ffffff" />
+<rect x="777" y="263" width="24" height="24" rx="2" fill="#e5d6cf" stroke="#ffffff" />
+<rect x="750" y="290" width="24" height="24" rx="2" fill="#dfc8bd" stroke="#ffffff" />
+<rect x="777" y="290" width="24" height="24" rx="2" fill="#d3aa99" stroke="#ffffff" />
+<text x="777" y="189" font-size="25" fill="#b76343" text-anchor="middle" font-weight="400" >V</text>
+<text x="777" y="345" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >T × dᵥ</text>
+<line x1="815" y1="261" x2="858" y2="261" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="885" y="209" width="24" height="24" rx="2" fill="#d9e8e9" stroke="#ffffff" />
+<rect x="912" y="209" width="24" height="24" rx="2" fill="#afd0d2" stroke="#ffffff" />
+<rect x="885" y="236" width="24" height="24" rx="2" fill="#9bc4c6" stroke="#ffffff" />
+<rect x="912" y="236" width="24" height="24" rx="2" fill="#71abae" stroke="#ffffff" />
+<rect x="885" y="263" width="24" height="24" rx="2" fill="#5c9fa3" stroke="#ffffff" />
+<rect x="912" y="263" width="24" height="24" rx="2" fill="#c4dcdd" stroke="#ffffff" />
+<rect x="885" y="290" width="24" height="24" rx="2" fill="#afd0d2" stroke="#ffffff" />
+<rect x="912" y="290" width="24" height="24" rx="2" fill="#86b8ba" stroke="#ffffff" />
+<text x="912" y="189" font-size="25" fill="#227d82" text-anchor="middle" font-weight="400" >O</text>
+<text x="912" y="345" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >T × dᵥ</text>
+<rect x="72" y="405" width="856" height="80" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="500" y="438" font-size="25" fill="#26343b" text-anchor="middle" font-weight="400" >O = softmax(QKᵀ / √dₖ + M) V</text>
+<text x="500" y="469" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >A 的每一行是一次读取：行和为 1，屏蔽位置的权重为 0</text>
+<line x1="40" y1="513" x2="960" y2="513" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="542" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >行 = 发起读取的位置；列 = 被读取的位置。这里展示带因果掩码的 A。</text>
+<text x="40" y="567" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >交叉注意力中，Q 有 T 行，K、V 有 S 行，权重矩阵相应为 T × S。</text></svg>

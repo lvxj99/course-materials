@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "chapters": 20,
+  "appendices": 5,
+  "images": 15,
+  "displayMathBlocks": 75,
+  "codeBlocks": 3,
+  "chineseCharacters": 21418,
+  "totalCharacters": 46175,
+  "externalLinks": 22,
+  "checks": [
+    {
+      "name": "20 numbered main chapters, 5 appendices, and independent introduction",
+      "passed": true
+    },
+    {
+      "name": "All 15 referenced SVG files exist within this standalone directory",
+      "passed": true
+    },
+    {
+      "name": "Code fences and display math delimiters paired; no placeholder text",
+      "passed": true
+    },
+    {
+      "name": "Every math block has balanced braces, begin/end and left/right",
+      "passed": true
+    },
+    {
+      "name": "Inline math delimiters paired within every prose line",
+      "passed": true
+    },
+    {
+      "name": "SVG files self-contained and accessible",
+      "passed": true
+    },
+    {
+      "name": "Local document links remain inside standalone root and exist",
+      "passed": true
+    },
+    {
+      "name": "Numerical companion passed; figures 4 and 15 read generated data",
+      "passed": true
+    }
+  ]
+}

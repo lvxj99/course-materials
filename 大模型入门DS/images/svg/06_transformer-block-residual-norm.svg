@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">
+<rect width="960" height="560" fill="#ffffff"/>
+
+<text x="64.00" y="44.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11" text-anchor="start" fill="#44525e" font-weight="600">① 一个 Block 内的数据流</text>
+<text x="64.00" y="66.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#7c8a97">隐藏状态 H 始终保持 T × d：每一步只改数值，不改形状</text>
+<rect x="64.00" y="160.00" width="304.00" height="288.00" rx="8" fill="none" stroke="#c9dcee" stroke-width="1" stroke-dasharray="5 4"/>
+<rect x="68.00" y="157.00" width="132.00" height="15.00" rx="0" fill="#ffffff"/>
+<text x="72.00" y="168.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#3a6ea5" font-weight="600">Block ℓ（Pre-Norm）</text>
+<rect x="324.00" y="157.00" width="32.00" height="15.00" rx="0" fill="#ffffff"/>
+<text x="354.00" y="168.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="end" fill="#7c8a97">× N</text>
+<text x="184.44" y="460.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13" text-anchor="start" fill="#1f2a33" font-style="italic">H</text>
+<text x="193.36" y="454.54" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="9.36" text-anchor="start" fill="#1f2a33" font-style="italic">(ℓ)</text>
+<text x="212.00" y="460.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="start" fill="#7c8a97">（T × d）</text>
+<line x1="220.00" y1="446.00" x2="220.00" y2="434.25" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="220.00,430.00 216.90,435.00 223.10,435.00" fill="#7c8a97"/>
+<rect x="110.00" y="406.00" width="220.00" height="24.00" rx="4" fill="#fbf3df" stroke="#ecd9a8" stroke-width="1"/>
+<text x="220.00" y="421.90" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="middle" fill="#b98b2e" font-weight="600">LayerNorm / RMSNorm</text>
+<line x1="220.00" y1="406.00" x2="220.00" y2="394.25" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="220.00,390.00 216.90,395.00 223.10,395.00" fill="#7c8a97"/>
+<rect x="110.00" y="334.00" width="220.00" height="56.00" rx="5" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="220.00" y="360.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.8" text-anchor="middle" fill="#3a6ea5" font-weight="600">Multi-Head Attention</text>
+<text x="220.00" y="374.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="middle" fill="#3a6ea5">h 个头 · Q/K/V 投影 · 因果掩码</text>
+<line x1="220.00" y1="334.00" x2="220.00" y2="329.25" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="220.00,325.00 216.90,330.00 223.10,330.00" fill="#7c8a97"/>
+<circle cx="220.00" cy="316.00" r="9.00" fill="#ffffff" stroke="#44525e" stroke-width="1.1"/>
+<text x="220.00" y="319.80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.15" text-anchor="middle" fill="#44525e">+</text>
+<text x="242.00" y="321.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="12.5" text-anchor="start" fill="#1f2a33" font-style="italic">U</text>
+<line x1="220.00" y1="307.00" x2="220.00" y2="296.25" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="220.00,292.00 216.90,297.00 223.10,297.00" fill="#7c8a97"/>
+<rect x="110.00" y="268.00" width="220.00" height="24.00" rx="4" fill="#fbf3df" stroke="#ecd9a8" stroke-width="1"/>
+<text x="220.00" y="283.90" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="middle" fill="#b98b2e" font-weight="600">LayerNorm / RMSNorm</text>
+<line x1="220.00" y1="268.00" x2="220.00" y2="256.25" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="220.00,252.00 216.90,257.00 223.10,257.00" fill="#7c8a97"/>
+<rect x="110.00" y="196.00" width="220.00" height="56.00" rx="5" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="220.00" y="222.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.8" text-anchor="middle" fill="#1f2a33" font-weight="600">Feed Forward</text>
+<text x="220.00" y="236.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="middle" fill="#7c8a97">逐位置 MLP：d → 4d → d</text>
+<line x1="220.00" y1="196.00" x2="220.00" y2="191.25" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="220.00,187.00 216.90,192.00 223.10,192.00" fill="#7c8a97"/>
+<circle cx="220.00" cy="178.00" r="9.00" fill="#ffffff" stroke="#44525e" stroke-width="1.1"/>
+<text x="220.00" y="181.80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.15" text-anchor="middle" fill="#44525e">+</text>
+<line x1="220.00" y1="169.00" x2="220.00" y2="158.25" stroke="#7c8a97" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="220.00,154.00 216.90,159.00 223.10,159.00" fill="#7c8a97"/>
+<text x="172.26" y="144.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13" text-anchor="start" fill="#1f2a33" font-style="italic">H</text>
+<text x="181.19" y="138.54" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="9.36" text-anchor="start" fill="#1f2a33" font-style="italic">(ℓ+1)</text>
+<text x="212.00" y="144.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="start" fill="#7c8a97">（T × d）</text>
+<path d="M 220.00 442.00 L 74.00 442.00 L 74.00 316.00" fill="none" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="74.00" y1="316.00" x2="206.75" y2="316.00" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="211.00,316.00 206.00,312.90 206.00,319.10" fill="#b98b2e"/>
+<path d="M 220.00 302.00 L 358.00 302.00 L 358.00 178.00" fill="none" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="358.00" y1="178.00" x2="233.25" y2="178.00" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="229.00,178.00 234.00,181.10 234.00,174.90" fill="#b98b2e"/>
+<text x="396.00" y="44.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11" text-anchor="start" fill="#44525e" font-weight="600">② 两次子层更新，结构完全相同</text>
+<rect x="396.00" y="56.00" width="534.00" height="92.00" rx="6" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="414.00" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33" font-style="italic">U</text>
+<text x="426.51" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">=</text>
+<text x="440.33" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33" font-style="italic">H</text>
+<text x="449.40" y="82.46" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="9.504" text-anchor="start" fill="#1f2a33" font-style="italic">(ℓ)</text>
+<text x="466.19" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">+</text>
+<text x="480.01" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">MultiHead</text>
+<text x="539.05" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">(</text>
+<text x="544.52" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">Norm</text>
+<text x="576.96" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">(</text>
+<text x="582.44" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33" font-style="italic">H</text>
+<text x="591.50" y="82.46" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="9.504" text-anchor="start" fill="#1f2a33" font-style="italic">(ℓ)</text>
+<text x="604.33" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">)</text>
+<text x="609.81" y="88.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">)</text>
+<text x="414.00" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33" font-style="italic">H</text>
+<text x="423.06" y="118.46" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="9.504" text-anchor="start" fill="#1f2a33" font-style="italic">(ℓ+1)</text>
+<text x="452.22" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">=</text>
+<text x="466.04" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33" font-style="italic">U</text>
+<text x="478.55" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">+</text>
+<text x="492.37" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">FFN</text>
+<text x="515.52" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">(</text>
+<text x="521.00" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">Norm</text>
+<text x="553.43" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">(</text>
+<text x="558.91" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33" font-style="italic">U</text>
+<text x="567.46" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">)</text>
+<text x="572.94" y="124.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="13.2" text-anchor="start" fill="#1f2a33">)</text>
+<text x="396.00" y="172.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e">两次 Norm 各有自己的可学习参数：LayerNorm 有 γ、β，RMSNorm 只有缩放 g。</text>
+<text x="396.00" y="190.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e">残差把 H 原样抄进下一行：信息与梯度都沿这条恒等通路逐层累积。</text>
+<rect x="396.00" y="206.00" width="534.00" height="258.00" rx="8" fill="#ffffff" stroke="#dde5ec" stroke-width="1"/>
+<text x="412.00" y="228.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11" text-anchor="start" fill="#44525e" font-weight="600">③ 区别只在 Norm 放在子层之前还是之后</text>
+<line x1="663.00" y1="242.00" x2="663.00" y2="452.00" stroke="#dde5ec" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3 4"/>
+<text x="520.00" y="252.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#3a6ea5" font-weight="600">Pre-Norm</text>
+<text x="520.00" y="268.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.6" text-anchor="middle" fill="#7c8a97">Norm 在子层之前</text>
+<text x="520.00" y="442.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.6" text-anchor="middle" fill="#7c8a97">残差通路不经过任何 Norm</text>
+<rect x="496.00" y="408.00" width="48.00" height="24.00" rx="4" fill="#eef4f8" stroke="#dde5ec" stroke-width="1"/>
+<text x="520.00" y="424.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="11.5" text-anchor="middle" fill="#44525e" font-style="italic">x</text>
+<circle cx="520.00" cy="300.00" r="9.00" fill="#ffffff" stroke="#44525e" stroke-width="1.1"/>
+<text x="520.00" y="303.80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.15" text-anchor="middle" fill="#44525e">+</text>
+<rect x="454.00" y="328.00" width="132.00" height="24.00" rx="4" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="520.00" y="344.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#3a6ea5">Self-Attention</text>
+<rect x="454.00" y="368.00" width="132.00" height="24.00" rx="4" fill="#fbf3df" stroke="#ecd9a8" stroke-width="1"/>
+<text x="520.00" y="383.90" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="middle" fill="#b98b2e" font-weight="600">Norm</text>
+<line x1="520.00" y1="328.00" x2="520.00" y2="313.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="520.00,309.00 516.90,314.00 523.10,314.00" fill="#7c8a97"/>
+<line x1="520.00" y1="368.00" x2="520.00" y2="356.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="520.00,352.00 516.90,357.00 523.10,357.00" fill="#7c8a97"/>
+<line x1="520.00" y1="408.00" x2="520.00" y2="396.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="520.00,392.00 516.90,397.00 523.10,397.00" fill="#7c8a97"/>
+<line x1="520.00" y1="291.00" x2="520.00" y2="276.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="520.00,272.00 516.90,277.00 523.10,277.00" fill="#7c8a97"/>
+<path d="M 496.00 420.00 L 438.00 420.00 L 438.00 300.00" fill="none" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="438.00" y1="300.00" x2="506.75" y2="300.00" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="511.00,300.00 506.00,296.90 506.00,303.10" fill="#b98b2e"/>
+<text x="790.00" y="252.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#44525e" font-weight="600">Post-Norm</text>
+<text x="790.00" y="268.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.6" text-anchor="middle" fill="#7c8a97">先相加、再 Norm</text>
+<text x="790.00" y="442.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.6" text-anchor="middle" fill="#7c8a97">每层输出先归一化再进下一层</text>
+<rect x="766.00" y="408.00" width="48.00" height="24.00" rx="4" fill="#eef4f8" stroke="#dde5ec" stroke-width="1"/>
+<text x="790.00" y="424.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="11.5" text-anchor="middle" fill="#44525e" font-style="italic">x</text>
+<rect x="724.00" y="288.00" width="132.00" height="24.00" rx="4" fill="#fbf3df" stroke="#ecd9a8" stroke-width="1"/>
+<text x="790.00" y="303.90" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="middle" fill="#b98b2e" font-weight="600">Norm</text>
+<circle cx="790.00" cy="340.00" r="9.00" fill="#ffffff" stroke="#44525e" stroke-width="1.1"/>
+<text x="790.00" y="343.80" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.15" text-anchor="middle" fill="#44525e">+</text>
+<rect x="724.00" y="368.00" width="132.00" height="24.00" rx="4" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="790.00" y="384.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#3a6ea5">Self-Attention</text>
+<line x1="790.00" y1="331.00" x2="790.00" y2="316.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="790.00,312.00 786.90,317.00 793.10,317.00" fill="#7c8a97"/>
+<line x1="790.00" y1="368.00" x2="790.00" y2="353.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="790.00,349.00 786.90,354.00 793.10,354.00" fill="#7c8a97"/>
+<line x1="790.00" y1="408.00" x2="790.00" y2="396.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="790.00,392.00 786.90,397.00 793.10,397.00" fill="#7c8a97"/>
+<line x1="790.00" y1="288.00" x2="790.00" y2="276.25" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="790.00,272.00 786.90,277.00 793.10,277.00" fill="#7c8a97"/>
+<path d="M 766.00 420.00 L 708.00 420.00 L 708.00 340.00" fill="none" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="708.00" y1="340.00" x2="776.75" y2="340.00" stroke="#b98b2e" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="781.00,340.00 776.00,336.90 776.00,343.10" fill="#b98b2e"/>
+<text x="40.00" y="526.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#7c8a97">Pre-Norm 把残差留成一条从输入直通输出的恒等通路，深层网络更容易优化；Post-Norm 让每层输出都被归一化，训练通常需要 warmup。</text>
+<text x="40.00" y="544.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#7c8a97">残差相加要求形状一致（都是 T × d）；两次 Norm 的参数互不共享，换成 RMSNorm 只是去掉均值中心化、省下一部分开销。</text>
+</svg>

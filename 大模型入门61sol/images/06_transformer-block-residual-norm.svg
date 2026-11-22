@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="title desc"><title id="title">一个 Pre-Norm Block 的两次残差更新</title><desc id="desc">Pre-Norm Block 的注意力和 FFN 都先做归一化，再通过残差相加更新表示。注意力交换位置信息，FFN 变换每个位置的特征。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="610" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 06</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >一个 Pre-Norm Block 的两次残差更新</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >Norm 在子层之前；残差主干保留未经该子层变换的输入</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="47" y="221" width="112" height="52" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="103" y="253" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >H⁽ℓ⁾</text>
+<line x1="159" y1="247" x2="225" y2="247" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="225" y="221" width="140" height="52" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="295" y="253" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Norm</text>
+<line x1="365" y1="247" x2="423" y2="247" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="423" y="221" width="242" height="52" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="544" y="253" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >多头自注意力</text>
+<line x1="665" y1="247" x2="746" y2="247" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<circle cx="767" cy="247" r="20" fill="#ffffff" stroke="#227d82" stroke-width="1.5"/>
+<text x="767" y="255" font-size="25" fill="#227d82" text-anchor="middle" font-weight="400" >+</text>
+<line x1="787" y1="247" x2="843" y2="247" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="843" y="221" width="115" height="52" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="900.5" y="253" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >U</text>
+<path d="M186,247 L186,186 L767,186 L767,227" stroke="#227d82" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-227d82)"/>
+<rect x="47" y="396" width="112" height="52" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="103" y="428" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >U</text>
+<line x1="159" y1="422" x2="225" y2="422" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="225" y="396" width="140" height="52" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="295" y="428" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Norm</text>
+<line x1="365" y1="422" x2="423" y2="422" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="423" y="396" width="242" height="52" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="544" y="428" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >逐位置 FFN</text>
+<line x1="665" y1="422" x2="746" y2="422" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<circle cx="767" cy="422" r="20" fill="#ffffff" stroke="#227d82" stroke-width="1.5"/>
+<text x="767" y="430" font-size="25" fill="#227d82" text-anchor="middle" font-weight="400" >+</text>
+<line x1="787" y1="422" x2="843" y2="422" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="843" y="396" width="115" height="52" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="900.5" y="428" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >H⁽ℓ⁺¹⁾</text>
+<path d="M186,422 L186,361 L767,361 L767,402" stroke="#227d82" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-227d82)"/>
+<text x="499" y="307" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >U = H⁽ℓ⁾ + Attention(Norm(H⁽ℓ⁾))</text>
+<text x="499" y="482" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >H⁽ℓ⁺¹⁾ = U + FFN(Norm(U))</text>
+<line x1="40" y1="538" x2="960" y2="538" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="567" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >每个节点保持 T × d；FFN 独立处理每一行，并在各位置共享同一组参数。</text>
+<text x="40" y="592" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >两次 Norm 各自带参数；原始 Transformer 的 Post-Norm 则是在残差相加之后归一化。</text></svg>

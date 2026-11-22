@@ -1,0 +1,298 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "id": 1,
+      "file": "01_original-transformer-architecture.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 26,
+      "width": 1000,
+      "height": 850
+    },
+    {
+      "id": 24,
+      "file": "24_self-attention-score-heatmap.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 38,
+      "width": 1000,
+      "height": 610
+    },
+    {
+      "id": 2,
+      "file": "02_self-attention-query-key-value.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 26,
+      "width": 1000,
+      "height": 580
+    },
+    {
+      "id": 3,
+      "file": "03_scaled-dot-product-attention-matrices.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 24,
+      "width": 1000,
+      "height": 585
+    },
+    {
+      "id": 28,
+      "file": "28_causal-mask-and-shifted-targets.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 21,
+      "width": 1000,
+      "height": 610
+    },
+    {
+      "id": 4,
+      "file": "04_scaled-dot-product-and-multi-head-attention.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 25,
+      "width": 1000,
+      "height": 580
+    },
+    {
+      "id": 5,
+      "file": "05_positional-encoding-and-rope.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 24,
+      "width": 1000,
+      "height": 640
+    },
+    {
+      "id": 6,
+      "file": "06_transformer-block-residual-norm.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 17,
+      "width": 1000,
+      "height": 610
+    },
+    {
+      "id": 7,
+      "file": "07_transformer-architectures-encoder-decoder.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 18,
+      "width": 1000,
+      "height": 625
+    },
+    {
+      "id": 8,
+      "file": "08_autoregressive-generation.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 27,
+      "width": 1000,
+      "height": 625
+    },
+    {
+      "id": 9,
+      "file": "09_parallel-processing-and-kv-cache.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 35,
+      "width": 1000,
+      "height": 650
+    },
+    {
+      "id": 25,
+      "file": "25_batching-throughput-latency.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 32,
+      "width": 1000,
+      "height": 640
+    },
+    {
+      "id": 10,
+      "file": "10_autoencoder-reconstruction.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 14,
+      "width": 1000,
+      "height": 580
+    },
+    {
+      "id": 11,
+      "file": "11_denoising-autoencoder.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 13,
+      "width": 1000,
+      "height": 605
+    },
+    {
+      "id": 12,
+      "file": "12_masked-autoencoder-mae.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 15,
+      "width": 1000,
+      "height": 665
+    },
+    {
+      "id": 13,
+      "file": "13_vae-latent-sampling.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 26,
+      "width": 1000,
+      "height": 685
+    },
+    {
+      "id": 14,
+      "file": "14_gan-generator-discriminator.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 15,
+      "width": 1000,
+      "height": 625
+    },
+    {
+      "id": 15,
+      "file": "15_diffusion-forward-reverse-process.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 18,
+      "width": 1000,
+      "height": 715
+    },
+    {
+      "id": 16,
+      "file": "16_flow-matching-vs-diffusion.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 16,
+      "width": 1000,
+      "height": 705
+    },
+    {
+      "id": 27,
+      "file": "27_agent-environment-reinforcement-loop.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 14,
+      "width": 1000,
+      "height": 605
+    },
+    {
+      "id": 17,
+      "file": "17_bpe-tokenization.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 23,
+      "width": 1000,
+      "height": 660
+    },
+    {
+      "id": 18,
+      "file": "18_tokenization-and-embedding.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 31,
+      "width": 1000,
+      "height": 625
+    },
+    {
+      "id": 19,
+      "file": "19_temperature-next-token-distribution.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 36,
+      "width": 1000,
+      "height": 615
+    },
+    {
+      "id": 20,
+      "file": "20_training-to-usage-workflow.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 18,
+      "width": 1000,
+      "height": 720
+    },
+    {
+      "id": 21,
+      "file": "21_three-scaling-laws.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 19,
+      "width": 1000,
+      "height": 625
+    },
+    {
+      "id": 22,
+      "file": "22_multimodal-model-architecture.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 20,
+      "width": 1000,
+      "height": 660
+    },
+    {
+      "id": 23,
+      "file": "23_mixture-of-experts-layer.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 24,
+      "width": 1000,
+      "height": 660
+    },
+    {
+      "id": 29,
+      "file": "29_rag-retrieval-evidence-generation.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 24,
+      "width": 1000,
+      "height": 675
+    },
+    {
+      "id": 26,
+      "file": "26_agent-iterative-cycle.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 19,
+      "width": 1000,
+      "height": 640
+    },
+    {
+      "id": 30,
+      "file": "30_bellman-backup-example.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 16,
+      "width": 1000,
+      "height": 630
+    }
+  ],
+  "gallery": {
+    "figures": 30,
+    "duplicateIds": [],
+    "hasHorizontalOverflow": false
+  },
+  "mobile": {
+    "pageOverflow": false,
+    "svgScrollable": true
+  },
+  "interactions": {
+    "temperature": "概率和 = 1.000000；熵 = 1.245 nats。",
+    "firstMask": 3,
+    "lastMask": 0,
+    "filtered": 12
+  },
+  "errors": [],
+  "contact": [
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\illustration-src\\qa\\contact-1.png",
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\illustration-src\\qa\\contact-2.png",
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\illustration-src\\qa\\contact-3.png",
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\illustration-src\\qa\\contact-4.png",
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\illustration-src\\qa\\contact-5.png"
+  ]
+}

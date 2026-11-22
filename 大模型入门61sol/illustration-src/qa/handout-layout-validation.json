@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "desktop": {
+    "tables": 7,
+    "images": 30,
+    "brokenImages": 0,
+    "overflow": false,
+    "unrenderedStrong": false
+  },
+  "mobile": {
+    "overflow": false
+  },
+  "mathCheck": "TeX source preserved; this preview checks Markdown layout, not formula typesetting."
+}

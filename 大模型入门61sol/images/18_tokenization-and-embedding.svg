@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title id="title">从文字到向量：token id 是查表索引</title><desc id="desc">Tokenizer 将文本分成 token 并给出 id；Embedding 层以 id 为行索引查表，组成 T×d 的向量矩阵。id 和向量均为教学示例。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="625" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 18</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >从文字到向量：token id 是查表索引</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >示例词表和向量人工构造；真实 token 边界与 id 由 tokenizer 决定</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="48" y="196" width="214" height="61" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="155" y="232.5" font-size="25" fill="#26343b" text-anchor="middle" font-weight="400" >“我喜欢学习”</text>
+<line x1="262" y1="226" x2="307" y2="226" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="313" y="196" width="156" height="61" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="391" y="232.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >Tokenizer</text>
+<line x1="469" y1="226" x2="517" y2="226" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="527" y="205" width="122" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="588" y="231" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >我</text>
+<rect x="657" y="205" width="122" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="718" y="231" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >喜欢</text>
+<rect x="787" y="205" width="122" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="848" y="231" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >学习</text>
+<text x="58" y="326" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >Token ids</text>
+<text x="306" y="326" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >查嵌入矩阵 E 的对应行</text>
+<text x="681" y="326" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >输入 X：T × d</text>
+<rect x="69" y="355" width="87" height="37" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="112.5" y="379.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >7</text>
+<line x1="156" y1="373" x2="230" y2="373" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="254" y="381" font-size="19" fill="#647079" text-anchor="start" font-weight="400" >E[7, :]</text>
+<rect x="367" y="355" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="394" y="379.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.2</text>
+<rect x="426" y="355" width="54" height="37" rx="6" fill="#faeee7" stroke="#ffffff" />
+<text x="453" y="379.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >-0.4</text>
+<rect x="485" y="355" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="512" y="379.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.8</text>
+<rect x="544" y="355" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="571" y="379.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.1</text>
+<line x1="610" y1="373" x2="675" y2="373" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="690" y="355" width="40" height="37" rx="2" fill="#d3e5e6" stroke="#ffffff" />
+<rect x="735" y="355" width="40" height="37" rx="2" fill="#e2c1b4" stroke="#ffffff" />
+<rect x="780" y="355" width="40" height="37" rx="2" fill="#4e979b" stroke="#ffffff" />
+<rect x="825" y="355" width="40" height="37" rx="2" fill="#e9f2f3" stroke="#ffffff" />
+<rect x="69" y="410" width="87" height="37" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="112.5" y="434.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >42</text>
+<line x1="156" y1="428" x2="230" y2="428" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="254" y="436" font-size="19" fill="#647079" text-anchor="start" font-weight="400" >E[42, :]</text>
+<rect x="367" y="410" width="54" height="37" rx="6" fill="#faeee7" stroke="#ffffff" />
+<text x="394" y="434.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >-0.3</text>
+<rect x="426" y="410" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="453" y="434.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.5</text>
+<rect x="485" y="410" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="512" y="434.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.1</text>
+<rect x="544" y="410" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="571" y="434.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.7</text>
+<line x1="610" y1="428" x2="675" y2="428" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="690" y="410" width="40" height="37" rx="2" fill="#e9d0c7" stroke="#ffffff" />
+<rect x="735" y="410" width="40" height="37" rx="2" fill="#91bec1" stroke="#ffffff" />
+<rect x="780" y="410" width="40" height="37" rx="2" fill="#e9f2f3" stroke="#ffffff" />
+<rect x="825" y="410" width="40" height="37" rx="2" fill="#64a4a8" stroke="#ffffff" />
+<rect x="69" y="465" width="87" height="37" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="112.5" y="489.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >19</text>
+<line x1="156" y1="483" x2="230" y2="483" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="254" y="491" font-size="19" fill="#647079" text-anchor="start" font-weight="400" >E[19, :]</text>
+<rect x="367" y="465" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="394" y="489.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.6</text>
+<rect x="426" y="465" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="453" y="489.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.2</text>
+<rect x="485" y="465" width="54" height="37" rx="6" fill="#faeee7" stroke="#ffffff" />
+<text x="512" y="489.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >-0.5</text>
+<rect x="544" y="465" width="54" height="37" rx="6" fill="#e4f1f0" stroke="#ffffff" />
+<text x="571" y="489.5" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >0.4</text>
+<line x1="610" y1="483" x2="675" y2="483" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="690" y="465" width="40" height="37" rx="2" fill="#7ab1b4" stroke="#ffffff" />
+<rect x="735" y="465" width="40" height="37" rx="2" fill="#d3e5e6" stroke="#ffffff" />
+<rect x="780" y="465" width="40" height="37" rx="2" fill="#dbb1a1" stroke="#ffffff" />
+<rect x="825" y="465" width="40" height="37" rx="2" fill="#a7cbcd" stroke="#ffffff" />
+<line x1="40" y1="553" x2="960" y2="553" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="582" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >Embedding 的形状是 |词表| × d；长度为 T 的 id 序列查表后得到 T × d。</text>
+<text x="40" y="607" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >id 的数值大小不代表语义距离；嵌入向量由训练学习，位置关系还需另行编码。</text></svg>

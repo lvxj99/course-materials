@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 479" width="960" height="479" role="img" aria-labelledby="title desc" xml:lang="zh-CN"><title id="title">一次预测，可以往三个方向查</title>
+<desc id="desc">例子从一个边缘 site 的预测开始。</desc>
+<style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","WenQuanYi Zen Hei",system-ui,sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="960" height="479" fill="#f7f9fc"/>
+<rect x="36" y="24" width="64" height="38" rx="9" fill="#e7f0fa"/>
+<text x="68" y="50" fill="#2866a0" font-size="19" font-weight="650" text-anchor="middle">图 1</text>
+<text x="117" y="53" fill="#172b44" font-size="33" font-weight="700">一次预测，可以往三个方向查</text>
+<text x="36" y="94" fill="#485e75" font-size="22" font-weight="500">例子从一个边缘 site 的预测开始。</text>
+<rect x="36" y="126" width="328" height="325" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/>
+<text x="59" y="162" fill="#172b44" font-size="25" font-weight="650">wafer 上的测点</text>
+<circle cx="200" cy="278" r="104" fill="#f0f5fb" stroke="#9bb4cb" stroke-width="2"/>
+<circle cx="200" cy="278" r="60" fill="none" stroke="#d0dfed" stroke-width="1"/>
+<circle cx="106.4" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="106.4" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="106.4" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="129.8" cy="231.2" r="3.4" fill="#aabed1"/>
+<circle cx="129.8" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="129.8" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="129.8" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="129.8" cy="324.8" r="3.4" fill="#aabed1"/>
+<circle cx="153.2" cy="207.8" r="3.4" fill="#aabed1"/>
+<circle cx="153.2" cy="231.2" r="3.4" fill="#aabed1"/>
+<circle cx="153.2" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="153.2" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="153.2" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="153.2" cy="324.8" r="3.4" fill="#aabed1"/>
+<circle cx="153.2" cy="348.2" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="184.4" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="207.8" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="231.2" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="324.8" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="348.2" r="3.4" fill="#aabed1"/>
+<circle cx="176.6" cy="371.6" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="184.4" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="207.8" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="231.2" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="324.8" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="348.2" r="3.4" fill="#aabed1"/>
+<circle cx="200" cy="371.6" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="184.4" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="207.8" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="231.2" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="324.8" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="348.2" r="3.4" fill="#aabed1"/>
+<circle cx="223.4" cy="371.6" r="3.4" fill="#aabed1"/>
+<circle cx="246.8" cy="207.8" r="3.4" fill="#aabed1"/>
+<circle cx="246.8" cy="231.2" r="3.4" fill="#aabed1"/>
+<circle cx="246.8" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="246.8" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="246.8" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="246.8" cy="324.8" r="3.4" fill="#aabed1"/>
+<circle cx="246.8" cy="348.2" r="3.4" fill="#aabed1"/>
+<circle cx="270.2" cy="231.2" r="3.4" fill="#aabed1"/>
+<circle cx="270.2" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="270.2" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="270.2" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="270.2" cy="324.8" r="3.4" fill="#aabed1"/>
+<circle cx="293.6" cy="254.6" r="3.4" fill="#aabed1"/>
+<circle cx="293.6" cy="278" r="3.4" fill="#aabed1"/>
+<circle cx="293.6" cy="301.4" r="3.4" fill="#aabed1"/>
+<circle cx="293.6" cy="278" r="14" fill="#dff4ef" stroke="#087e78" stroke-width="2.4"/>
+<circle cx="293.6" cy="278" r="5" fill="#087e78"/>
+<text x="200" y="424" fill="#087e78" font-size="25" font-weight="700" text-anchor="middle">该点预测 +2.0 nm</text>
+<rect x="388" y="126" width="536" height="99" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/><circle cx="425" cy="160" r="18" fill="#e7f0fa"/><text x="425" y="167" fill="#2866a0" font-size="22" font-weight="700" text-anchor="middle">1</text><text x="457" y="168" fill="#2866a0" font-size="25" font-weight="650">这个 site 为什么预测偏大？</text><text x="457" y="201" fill="#485e75" font-size="22" font-weight="500">拆开一条预测，看各项加了多少。</text>
+<rect x="388" y="239" width="536" height="99" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/><circle cx="425" cy="273" r="18" fill="#dff4ef"/><text x="425" y="280" fill="#087e78" font-size="22" font-weight="700" text-anchor="middle">2</text><text x="457" y="281" fill="#087e78" font-size="25" font-weight="650">温度在整批数据上有用吗？</text><text x="457" y="314" fill="#485e75" font-size="22" font-weight="500">置换一列，看看测试误差升多少。</text>
+<rect x="388" y="352" width="536" height="99" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/><circle cx="425" cy="386" r="18" fill="#eee8f8"/><text x="425" y="393" fill="#66529d" font-size="22" font-weight="700" text-anchor="middle">3</text><text x="457" y="394" fill="#66529d" font-size="25" font-weight="650">调温度会让实测残差变小吗？</text><text x="457" y="427" fill="#485e75" font-size="22" font-weight="500">在相近工况下，试两档温度。</text></svg>

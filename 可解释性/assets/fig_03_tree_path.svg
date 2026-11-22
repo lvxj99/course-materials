@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 474" width="960" height="474" role="img" aria-labelledby="title desc" xml:lang="zh-CN"><title id="title">沿着条件走到叶子</title>
+<desc id="desc">当前记录的温度为 94 °C，mark 类型为 AIM。</desc>
+<style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","WenQuanYi Zen Hei",system-ui,sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="960" height="474" fill="#f7f9fc"/>
+<rect x="36" y="24" width="64" height="38" rx="9" fill="#e7f0fa"/>
+<text x="68" y="50" fill="#2866a0" font-size="19" font-weight="650" text-anchor="middle">图 3</text>
+<text x="117" y="53" fill="#172b44" font-size="33" font-weight="700">沿着条件走到叶子</text>
+<text x="36" y="94" fill="#485e75" font-size="22" font-weight="500">当前记录的温度为 94 °C，mark 类型为 AIM。</text>
+<polyline points="480,191 480,224 240,224 240,252" fill="none" stroke="#91a4b7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="480,191 480,224 650,224 650,252" fill="none" stroke="#087e78" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="650,309 650,341 801,341 801,373" fill="none" stroke="#91a4b7" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="650,309 650,341 521,341 521,373" fill="none" stroke="#087e78" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="343" y="214" fill="#485e75" font-size="22" font-weight="500" text-anchor="middle">否</text>
+<text x="568" y="214" fill="#087e78" font-size="22" font-weight="700" text-anchor="middle">是</text>
+<text x="581" y="331" fill="#087e78" font-size="22" font-weight="700" text-anchor="middle">是</text>
+<text x="731" y="331" fill="#485e75" font-size="22" font-weight="500" text-anchor="middle">否</text>
+<rect x="345" y="133" width="270" height="58" rx="10" fill="#dff4ef" stroke="#087e78" stroke-width="2.3"/><text x="480" y="171" fill="#087e78" font-size="24" font-weight="650" text-anchor="middle">温度 ≥ 93 °C？</text>
+<rect x="137" y="252" width="206" height="58" rx="10" fill="#ffffff" stroke="#dce5ef" stroke-width="1.6"/><text x="240" y="290" fill="#485e75" font-size="24" font-weight="650" text-anchor="middle">预测 +0.8 nm</text>
+<rect x="529" y="252" width="242" height="58" rx="10" fill="#dff4ef" stroke="#087e78" stroke-width="2.3"/><text x="650" y="290" fill="#087e78" font-size="24" font-weight="650" text-anchor="middle">mark 为 AIM？</text>
+<rect x="413.5" y="373" width="215" height="58" rx="10" fill="#dff4ef" stroke="#087e78" stroke-width="2.3"/><text x="521" y="411" fill="#087e78" font-size="24" font-weight="650" text-anchor="middle">预测 +2.0 nm</text>
+<rect x="699.5" y="373" width="203" height="58" rx="10" fill="#ffffff" stroke="#dce5ef" stroke-width="1.6"/><text x="801" y="411" fill="#485e75" font-size="24" font-weight="650" text-anchor="middle">预测 +1.4 nm</text></svg>

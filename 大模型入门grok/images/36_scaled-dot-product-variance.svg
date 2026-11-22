@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="405" viewBox="0 0 960 405" role="img">
+<title>为什么注意力要除以 √d_k</title>
+<desc>点积的标准差大约是 √d_k，不缩放时 softmax 会过于尖锐。</desc>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="mk1F2A30" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#1F2A30"/></marker><marker id="mk3E9B96" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#3E9B96"/></marker><marker id="mk4C78A8" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4C78A8"/></marker><marker id="mk4E8C46" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4E8C46"/></marker><marker id="mk8A847C" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8A847C"/></marker><marker id="mk8E6899" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8E6899"/></marker><marker id="mkC4922A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C4922A"/></marker><marker id="mkC9C4BC" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C9C4BC"/></marker><marker id="mkD4544E" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#D4544E"/></marker><marker id="mkE07B2A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#E07B2A"/></marker></defs>
+<text x="28.0" y="32.0" fill="#1F2A30" fill-opacity="1.0" font-size="15" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">设 q、k 的各分量独立、均值 0、方差 1。点积是 d_k 个乘积之和，方差是 d_k。</text>
+<text x="28.0" y="60.0" fill="#1F2A30" fill-opacity="1.0" font-size="15" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">下面用 d_k = 64，√d_k = 8。四份示意点积取在 1、0.5、0、−0.5 个标准差上。</text>
+<text x="40.0" y="100.0" fill="#D4544E" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">不除</text>
+<text x="40.0" y="124.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="Georgia, 'Palatino Linotype', 'Songti SC', serif" text-anchor="start">分数  8,  4,  0,  −4</text>
+<rect x="40.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="40.0" y="152.2" width="36.0" height="117.8" rx="3" fill="#D4544E" fill-opacity="1.0" stroke="none"/>
+<text x="58.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">1σ</text>
+<text x="58.0" y="142.2" fill="#D4544E" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">98.2%</text>
+<rect x="94.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="94.0" y="267.8" width="36.0" height="2.2" rx="3" fill="#D4544E" fill-opacity="1.0" stroke="none"/>
+<text x="112.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">0.5σ</text>
+<text x="112.0" y="257.8" fill="#D4544E" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">1.8%</text>
+<rect x="148.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="148.0" y="270.0" width="36.0" height="0.0" rx="3" fill="#D4544E" fill-opacity="1.0" stroke="none"/>
+<text x="166.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">0</text>
+<text x="166.0" y="260.0" fill="#D4544E" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">0.0%</text>
+<rect x="202.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="202.0" y="270.0" width="36.0" height="0.0" rx="3" fill="#D4544E" fill-opacity="1.0" stroke="none"/>
+<text x="220.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">−0.5σ</text>
+<text x="220.0" y="260.0" fill="#D4544E" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">0.0%</text>
+<text x="480.0" y="100.0" fill="#4C78A8" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">除以 8 之后</text>
+<text x="480.0" y="124.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="Georgia, 'Palatino Linotype', 'Songti SC', serif" text-anchor="start">分数  1,  0.5,  0,  −0.5</text>
+<rect x="480.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="480.0" y="215.4" width="36.0" height="54.6" rx="3" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="498.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">1σ</text>
+<text x="498.0" y="205.4" fill="#4C78A8" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">45.5%</text>
+<rect x="534.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="534.0" y="236.9" width="36.0" height="33.1" rx="3" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="552.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">0.5σ</text>
+<text x="552.0" y="226.9" fill="#4C78A8" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">27.6%</text>
+<rect x="588.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="588.0" y="249.9" width="36.0" height="20.1" rx="3" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="606.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">0</text>
+<text x="606.0" y="239.9" fill="#4C78A8" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">16.7%</text>
+<rect x="642.0" y="150.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="642.0" y="257.8" width="36.0" height="12.2" rx="3" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="660.0" y="286.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">−0.5σ</text>
+<text x="660.0" y="247.8" fill="#4C78A8" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">10.2%</text>
+<text x="40.0" y="320.0" fill="#1F2A30" fill-opacity="1.0" font-size="15" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">左边几乎把全部质量给了第一名。右边仍然分得清高下，但其他候选还留着梯度。</text>
+<text x="28.0" y="356.0" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">这是方差论证，不是从某个训练好的模型里读出来的分数。softmax 对尺度很敏感：分数整体变大，分布就更尖。</text>
+<text x="28.0" y="373.5" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">除以 √d_k 把这个尺度拉回大约方差为 1 的范围。百分比按图中的精确 softmax 取一位小数。</text>
+</svg>

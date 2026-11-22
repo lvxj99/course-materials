@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="title desc"><title id="title">因果掩码：并行计算，也不会偷看答案</title><desc id="desc">因果掩码禁止读取未来输入。示例中“喜欢”所在行可读取 BOS、我、喜欢，并预测“学习”；训练目标与输入错开一位。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="610" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 28</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >因果掩码：并行计算，也不会偷看答案</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >输入右移一位；第 t 行读取 ≤ t 的输入，用来预测下一个 token</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="214" y="222" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="276" y="222" width="59" height="59" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="338" y="222" width="59" height="59" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="400" y="222" width="59" height="59" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="214" y="284" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="276" y="284" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="338" y="284" width="59" height="59" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="400" y="284" width="59" height="59" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="214" y="346" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="276" y="346" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="338" y="346" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="400" y="346" width="59" height="59" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="214" y="408" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="276" y="408" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="338" y="408" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="400" y="408" width="59" height="59" rx="2" fill="#9fc6c8" stroke="#ffffff" />
+<rect x="210" y="342" width="253" height="67" rx="4" fill="none" stroke="#b76343" stroke-width="2.5"/>
+<text x="243" y="205" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >〈BOS〉</text>
+<text x="197" y="258" font-size="17" fill="#647079" text-anchor="end" font-weight="400" >〈BOS〉</text>
+<text x="305" y="205" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >我</text>
+<text x="197" y="320" font-size="17" fill="#647079" text-anchor="end" font-weight="400" >我</text>
+<text x="367" y="205" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >喜欢</text>
+<text x="197" y="382" font-size="17" fill="#b76343" text-anchor="end" font-weight="400" >喜欢</text>
+<text x="429" y="205" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >学习</text>
+<text x="197" y="444" font-size="17" fill="#647079" text-anchor="end" font-weight="400" >学习</text>
+<text x="337" y="176" font-size="18" fill="#4c75a0" text-anchor="middle" font-weight="400" >允许读取的输入列</text>
+<text x="533" y="216" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >例如：位置 3 的输入是「喜欢」</text>
+<rect x="535" y="245" width="108" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="589" y="271" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >〈BOS〉</text>
+<rect x="651" y="245" width="108" height="40" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="705" y="271" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >我</text>
+<rect x="767" y="245" width="108" height="40" rx="6" fill="#e4eff0" stroke="#227d82" />
+<text x="821" y="271" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >喜欢</text>
+<line x1="710" y1="286" x2="710" y2="326" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="585" y="329" width="250" height="49" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="710" y="359.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >预测目标：学习</text>
+<text x="533" y="426" font-size="19" fill="#647079" text-anchor="start" font-weight="400" >「学习」作为第 4 个输入存在，</text>
+<text x="533" y="455" font-size="19" fill="#647079" text-anchor="start" font-weight="400" >但第 3 行无法读取这一列。</text>
+<line x1="40" y1="538" x2="960" y2="538" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="567" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >允许位置 Mₜₛ = 0；未来位置 Mₜₛ = −∞，softmax 后权重为 0。</text>
+<text x="40" y="592" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >训练时四行可以在同一层并行计算；生成时下一步输入仍须等待本步选出 token。</text></svg>

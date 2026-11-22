@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="519" viewBox="0 0 960 519" role="img">
+<title>三种 Transformer 用法</title>
+<desc>差别在于谁可以读谁，以及有没有交叉注意力。</desc>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="mk1F2A30" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#1F2A30"/></marker><marker id="mk3E9B96" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#3E9B96"/></marker><marker id="mk4C78A8" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4C78A8"/></marker><marker id="mk4E8C46" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4E8C46"/></marker><marker id="mk8A847C" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8A847C"/></marker><marker id="mk8E6899" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8E6899"/></marker><marker id="mkC4922A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C4922A"/></marker><marker id="mkC9C4BC" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C9C4BC"/></marker><marker id="mkD4544E" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#D4544E"/></marker><marker id="mkE07B2A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#E07B2A"/></marker></defs>
+<rect x="28.0" y="24.0" width="300.0" height="430.0" rx="10" fill="#F6F5F2" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<rect x="28.0" y="24.0" width="300.0" height="8.0" rx="0" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="46.0" y="52.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">Encoder-only</text>
+<text x="46.0" y="76.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">双向自注意力</text>
+<text x="46.0" y="112.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">允许读取的位置</text>
+<rect x="46.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="57.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="68.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="79.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="90.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="46.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="57.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="68.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="79.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="90.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="46.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="57.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="68.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="79.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="90.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="46.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="57.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="68.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="79.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="90.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="46.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="57.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="68.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="79.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="90.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="118.0" y="150.0" fill="#526068" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">全部有效位置</text>
+<text x="46.0" y="250.0" fill="#6A767C" fill-opacity="1.0" font-size="12" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">例子</text>
+<text x="46.0" y="274.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">BERT、ViT</text>
+<text x="46.0" y="312.0" fill="#6A767C" fill-opacity="1.0" font-size="12" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">适合</text>
+<text x="46.0" y="336.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">分类、检索表示、图像识别</text>
+<rect x="344.0" y="24.0" width="300.0" height="430.0" rx="10" fill="#F6F5F2" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<rect x="344.0" y="24.0" width="300.0" height="8.0" rx="0" fill="#3E9B96" fill-opacity="1.0" stroke="none"/>
+<text x="362.0" y="52.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">Encoder–decoder</text>
+<text x="362.0" y="76.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">编码双向，解码因果 + 交叉</text>
+<text x="362.0" y="112.0" fill="#4C78A8" fill-opacity="1.0" font-size="12" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">编码器</text>
+<rect x="362.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="373.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="384.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="395.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="406.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="362.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="373.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="384.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="395.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="406.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="362.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="373.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="384.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="395.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="406.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="362.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="373.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="384.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="395.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="406.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="362.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="373.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="384.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="395.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="406.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="454.0" y="112.0" fill="#E07B2A" fill-opacity="1.0" font-size="12" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">解码器自注意力</text>
+<rect x="454.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="465.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="476.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="487.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="498.0" y="128.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="454.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="465.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="476.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="487.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="498.0" y="139.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="454.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="465.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="476.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="487.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="498.0" y="150.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="454.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="465.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="476.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="487.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="498.0" y="161.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="454.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="465.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="476.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="487.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="498.0" y="172.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="362.0" y="196.0" fill="#526068" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">交叉注意力是 T × S，源侧不遮挡。</text>
+<text x="362.0" y="250.0" fill="#6A767C" fill-opacity="1.0" font-size="12" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">例子</text>
+<text x="362.0" y="274.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">原始 Transformer、T5</text>
+<text x="362.0" y="312.0" fill="#6A767C" fill-opacity="1.0" font-size="12" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">适合</text>
+<text x="362.0" y="336.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">翻译、摘要</text>
+<rect x="660.0" y="24.0" width="300.0" height="430.0" rx="10" fill="#F6F5F2" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<rect x="660.0" y="24.0" width="300.0" height="8.0" rx="0" fill="#E07B2A" fill-opacity="1.0" stroke="none"/>
+<text x="678.0" y="52.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">Decoder-only</text>
+<text x="678.0" y="76.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">一条序列上的因果自注意力</text>
+<text x="678.0" y="112.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">允许读取的位置</text>
+<rect x="678.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="689.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="700.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="711.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="722.0" y="130.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="678.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="689.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="700.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="711.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="722.0" y="141.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="678.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="689.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="700.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="711.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="722.0" y="152.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="678.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="689.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="700.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="711.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="722.0" y="163.0" width="9.5" height="9.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="678.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="689.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="700.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="711.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="722.0" y="174.0" width="9.5" height="9.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="750.0" y="150.0" fill="#526068" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">自己和过去</text>
+<text x="678.0" y="250.0" fill="#6A767C" fill-opacity="1.0" font-size="12" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">例子</text>
+<text x="678.0" y="274.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">GPT，以及多数大语言模型</text>
+<text x="678.0" y="312.0" fill="#6A767C" fill-opacity="1.0" font-size="12" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">适合</text>
+<text x="678.0" y="336.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">把提示和回答放在一起，预测下一个</text>
+<text x="678.0" y="358.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">token</text>
+<rect x="678.0" y="400.0" width="46.5" height="26.0" rx="5" fill="#4C78A8" fill-opacity="0.12" stroke="#4C78A8" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="701.2" y="413.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">提示</text>
+<rect x="732.5" y="400.0" width="58.7" height="26.0" rx="5" fill="#E07B2A" fill-opacity="0.12" stroke="#E07B2A" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="761.8" y="413.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">已生成</text>
+<text x="28.0" y="470.0" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">深色格子是可以读取的位置。Encoder-only 让整段输入互相看见；Decoder-only 把任务说明和正在生成的内容放进同一条因果序列。</text>
+<text x="28.0" y="487.5" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">三种结构最后都接一个任务输出层：类别、数值，或词表上的 softmax。</text>
+</svg>

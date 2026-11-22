@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="525" viewBox="0 0 960 525" role="img">
+<title>温度怎样改变下一个 token 的分布</title>
+<desc>温度不改变谁最大；top-k 和 top-p 会丢掉一些候选。</desc>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="mk1F2A30" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#1F2A30"/></marker><marker id="mk3E9B96" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#3E9B96"/></marker><marker id="mk4C78A8" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4C78A8"/></marker><marker id="mk4E8C46" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4E8C46"/></marker><marker id="mk8A847C" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8A847C"/></marker><marker id="mk8E6899" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8E6899"/></marker><marker id="mkC4922A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C4922A"/></marker><marker id="mkC9C4BC" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C9C4BC"/></marker><marker id="mkD4544E" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#D4544E"/></marker><marker id="mkE07B2A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#E07B2A"/></marker></defs>
+<text x="28.0" y="28.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">同一组 logits。上下文示意是“我喜欢”，τ = 1 时概率就是 0.7、0.2、0.1。</text>
+<text x="40.0" y="64.0" fill="#E07B2A" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">τ = 0.5</text>
+<rect x="40.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="40.0" y="99.1" width="36.0" height="108.9" rx="3" fill="#E07B2A" fill-opacity="1.0" stroke="none"/>
+<text x="58.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">学</text>
+<text x="58.0" y="89.1" fill="#E07B2A" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">90.7%</text>
+<rect x="94.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="94.0" y="199.1" width="36.0" height="8.9" rx="3" fill="#E07B2A" fill-opacity="1.0" stroke="none"/>
+<text x="112.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">吃</text>
+<text x="112.0" y="189.1" fill="#E07B2A" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">7.4%</text>
+<rect x="148.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="148.0" y="205.8" width="36.0" height="2.2" rx="3" fill="#E07B2A" fill-opacity="1.0" stroke="none"/>
+<text x="166.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">看</text>
+<text x="166.0" y="195.8" fill="#E07B2A" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">1.9%</text>
+<text x="40.0" y="250.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">更接近贪心</text>
+<text x="340.0" y="64.0" fill="#4C78A8" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">τ = 1</text>
+<rect x="340.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="340.0" y="124.0" width="36.0" height="84.0" rx="3" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="358.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">学</text>
+<text x="358.0" y="114.0" fill="#4C78A8" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">70.0%</text>
+<rect x="394.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="394.0" y="184.0" width="36.0" height="24.0" rx="3" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="412.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">吃</text>
+<text x="412.0" y="174.0" fill="#4C78A8" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">20.0%</text>
+<rect x="448.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="448.0" y="196.0" width="36.0" height="12.0" rx="3" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="466.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">看</text>
+<text x="466.0" y="186.0" fill="#4C78A8" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">10.0%</text>
+<text x="340.0" y="250.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">讲义里的例子</text>
+<text x="640.0" y="64.0" fill="#E07B2A" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">τ = 2</text>
+<rect x="640.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="640.0" y="145.3" width="36.0" height="62.7" rx="3" fill="#3E9B96" fill-opacity="1.0" stroke="none"/>
+<text x="658.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">学</text>
+<text x="658.0" y="135.3" fill="#3E9B96" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">52.3%</text>
+<rect x="694.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="694.0" y="174.5" width="36.0" height="33.5" rx="3" fill="#3E9B96" fill-opacity="1.0" stroke="none"/>
+<text x="712.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">吃</text>
+<text x="712.0" y="164.5" fill="#3E9B96" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">27.9%</text>
+<rect x="748.0" y="88.0" width="36.0" height="120.0" rx="3" fill="#F4F1EA" fill-opacity="1.0" stroke="none"/>
+<rect x="748.0" y="184.3" width="36.0" height="23.7" rx="3" fill="#3E9B96" fill-opacity="1.0" stroke="none"/>
+<text x="766.0" y="224.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">看</text>
+<text x="766.0" y="174.3" fill="#3E9B96" fill-opacity="1.0" font-size="11" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle">19.8%</text>
+<text x="640.0" y="250.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">分布更平</text>
+<text x="28.0" y="278.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">温度不改变排序。贪心永远选“学”。τ 趋向 0 时接近贪心，趋向无穷时接近均匀。</text>
+<rect x="28.0" y="310.0" width="904.0" height="150.0" rx="10" fill="#F6F5F2" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<text x="44.0" y="334.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">另外两个旋钮会先丢掉候选，再重新归一化</text>
+<text x="44.0" y="364.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="Georgia, 'Palatino Linotype', 'Songti SC', serif" text-anchor="start">原分布  50%  25%  15%  10%</text>
+<text x="44.0" y="392.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">top-k = 2：留下学、吃 → 66.7%  33.3%</text>
+<text x="44.0" y="418.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">top-p = 0.8：50+25 还不到 0.8，于是再留下看 → 55.5%  27.8%  16.7%</text>
+<text x="44.0" y="444.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">这个例子里两者留下的集合不同。玩在两种规则下都被丢掉。</text>
+<text x="28.0" y="476.0" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">百分比按一位小数配平，使一行加起来是 100%。这些分布是为了把公式算清楚，不是模型的真实输出。</text>
+<text x="28.0" y="493.5" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">top-p 取最小的一组候选，使累计概率达到阈值，然后只在这组里重新归一化。</text>
+</svg>

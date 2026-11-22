@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="640" viewBox="0 0 1080 640" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC','Source Han Sans SC','Hiragino Sans GB',sans-serif" role="img"><title>VAE：可以采样的潜在空间</title><desc>编码器输出分布，重参数化采样后解码；KL 把编码分布拉向标准正态。</desc><defs><marker id="ah1F29371_0" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#1F2937"/></marker><marker id="ah6B72801_0" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#6B7280"/></marker><marker id="ahE07B241_0" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#E07B24"/></marker></defs><rect width="1080" height="640" fill="#FFFFFF"/><rect x="20.0" y="16.0" width="1040.0" height="336.0" rx="12" fill="#F6F7F9" stroke="#2F6FD0" stroke-width="1.1" />
+<circle cx="46.0" cy="38.0" r="11.0" fill="#2F6FD0" stroke="none" stroke-width="1.2"/>
+<text x="46.0" y="38.5" font-size="12.5" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">1</text>
+<text x="64.0" y="38.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">训练：损失 = 重建项 + KL 项</text>
+<image x="44.0" y="80.0" width="104.0" height="104.0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAAvUlEQVR42mP4jwcwUEfy9LZNF7BLXo9lAIOIu5iS0xjgYAa65GIGJLAITRIsaJCcbACiGVElFwCF2A6CWEe4gMzlKJIgG6dBmFOAzFpUY50ZPKAsF6BkPfZA+GYKsvQUVsnnaiA5H6zBd0McJBeNNfhOcoDksrCG7S6wZyuxBvxqsFw71oCfA5abhjVWesFyS7HGZx1Ybss7CPiIIlnAgAoikCS/MqCDy0g6MSSfI0luNtdFBobzqZk0SZIEAPPEVhmlZ4cEAAAAAElFTkSuQmCC" preserveAspectRatio="none" style="image-rendering:pixelated;image-rendering:crisp-edges"/>
+<rect x="44.0" y="80.0" width="104.0" height="104.0" rx="3" fill="none" stroke="#D1D5DB" stroke-width="1.2" />
+<text x="96.0" y="204.0" font-size="14.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">输入 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan></text>
+<path d="M156.0,132.0 L180.0,132.0" stroke="#1F2937" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<path d="M186.0,72.0 L300.0,102.0 L300.0,162.0 L186.0,192.0 Z" stroke="#2F6FD0" stroke-width="1.5" fill="#DDE8FA" stroke-linecap="round" stroke-linejoin="round" />
+<text x="243.0" y="132.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">编码器</text>
+<path d="M304.0,120.0 L340.0,98.0" stroke="#1F2937" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<path d="M304.0,144.0 L340.0,166.0" stroke="#1F2937" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<rect x="344.0" y="80.0" width="66.0" height="34.0" rx="8" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.4" />
+<text x="377.0" y="97.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">μ</tspan>(<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan>)</text>
+<rect x="344.0" y="150.0" width="66.0" height="34.0" rx="8" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.4" />
+<text x="377.0" y="167.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">σ</tspan>(<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan>)</text>
+<text x="377.0" y="132.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">均值与标准差</text>
+<path d="M414.0,97.0 L440.0,122.0" stroke="#1F2937" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<path d="M414.0,167.0 L440.0,142.0" stroke="#1F2937" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<rect x="442.0" y="104.0" width="116.0" height="56.0" rx="10" fill="#FFFFFF" stroke="#7B4FC9" stroke-width="1.8" />
+<text x="500.0" y="124.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">z</tspan> = <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">μ</tspan> + <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">σ</tspan> ⊙ <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">ε</tspan></text>
+<text x="500.0" y="145.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">重参数化</text>
+<rect x="438.0" y="50.0" width="124.0" height="30.0" rx="8" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.4" stroke-dasharray="5 3" />
+<text x="500.0" y="65.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">ε</tspan> ~ 𝒩(0, <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">I</tspan>)</text>
+<path d="M500.0,82.0 L500.0,102.0" stroke="#6B7280" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 3" marker-end="url(#ah6B72801_0)"/>
+<text x="570.0" y="66.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">随机性只从这里进入</text>
+<text x="500.0" y="178.0" font-size="12.5" fill="#D64545" text-anchor="middle" dominant-baseline="central">梯度可经 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">μ</tspan>、<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">σ</tspan> 传回编码器</text>
+<path d="M560.0,132.0 L584.0,132.0" stroke="#1F2937" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<rect x="590.0" y="108.0" width="12.0" height="12.0" rx="0" fill="#E2DAEF" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="602.0" y="108.0" width="12.0" height="12.0" rx="0" fill="#DBD2EC" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="614.0" y="108.0" width="12.0" height="12.0" rx="0" fill="#8C6EC2" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="626.0" y="108.0" width="12.0" height="12.0" rx="0" fill="#AA94D2" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="590.0" y="120.0" width="12.0" height="12.0" rx="0" fill="#AC96D3" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="602.0" y="120.0" width="12.0" height="12.0" rx="0" fill="#D2C7E7" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="614.0" y="120.0" width="12.0" height="12.0" rx="0" fill="#8161BC" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="626.0" y="120.0" width="12.0" height="12.0" rx="0" fill="#BCABDB" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="590.0" y="132.0" width="12.0" height="12.0" rx="0" fill="#C1B2DE" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="602.0" y="132.0" width="12.0" height="12.0" rx="0" fill="#6C46B1" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="614.0" y="132.0" width="12.0" height="12.0" rx="0" fill="#7D5BBA" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="626.0" y="132.0" width="12.0" height="12.0" rx="0" fill="#9276C5" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="590.0" y="144.0" width="12.0" height="12.0" rx="0" fill="#9174C5" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="602.0" y="144.0" width="12.0" height="12.0" rx="0" fill="#8A6CC1" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="614.0" y="144.0" width="12.0" height="12.0" rx="0" fill="#DED6EE" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="626.0" y="144.0" width="12.0" height="12.0" rx="0" fill="#BFAFDD" stroke="#FFFFFF" stroke-width="1.5" />
+<rect x="590.0" y="108.0" width="48.0" height="48.0" rx="0" fill="none" stroke="#7B4FC9" stroke-width="1.3" />
+<text x="614.0" y="172.0" font-size="15" fill="#7B4FC9" text-anchor="middle" dominant-baseline="central" font-weight="bold"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">z</tspan></text>
+<path d="M644.0,132.0 L668.0,132.0" stroke="#1F2937" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<path d="M672.0,102.0 L784.0,72.0 L784.0,192.0 L672.0,162.0 Z" stroke="#E07B24" stroke-width="1.5" fill="#FDEBD8" stroke-linecap="round" stroke-linejoin="round" />
+<text x="728.0" y="132.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">解码器</text>
+<path d="M790.0,132.0 L814.0,132.0" stroke="#1F2937" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<image x="820.0" y="80.0" width="104.0" height="104.0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABi0lEQVR42mP4jwcwECv58+PLlx9/YZP8/fLM+jlTpsxZf+blb3TJz5eXlEe529u7R5UvufwFVfLr2Qn+SlwMQMCl5D/h7FcUyRtT7AUZWAWkpQVYGQTtp9xAlvyyKVaIUcwirqAg3kKcUSh201ckyZdT7BkEnRs3Hz26pclFiMF20nNkydlu/GYtF3/8//9jT7okg37LTSTJz4c6U7oOf/7//9/zVWESDMYdd5Ed9OrcznOv////83hDmhYHh+e815jB9/veyjhVNi79upM/MYPv5oIwBRYeo+K9rzHC9vvVmX7SzLymFQfeYgT8t0uTPcQZ+S1rD7/DCPgv5/pcRBkEbZqOfcCIlU+nOx2FGYTs2099woiyjydabAUZRBw7jr/7+fPnrz9/kSTfH6m3EmAASlbMWgIESzecfwOX/Hep25wPGF0iep7+IBAQPfH0L7jk1gQeBmTAFb7mB1xyb568AD8CCMikboFL/r+1oiQ1BQFSCxdd/QOX/P7g5K6dCLDr2N0vJKVb0iQB3SJWDL+/afkAAAAASUVORK5CYII=" preserveAspectRatio="none" style="image-rendering:pixelated;image-rendering:crisp-edges"/>
+<rect x="820.0" y="80.0" width="104.0" height="104.0" rx="3" fill="none" stroke="#D1D5DB" stroke-width="1.2" />
+<text x="872.0" y="204.0" font-size="14.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">重建 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x̂</tspan></text>
+<rect x="260.0" y="242.0" width="270.0" height="40.0" rx="8" fill="#FBE1E1" stroke="#D64545" stroke-width="1.4" />
+<text x="395.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">KL( <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">q</tspan><tspan font-size="10.1" dy="3.9">φ</tspan><tspan dy="-3.9" font-size="14.0">​</tspan>(<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">z</tspan>|<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan>) ‖ 𝒩(0, <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">I</tspan>) )</text>
+<path d="M377,184 L377,242" stroke="#D64545" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" />
+<text x="540.0" y="262.0" font-size="12.5" fill="#D64545" text-anchor="start" dominant-baseline="central">← 把编码分布拉向标准正态</text>
+<path d="M96,218.0 L96,318 L380,318" stroke="#D64545" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" />
+<path d="M872,218.0 L872,318 L700,318" stroke="#D64545" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" />
+<rect x="380.0" y="300.0" width="320.0" height="36.0" rx="8" fill="#FBE1E1" stroke="#D64545" stroke-width="1.4" />
+<text x="540.0" y="318.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">重建：−log <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">p</tspan><tspan font-size="10.1" dy="3.9">θ</tspan><tspan dy="-3.9" font-size="14.0">​</tspan>(<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan> | <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">z</tspan>)</text>
+<rect x="20.0" y="370.0" width="330.0" height="248.0" rx="12" fill="#F6F7F9" stroke="#E07B24" stroke-width="1.1" />
+<circle cx="46.0" cy="392.0" r="11.0" fill="#E07B24" stroke="none" stroke-width="1.2"/>
+<text x="46.0" y="392.5" font-size="12.5" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">2</text>
+<text x="64.0" y="392.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">生成：直接从先验采样</text>
+<rect x="44.0" y="422.0" width="120.0" height="40.0" rx="8" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.4" />
+<text x="104.0" y="442.0" font-size="14.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">z</tspan> ~ 𝒩(0, <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">I</tspan>)</text>
+<path d="M104.0,464.0 L104.0,486.0" stroke="#E07B24" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 3" marker-end="url(#ahE07B241_0)"/>
+<path d="M50.0,505.0 L158.0,487.0 L158.0,557.0 L50.0,539.0 Z" stroke="#E07B24" stroke-width="1.5" fill="#FDEBD8" stroke-linecap="round" stroke-linejoin="round" />
+<text x="104.0" y="522.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">解码器</text>
+<path d="M170.0,522.0 L200.0,522.0" stroke="#E07B24" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 3" marker-end="url(#ahE07B241_0)"/>
+<image x="206.0" y="494.0" width="56.0" height="56.0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAA3UlEQVR42mP4jwcwUEPyUrGZhIhl3hUskr99GKAg8Be65Bs5BjiQ/IQm6cWABFxRJa+DxCJO/f9/OgrEuogi+R4okghhpgCZjajGrrJJg7KmY0rCwTFOoOQCLJIzGBg4wS7CFkK8UNfOwyapDJXswiZ5EubRldgc9Gjx6VnMQEl9XLFyBaT1PIrkkVNw2WSg5GZkySQGhkqYZChQcjmyJMioHRDmdhD7JbKkCUgk6+z//2ezQCwzFAddZEABqLHyfxGy3FL0QDhhDpOyOIYlge0vMJWQNC7cS+V0iwkAej9U9FsyLyIAAAAASUVORK5CYII=" preserveAspectRatio="none" style="image-rendering:pixelated;image-rendering:crisp-edges"/>
+<rect x="206.0" y="494.0" width="56.0" height="56.0" rx="3" fill="none" stroke="#D1D5DB" stroke-width="1.2" />
+<image x="270.0" y="494.0" width="56.0" height="56.0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAAA5ElEQVR42mP4jwcwUEXyVlt6etstrJJP/RjAwO8ppuQTMQYoEHuCIenEAAdO6JIXQKKx69bFgugLaJILgWJJIEYSkLEQTXIJUCwCxIgAMpagSV4FGec1Y4YXiL6K7iBfhIN8MVz7WRUmp/oZQ3IGQucMdMl1DEhgHZqkMtiy7m6w1cqokttAYkdArCMg1jYUyU6gSD2EWQ9kdqJIVgBFpkGY04DMChTJxUARUwjTFMhcjCL5AWST2Y4/f3aYgVgfUF2bh+yVPPRA8EHI+WAmkzKYXBm2BHa/0UJCwqLxPrXTLQYAAAHAPysEQQOLAAAAAElFTkSuQmCC" preserveAspectRatio="none" style="image-rendering:pixelated;image-rendering:crisp-edges"/>
+<rect x="270.0" y="494.0" width="56.0" height="56.0" rx="3" fill="none" stroke="#D1D5DB" stroke-width="1.2" />
+<text x="266.0" y="574.0" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">新样本</text>
+<text x="185.0" y="602.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">不再需要输入图像</text>
+<rect x="366.0" y="370.0" width="342.0" height="248.0" rx="12" fill="#F6F7F9" stroke="#D1D5DB" stroke-width="1.1" />
+<text x="382.0" y="392.0" font-size="14" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">普通 AE：编码是散落的点，中间有空洞</text>
+<circle cx="497.0" cy="500.0" r="84.0" fill="none" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="537.0" y="604.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">虚线圈：先验 𝒩(0, <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">I</tspan>) 的主要范围</text>
+<circle cx="431.6" cy="442.0" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="410.7" cy="450.4" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="420.4" cy="448.0" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="422.3" cy="449.2" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="414.1" cy="455.2" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="419.5" cy="450.2" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="423.2" cy="443.7" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="402.5" cy="460.8" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="410.0" cy="447.4" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="424.3" cy="443.0" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="422.6" cy="445.4" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="423.9" cy="445.1" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="421.9" cy="440.1" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="409.7" cy="453.4" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="424.7" cy="456.7" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="420.4" cy="448.1" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="576.0" cy="441.1" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="563.3" cy="436.1" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="571.3" cy="445.2" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="574.1" cy="451.1" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="578.1" cy="450.6" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="574.0" cy="443.1" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="572.9" cy="438.9" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="577.6" cy="440.4" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="571.2" cy="436.7" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="559.1" cy="439.1" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="566.5" cy="436.3" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="584.3" cy="437.0" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="578.6" cy="443.6" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="578.2" cy="434.3" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="566.3" cy="440.4" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="571.8" cy="437.2" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="434.2" cy="567.8" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="433.7" cy="574.6" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="439.0" cy="565.6" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="430.8" cy="569.1" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="431.8" cy="561.9" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="430.9" cy="574.7" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="423.2" cy="573.0" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="425.5" cy="573.4" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="435.2" cy="572.1" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="434.6" cy="574.7" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="440.1" cy="575.1" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="428.8" cy="578.2" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="433.3" cy="569.8" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="436.7" cy="574.0" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="427.0" cy="573.4" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="428.1" cy="577.3" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="578.2" cy="564.1" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="578.5" cy="565.5" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="585.4" cy="558.3" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="595.5" cy="557.5" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="578.9" cy="566.1" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="580.3" cy="569.7" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="570.6" cy="558.2" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="584.3" cy="565.2" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="574.9" cy="560.2" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="584.8" cy="563.9" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="584.5" cy="570.5" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="584.1" cy="554.4" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="590.4" cy="560.4" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="585.5" cy="565.0" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="575.9" cy="560.2" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="584.6" cy="556.4" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<text x="501.2" y="501.7" font-size="22" fill="#1F2937" text-anchor="middle" dominant-baseline="central">★</text>
+<path d="M515.2,501.7 L602.0,501.7" stroke="#1F2937" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<image x="608.0" y="471.7" width="60.0" height="60.0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAACpElEQVR42g2RS2/bOBSF+f9XsytmPUAXQQZToNM0D8TtJG7t+BVHlqz3W7RkPSlSlERRtEebu/lwcA6+Cx720qVr6Sg4H7uuGT/Wn/5bXa+VrUACVi9flZR149hQWtdZf1S/KhZjmrTOKfj99MeXTc9FfTZcr0Lxt7sbK2CdD6cD8p9/fnprxhFnlqGf8XkrBZeBEj/yux4ge3a/RTDU82BKCufhYUcy2ww7Xd+D3AmckkJ7rRlJ2Q75eitN0IbMWj0CTEhD+MlaynpJMQqef8wJ8gPIjy83oMnTrOG8MGWzanGNLMcZOb9eB/jxAjg6HGzOSYOGoVyvzTiO+74fBm352wSfn+5lmTSYZJRk75LnuXoVZcWg7t8z8Pn51XWzPG2LhkSrlasc9zUsSmZqGgY3P80uD4IUJRUmGFFFn5+MmlwmYwRcGetqeMoxalpSxUVaWVEm0EHaeBKwklTUNRakRh2jZRV4czUQ1d33+8QGfy9j1mLatqztO4pq6EkRRMHtP7fKD3C7dOPYTJJ+6DgXAvvmXj946cdiNn8FTytoLh63uxCOZV6O06iTtjFg6hsTNN3t7vFVVuAE04xNNmNp59i+pP7aAllZ/7qbewH02Uk3Sj7JUjZHN3QleQHC+OXbkzWOF9ZkqrY03P4KHQfGweF9BlJf+vd5R5nou8Iy1kdDh5LjoB6r6gYg/W0mn5kQw0CLXDMcO4ooisuyqRBIld0+TOuGscswFbatF0XmcRs4mh8AdfNq4b5v23bgRVFwfhEismXbd/IEzO4e1bgowijifXoueJxlVxiGaWJmZ/D2vPGbponDsA63Siw0ReGC0lOeiwuw9raTnKYvvKX6bKELXZJ60bYwiXsGMKVVkfbaceVu/vqyEKGuU46x6btt9z/nGLc4Lw4X+AAAAABJRU5ErkJggg==" preserveAspectRatio="none" style="image-rendering:pixelated;image-rendering:crisp-edges"/>
+<rect x="608.0" y="471.7" width="60.0" height="60.0" rx="3" fill="none" stroke="#D64545" stroke-width="2" />
+<text x="638.0" y="549.7" font-size="12.5" fill="#D64545" text-anchor="middle" dominant-baseline="central">解码出乱码</text>
+<rect x="463.2" y="514.7" width="70.0" height="20.0" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.9" />
+<text x="498.2" y="524.7" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">随机采一点</text>
+<rect x="718.0" y="370.0" width="342.0" height="248.0" rx="12" fill="#F6F7F9" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="734.0" y="392.0" font-size="14" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">VAE：编码是一团团分布，铺满先验</text>
+<circle cx="849.0" cy="500.0" r="84.0" fill="none" stroke="#6B7280" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="889.0" y="604.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">虚线圈：先验 𝒩(0, <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">I</tspan>) 的主要范围</text>
+<circle cx="796.9" cy="470.6" r="46.2" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.14"/>
+<circle cx="868.3" cy="477.2" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="786.3" cy="461.6" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="790.4" cy="481.3" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="802.8" cy="453.3" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="790.0" cy="457.3" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="808.7" cy="492.1" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="797.2" cy="498.9" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="753.2" cy="481.5" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="788.2" cy="508.3" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="826.2" cy="468.1" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="811.3" cy="454.4" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="788.3" cy="471.5" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="819.6" cy="473.1" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="784.2" cy="448.0" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="779.8" cy="477.7" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="786.1" cy="492.4" r="2.6" fill="#2F6FD0" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="895.2" cy="462.2" r="46.2" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.14"/>
+<circle cx="896.0" cy="461.2" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="916.3" cy="468.6" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="913.5" cy="494.6" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="881.2" cy="456.8" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="898.9" cy="453.5" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="890.4" cy="456.4" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="891.5" cy="475.3" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="863.4" cy="454.4" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="920.2" cy="478.4" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="936.2" cy="418.5" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="901.1" cy="428.6" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="907.5" cy="445.0" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="900.9" cy="427.0" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="895.3" cy="413.2" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="871.9" cy="442.8" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="870.6" cy="470.3" r="2.6" fill="#E07B24" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="819.6" cy="542.0" r="46.2" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.14"/>
+<circle cx="852.8" cy="557.9" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="849.0" cy="572.9" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="791.5" cy="505.6" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="811.9" cy="520.5" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="860.1" cy="525.5" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="791.1" cy="531.7" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="803.0" cy="560.7" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="821.9" cy="532.7" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="833.6" cy="551.0" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="809.1" cy="514.3" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="798.2" cy="556.9" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="798.2" cy="549.9" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="802.1" cy="515.3" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="850.6" cy="558.2" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="819.3" cy="582.8" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="812.3" cy="562.1" r="2.6" fill="#2A9D66" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="886.8" cy="535.3" r="46.2" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.14"/>
+<circle cx="893.2" cy="518.8" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="901.9" cy="546.3" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="847.4" cy="510.4" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="910.2" cy="535.1" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="862.8" cy="569.7" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="890.7" cy="530.5" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="902.9" cy="522.2" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="876.6" cy="517.7" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="906.0" cy="569.3" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="887.6" cy="542.5" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="914.0" cy="542.8" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="868.9" cy="491.9" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="907.2" cy="560.7" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="867.2" cy="511.8" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="888.8" cy="516.0" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<circle cx="842.3" cy="542.7" r="2.6" fill="#C2417F" stroke="none" stroke-width="1.2" opacity="0.85"/>
+<text x="853.2" y="501.7" font-size="22" fill="#1F2937" text-anchor="middle" dominant-baseline="central">★</text>
+<path d="M867.2,501.7 L954.0,501.7" stroke="#1F2937" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<image x="960.0" y="471.7" width="60.0" height="60.0" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAAAAABXZoBIAAABsklEQVR42mP4jwcwECn5++3dCxfuvv2NRfLPyxMLO6qrOxaeePkHXfLP/fVlPsZqasY+Zevv/0GTfL4uSZWTAQg4VZPWPUeV/HW0WJmJS87QUI6LSbn46C8UyfeLfNm5jRLb2hKNuNl9F71HkXw6wZpBNGLJ7dtLIkQZrCc8RZF8NtGGQTRs/pUr88NEGWwmPkOR/LDEn5NLL7q+PlqPi9N/yQdUB52s0GDhkNTSkuRg0ag4ieqg//f6LFkYwIDFsu8eqle+na0xgEka1Jz9hiJ5b6aLIAOnhIaGBCeDoMvMe8iS33emiDOIWafX1qZbizGIp+z8jiT5aqYLC59D055Ll/Y0OfCxuMx8hSR5u82QQT730I///38cypVnMGy7jSR5s0WfQbXqPIh5vkqVQb/lJpLkk34rBvHQRQ++fXuwKFScwar/CZLk51WhPGwakd0LF3ZHarDxhK76jCT592KLIQeblJmPj5kUG4dhy8W/KFG2v9yIFxIIvEbl+1Gj7P/rA80BuuI8POK6Ac0HXqMnsA8XljblJCbmNC298AEzaf5+e/3gtm0HryOlTQayUzwAHvo/M+BPHKgAAAAASUVORK5CYII=" preserveAspectRatio="none" style="image-rendering:pixelated;image-rendering:crisp-edges"/>
+<rect x="960.0" y="471.7" width="60.0" height="60.0" rx="3" fill="none" stroke="#2A9D66" stroke-width="2" />
+<text x="990.0" y="549.7" font-size="12.5" fill="#2A9D66" text-anchor="middle" dominant-baseline="central">像样的数字</text>
+<rect x="815.2" y="514.7" width="70.0" height="20.0" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.9" />
+<text x="850.2" y="524.7" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">随机采一点</text></svg>

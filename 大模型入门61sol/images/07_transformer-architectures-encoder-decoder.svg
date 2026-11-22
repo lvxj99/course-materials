@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title id="title">三类 Transformer：信息能流向哪里？</title><desc id="desc">Encoder-only 双向理解输入；Encoder–decoder 通过交叉注意力连接输入和输出；Decoder-only 沿同一序列因果生成。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="625" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 07</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >三类 Transformer：信息能流向哪里？</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >小矩阵中，行是读取者，列是被读取者；实色表示允许读取</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="42" y="168" width="268" height="349" rx="6" fill="#ffffff" stroke="#d9dfdf" />
+<text x="176" y="201" font-size="22" fill="#26343b" text-anchor="middle" font-weight="600" >Encoder-only</text>
+<rect x="366" y="168" width="268" height="349" rx="6" fill="#ffffff" stroke="#d9dfdf" />
+<text x="500" y="201" font-size="22" fill="#26343b" text-anchor="middle" font-weight="600" >Encoder–decoder</text>
+<rect x="690" y="168" width="268" height="349" rx="6" fill="#ffffff" stroke="#d9dfdf" />
+<text x="824" y="201" font-size="22" fill="#26343b" text-anchor="middle" font-weight="600" >Decoder-only</text>
+<rect x="105" y="239" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="141" y="239" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="177" y="239" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="213" y="239" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="105" y="275" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="141" y="275" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="177" y="275" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="213" y="275" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="105" y="311" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="141" y="311" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="177" y="311" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="213" y="311" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="105" y="347" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="141" y="347" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="177" y="347" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<rect x="213" y="347" width="33" height="33" rx="2" fill="#94c0c2" stroke="#ffffff" />
+<text x="176" y="409" font-size="19" fill="#227d82" text-anchor="middle" font-weight="400" >双向读取输入</text>
+<text x="176" y="451" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >BERT / ViT</text>
+<text x="176" y="481" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >分类、检索表示</text>
+<rect x="390" y="241" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="414" y="241" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="438" y="241" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="390" y="265" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="414" y="265" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="438" y="265" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="390" y="289" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="414" y="289" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="438" y="289" width="21" height="21" rx="2" fill="#b0c3d4" stroke="#ffffff" />
+<rect x="538" y="241" width="21" height="21" rx="2" fill="#8ababd" stroke="#ffffff" />
+<rect x="562" y="241" width="21" height="21" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="586" y="241" width="21" height="21" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="538" y="265" width="21" height="21" rx="2" fill="#8ababd" stroke="#ffffff" />
+<rect x="562" y="265" width="21" height="21" rx="2" fill="#8ababd" stroke="#ffffff" />
+<rect x="586" y="265" width="21" height="21" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="538" y="289" width="21" height="21" rx="2" fill="#8ababd" stroke="#ffffff" />
+<rect x="562" y="289" width="21" height="21" rx="2" fill="#8ababd" stroke="#ffffff" />
+<rect x="586" y="289" width="21" height="21" rx="2" fill="#8ababd" stroke="#ffffff" />
+<line x1="465" y1="273" x2="532" y2="273" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<text x="499" y="327" font-size="16" fill="#4c75a0" text-anchor="middle" font-weight="400" >输入 → 交叉注意力 → 输出</text>
+<text x="499" y="409" font-size="19" fill="#227d82" text-anchor="middle" font-weight="400" >双向编码 + 因果解码</text>
+<text x="499" y="451" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >原始 Transformer / T5</text>
+<text x="499" y="481" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >翻译、摘要</text>
+<rect x="753" y="239" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="789" y="239" width="33" height="33" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="825" y="239" width="33" height="33" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="861" y="239" width="33" height="33" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="753" y="275" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="789" y="275" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="825" y="275" width="33" height="33" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="861" y="275" width="33" height="33" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="753" y="311" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="789" y="311" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="825" y="311" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="861" y="311" width="33" height="33" rx="2" fill="url(#hatch)" stroke="#ffffff" />
+<rect x="753" y="347" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="789" y="347" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="825" y="347" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<rect x="861" y="347" width="33" height="33" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<text x="824" y="409" font-size="19" fill="#227d82" text-anchor="middle" font-weight="400" >只读自己与先前位置</text>
+<text x="824" y="451" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >GPT 类模型</text>
+<text x="824" y="481" font-size="18" fill="#647079" text-anchor="middle" font-weight="400" >提示与回答处于同一序列</text>
+<line x1="40" y1="553" x2="960" y2="553" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="582" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >这里比较典型注意力拓扑；具体模型还会改变归一化、位置编码、FFN 等组件。</text>
+<text x="40" y="607" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >右侧因果结构适合自回归生成；并不意味着网络能同时知道尚未生成的后续 token。</text></svg>

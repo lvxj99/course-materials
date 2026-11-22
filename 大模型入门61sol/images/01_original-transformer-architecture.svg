@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="850" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc"><title id="title">Transformer：两条序列，三种注意力</title><desc id="desc">编码器用双向自注意力形成原文表示；解码器先做因果自注意力，再用交叉注意力读取原文。原始 Transformer 使用 Post-Norm。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="850" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 01</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >Transformer：两条序列，三种注意力</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >原始 2017 架构 · Post-Norm · 每个堆栈重复 N 次</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="88" y="277" width="326" height="330" rx="9" fill="#fbfcfc" stroke="#d9dfdf" />
+<rect x="559" y="221" width="339" height="386" rx="9" fill="#fbfcfc" stroke="#d9dfdf" />
+<text x="100" y="258" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >编码器 × N</text>
+<text x="572" y="202" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >解码器 × N</text>
+<rect x="129" y="536" width="238" height="44" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="248" y="564" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >双向自注意力</text>
+<rect x="129" y="485" width="238" height="44" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="248" y="513" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Add &amp; Norm</text>
+<rect x="129" y="401" width="238" height="44" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="248" y="429" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >逐位置 FFN</text>
+<rect x="129" y="350" width="238" height="44" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="248" y="378" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Add &amp; Norm</text>
+<line x1="248" y1="536" x2="248" y2="529" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="248" y1="485" x2="248" y2="445" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="248" y1="401" x2="248" y2="394" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<path d="M248,595 L110,595 L110,507 L129,507" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<path d="M248,467 L110,467 L110,372 L129,372" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<line x1="248" y1="350" x2="248" y2="315" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="152" y="283" width="192" height="32" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="248" y="305" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >原文表示</text>
+<rect x="605" y="546" width="238" height="44" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="724" y="574" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >因果自注意力</text>
+<rect x="605" y="495" width="238" height="44" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="724" y="523" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Add &amp; Norm</text>
+<rect x="605" y="411" width="238" height="44" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="724" y="439" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >交叉注意力</text>
+<rect x="605" y="360" width="238" height="44" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="724" y="388" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Add &amp; Norm</text>
+<rect x="605" y="276" width="238" height="44" rx="6" fill="#faeee7" stroke="#d9dfdf" />
+<text x="724" y="304" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >逐位置 FFN</text>
+<rect x="605" y="225" width="238" height="44" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="724" y="253" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >Add &amp; Norm</text>
+<line x1="724" y1="546" x2="724" y2="539" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="724" y1="495" x2="724" y2="455" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="724" y1="411" x2="724" y2="404" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="724" y1="360" x2="724" y2="320" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="724" y1="276" x2="724" y2="269" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<path d="M724,600 L879,600 L879,517 L843,517" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<path d="M724,478 L879,478 L879,382 L843,382" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<path d="M724,343 L879,343 L879,247 L843,247" stroke="#647079" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-647079)"/>
+<path d="M344,299 L470,299 L470,433 L605,433" stroke="#4c75a0" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-4c75a0)"/>
+<text x="441" y="282" font-size="18" fill="#4c75a0" text-anchor="start" font-weight="600" >K, V</text>
+<text x="738" y="479" font-size="17" fill="#4c75a0" text-anchor="start" font-weight="400" >Q</text>
+<line x1="724" y1="225" x2="724" y2="176" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="621" y="146" width="206" height="30" rx="6" fill="#f0edf6" stroke="#d9dfdf" />
+<text x="724" y="167" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >Linear → softmax</text>
+<rect x="129" y="635" width="238" height="44" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="248" y="663" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >Embedding + 位置编码</text>
+<line x1="248" y1="635" x2="248" y2="580" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="605" y="635" width="238" height="44" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="724" y="663" font-size="17" fill="#26343b" text-anchor="middle" font-weight="400" >Embedding + 位置编码</text>
+<line x1="724" y1="635" x2="724" y2="590" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="248" y="724" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >I  love  machine  learning</text>
+<line x1="248" y1="700" x2="248" y2="679" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="724" y="724" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >〈BOS〉 我 喜欢 机器 …</text>
+<line x1="724" y1="700" x2="724" y2="679" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="724" y="755" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >目标序列右移一位</text>
+<line x1="40" y1="778" x2="960" y2="778" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="807" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >Add &amp; Norm = LayerNorm(x + Sublayer(x))；图中省略 dropout。</text>
+<text x="40" y="832" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >解码器的 Q 来自输出侧，交叉注意力的 K、V 来自编码器；训练可并行，生成逐步进行。</text></svg>

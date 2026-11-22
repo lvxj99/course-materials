@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680" role="img" aria-labelledby="title desc"><title id="title">算法演进：三种问题，反复连接</title><desc id="desc">价值、策略梯度与更新约束的联系，解释 PPO 和 GRPO 等后训练方法的共同基础。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="680" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 09</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >算法演进：三种问题，反复连接</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >顺着三列阅读：估计未来 → 改变行动 → 控制更新</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<text x="60" y="179" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >怎样估计未来？</text>
+<text x="382" y="179" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >怎样改变行动？</text>
+<text x="704" y="179" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >怎样控制偏离？</text>
+<rect x="45" y="207" width="265" height="63" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="177.5" y="244.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >Bellman → MC / TD</text>
+<rect x="45" y="319" width="265" height="63" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="177.5" y="356.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >Q-learning → DQN</text>
+<line x1="177" y1="270" x2="177" y2="319" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<rect x="367" y="207" width="265" height="63" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="499.5" y="244.5" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >REINFORCE</text>
+<rect x="367" y="319" width="265" height="63" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="499.5" y="356.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >Actor–Critic + GAE</text>
+<line x1="499" y1="270" x2="499" y2="319" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<line x1="310" y1="239" x2="367" y2="350" stroke="#4c75a0" stroke-width="1.7" marker-end="url(#arrow-4c75a0)"/>
+<rect x="689" y="207" width="265" height="63" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="821.5" y="244.5" font-size="22" fill="#26343b" text-anchor="middle" font-weight="400" >TRPO → PPO</text>
+<rect x="689" y="319" width="265" height="63" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="821.5" y="356.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >概率比 / 裁剪 / KL</text>
+<line x1="821" y1="270" x2="821" y2="319" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<line x1="632" y1="350" x2="689" y2="350" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<path d="M499,382 L499,437 L245,437 L245,481" stroke="#227d82" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-227d82)"/>
+<path d="M821,382 L821,437 L755,437 L755,481" stroke="#b76343" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b76343)"/>
+<rect x="101" y="485" width="290" height="69" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="246" y="509.75" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >Critic 路线</text>
+<text x="246" y="541.25" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >PPO 式 RLHF / RLVR</text>
+<rect x="610" y="485" width="290" height="69" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="755" y="509.75" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >组内比较路线</text>
+<text x="755" y="541.25" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >GRPO 等</text>
+<line x1="40" y1="608" x2="960" y2="608" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="637" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >DPO 从 KL 正则化目标推导偏好损失，直接学习同题回答之间的比较。</text>
+<text x="40" y="662" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >连续控制、模型规划与离线 RL 则沿着不同任务需求发展出各自的方法。</text></svg>

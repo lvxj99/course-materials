@@ -1,0 +1,16 @@
+{
+  "bytes": 98678,
+  "han_chars": 22443,
+  "chapters": 18,
+  "sources": 39,
+  "reference_uses": 109,
+  "images": 7,
+  "display_equations": 25,
+  "missing_refs": [],
+  "unused_refs": [],
+  "broken_toc": [],
+  "duplicate_anchors": 0,
+  "equations_balanced": true,
+  "fences_balanced": true,
+  "issues": []
+}

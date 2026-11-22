@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "id": 1,
+      "file": "01_rl-feedback-loop.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 14
+    },
+    {
+      "id": 2,
+      "file": "02_two-state-mdp.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 15
+    },
+    {
+      "id": 3,
+      "file": "03_bellman-backup.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 16
+    },
+    {
+      "id": 4,
+      "file": "04_mc-td-returns.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 46
+    },
+    {
+      "id": 5,
+      "file": "05_dqn-learning-loop.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 17
+    },
+    {
+      "id": 6,
+      "file": "06_policy-gradient-baseline.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 16
+    },
+    {
+      "id": 7,
+      "file": "07_gae-credit-assignment.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 22
+    },
+    {
+      "id": 8,
+      "file": "08_ppo-clipping.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 27
+    },
+    {
+      "id": 9,
+      "file": "09_algorithm-map.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 18
+    },
+    {
+      "id": 10,
+      "file": "10_llm-token-mdp.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 19
+    },
+    {
+      "id": 11,
+      "file": "11_rlhf-model-roles.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 21
+    },
+    {
+      "id": 12,
+      "file": "12_dpo-reparameterization.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 12
+    },
+    {
+      "id": 13,
+      "file": "13_grpo-group-advantages.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 20
+    },
+    {
+      "id": 14,
+      "file": "14_posttraining-dataflow.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 18
+    },
+    {
+      "id": 15,
+      "file": "15_kl-bandit-experiment.svg",
+      "outside": [],
+      "collisions": [],
+      "textCount": 27
+    }
+  ],
+  "gallery": {
+    "images": 15,
+    "failed": 0,
+    "overflow": false
+  },
+  "mobile": {
+    "overflow": false,
+    "scrollable": true
+  },
+  "errors": [],
+  "contacts": [
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\强化学习拓展\\src\\qa\\contact-1.png",
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\强化学习拓展\\src\\qa\\contact-2.png",
+    "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\强化学习拓展\\src\\qa\\contact-3.png"
+  ]
+}

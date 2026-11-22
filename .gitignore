@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.chrome/
+.tmp/
+.env
+.env.local

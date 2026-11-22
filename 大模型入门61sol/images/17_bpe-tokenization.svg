@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc"><title id="title">BPE：统计相邻符号对，逐轮合并</title><desc id="desc">在给定带频次的小语料上，依次合并 e+s、es+t、est+词尾；每轮选中的相邻对都出现 9 次，合并结果加入词表。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="660" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 17</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >BPE：统计相邻符号对，逐轮合并</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >微型语料：low × 5，lower × 2，newest × 6，widest × 3</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<text x="52" y="179" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >语料中，每个词的次数都计入频率</text>
+<text x="390" y="219" font-size="20" fill="#227d82" text-anchor="middle" font-weight="400" >newest × 6</text>
+<text x="699" y="219" font-size="20" fill="#4c75a0" text-anchor="middle" font-weight="400" >widest × 3</text>
+<text x="51" y="270" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >初始</text>
+<rect x="249" y="243" width="282" height="47" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="390" y="272.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >n e w e s t &lt;/w&gt;</text>
+<rect x="559" y="243" width="282" height="47" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="700" y="272.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >w i d e s t &lt;/w&gt;</text>
+<line x1="390" y1="290" x2="390" y2="313" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="699" y1="290" x2="699" y2="313" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="51" y="345" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >合并 e + s</text>
+<rect x="249" y="318" width="282" height="47" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="390" y="347.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >n e w es t &lt;/w&gt;</text>
+<rect x="559" y="318" width="282" height="47" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="700" y="347.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >w i d es t &lt;/w&gt;</text>
+<text x="882" y="347" font-size="19" fill="#b76343" text-anchor="start" font-weight="400" >9 次</text>
+<line x1="390" y1="365" x2="390" y2="388" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="699" y1="365" x2="699" y2="388" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="51" y="420" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >合并 es + t</text>
+<rect x="249" y="393" width="282" height="47" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="390" y="422.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >n e w est &lt;/w&gt;</text>
+<rect x="559" y="393" width="282" height="47" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="700" y="422.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >w i d est &lt;/w&gt;</text>
+<text x="882" y="422" font-size="19" fill="#b76343" text-anchor="start" font-weight="400" >9 次</text>
+<line x1="390" y1="440" x2="390" y2="463" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<line x1="699" y1="440" x2="699" y2="463" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<text x="51" y="495" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >合并 est + &lt;/w&gt;</text>
+<rect x="249" y="468" width="282" height="47" rx="6" fill="#e4f1f0" stroke="#d9dfdf" />
+<text x="390" y="497.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >n e w est&lt;/w&gt;</text>
+<rect x="559" y="468" width="282" height="47" rx="6" fill="#eaf0f8" stroke="#d9dfdf" />
+<text x="700" y="497.5" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >w i d est&lt;/w&gt;</text>
+<text x="882" y="497" font-size="19" fill="#b76343" text-anchor="start" font-weight="400" >9 次</text>
+<line x1="40" y1="588" x2="960" y2="588" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="617" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >这里用 &lt;/w&gt; 表示词尾，采用词频加权计数；每次选中的符号对出现 6 + 3 = 9 次。</text>
+<text x="40" y="642" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >存在并列最高频时，按预定规则选一个；真实 BPE 的边界、预切分和字节处理依实现而异。</text></svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="556" viewBox="0 0 1100 556" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC','Source Han Sans SC','Hiragino Sans GB',sans-serif" role="img"><title>从预训练、后训练到使用</title><desc>每个训练阶段用不同数据与信号更新权重，使用阶段权重固定。</desc><defs><marker id="ah1F29371_0" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#1F2937"/></marker></defs><rect width="1100" height="556" fill="#FFFFFF"/><path d="M30.0,44.0 L30.0,36.0 L830.0,36.0 L830.0,44.0" stroke="#D64545" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="430.0" y="26.0" font-size="14.5" fill="#D64545" text-anchor="middle" dominant-baseline="central" font-weight="bold">训练：用数据和反馈更新权重</text>
+<path d="M890.0,44.0 L890.0,36.0 L1070.0,36.0 L1070.0,44.0" stroke="#2A9D66" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<text x="980.0" y="26.0" font-size="14.5" fill="#2A9D66" text-anchor="middle" dominant-baseline="central" font-weight="bold">使用：不再改权重</text>
+<rect x="30.0" y="58.0" width="220.0" height="58.0" rx="8" fill="#FFF3CC" stroke="#C98A00" stroke-width="1.4" />
+<text x="140.0" y="79.2" font-size="16" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">预训练</text>
+<text x="140.0" y="97.9" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">海量文本、代码</text>
+<rect x="310.0" y="58.0" width="220.0" height="58.0" rx="8" fill="#FDEBD8" stroke="#E07B24" stroke-width="1.4" />
+<text x="420.0" y="79.2" font-size="16" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">监督微调 SFT</text>
+<text x="420.0" y="97.9" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">指令—示范答案</text>
+<rect x="590.0" y="58.0" width="240.0" height="58.0" rx="8" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.4" />
+<text x="710.0" y="79.2" font-size="16" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">偏好优化 / RLVR</text>
+<text x="710.0" y="97.9" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">比较与验证</text>
+<rect x="890.0" y="58.0" width="180.0" height="58.0" rx="8" fill="#D9F1E5" stroke="#2A9D66" stroke-width="1.4" />
+<text x="980.0" y="79.2" font-size="16" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">使用</text>
+<text x="980.0" y="97.9" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">权重固定</text>
+<path d="M253.0,95.0 L307.0,95.0" stroke="#1F2937" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<text x="280.0" y="79.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">基础模型</text>
+<path d="M533.0,95.0 L587.0,95.0" stroke="#1F2937" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<text x="560.0" y="79.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">指令模型</text>
+<path d="M833.0,95.0 L887.0,95.0" stroke="#1F2937" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<text x="860.0" y="79.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">可用模型</text>
+<text x="30.0" y="136.0" font-size="13" fill="#6B7280" text-anchor="start" dominant-baseline="central" font-weight="bold">数据长什么样</text>
+<rect x="30.0" y="148.0" width="220.0" height="92.0" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.2" />
+<text x="42.0" y="170.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-family="'Cascadia Mono','Consolas','Menlo','DejaVu Sans Mono',monospace">df.groupby("a").sum() 会把</text>
+<text x="42.0" y="192.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">相同 a 值的行合并，再对</text>
+<text x="42.0" y="214.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">其余列</text>
+<rect x="118.5" y="203.0" width="39.0" height="22.0" rx="8.461538461538462" fill="#FFF3CC" stroke="#C98A00" stroke-width="1.1" />
+<text x="138.0" y="214.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">求和</text>
+<text x="166.0" y="214.0" font-size="12" fill="#C98A00" text-anchor="start" dominant-baseline="central">← 下一个 token</text>
+<rect x="310.0" y="148.0" width="220.0" height="92.0" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.2" />
+<rect x="322.0" y="161.0" width="36.0" height="22.0" rx="8.461538461538462" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="340.0" y="172.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">指令</text>
+<text x="368.0" y="172.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">解释下面这段 groupby 代码</text>
+<rect x="322.0" y="199.0" width="36.0" height="22.0" rx="8.461538461538462" fill="#FDEBD8" stroke="#E07B24" stroke-width="1.1" />
+<text x="340.0" y="210.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">示范</text>
+<text x="368.0" y="203.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">这行代码按 a 分组，</text>
+<text x="368.0" y="223.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">对每组其余列求和……</text>
+<rect x="590.0" y="148.0" width="240.0" height="42.0" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.2" />
+<rect x="602.0" y="158.0" width="36.0" height="22.0" rx="8.461538461538462" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="620.0" y="169.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">偏好</text>
+<text x="648.0" y="169.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">回答 A 优于 回答 B</text>
+<rect x="590.0" y="198.0" width="240.0" height="42.0" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.2" />
+<rect x="602.0" y="208.0" width="36.0" height="22.0" rx="8.461538461538462" fill="#D9F1E5" stroke="#2A9D66" stroke-width="1.1" />
+<text x="620.0" y="219.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">验证</text>
+<text x="648.0" y="219.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">答案对比 / 测试运行：</text>
+<text x="786.0" y="219.0" font-size="15" fill="#2A9D66" text-anchor="start" dominant-baseline="central" font-weight="bold">✓</text>
+<text x="804.0" y="219.0" font-size="15" fill="#D64545" text-anchor="start" dominant-baseline="central" font-weight="bold">✗</text>
+<rect x="890.0" y="148.0" width="180.0" height="92.0" rx="8" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.2" />
+<text x="906.0" y="166.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">· 提示（prompt）</text>
+<text x="906.0" y="186.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">· few-shot 示例</text>
+<text x="906.0" y="206.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">· 检索资料（RAG）</text>
+<text x="906.0" y="226.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">· 更多推理时计算</text>
+<text x="30.0" y="258.0" font-size="13" fill="#6B7280" text-anchor="start" dominant-baseline="central" font-weight="bold">学习信号</text>
+<rect x="30.0" y="270.0" width="220.0" height="52.0" rx="8" fill="#FFFFFF" stroke="#C98A00" stroke-width="1.2" />
+<text x="140.0" y="288.6" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">预测下一个 token</text>
+<text x="140.0" y="305.2" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">交叉熵，自监督</text>
+<rect x="310.0" y="270.0" width="220.0" height="52.0" rx="8" fill="#FFFFFF" stroke="#E07B24" stroke-width="1.2" />
+<text x="420.0" y="288.6" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">模仿示范答案</text>
+<text x="420.0" y="305.2" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">只在回答位置算交叉熵</text>
+<rect x="590.0" y="270.0" width="240.0" height="52.0" rx="8" fill="#FFFFFF" stroke="#7B4FC9" stroke-width="1.2" />
+<text x="710.0" y="288.6" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">更好 / 更对的回答更常出现</text>
+<text x="710.0" y="305.2" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">RLHF+PPO、DPO；RLVR+GRPO</text>
+<rect x="890.0" y="270.0" width="180.0" height="52.0" rx="8" fill="#FFFFFF" stroke="#2A9D66" stroke-width="1.2" />
+<text x="980.0" y="288.6" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">不学习，只改上下文</text>
+<text x="980.0" y="305.2" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">上下文决定输出分布</text>
+<text x="30.0" y="356.0" font-size="13" fill="#6B7280" text-anchor="start" dominant-baseline="central" font-weight="bold">同一个问题：“请解释这段 groupby 代码”，此时的模型会怎样回答？</text>
+<rect x="30.0" y="368.0" width="220.0" height="140.0" rx="10" fill="#FFF3CC" stroke="#C98A00" stroke-width="1.1" />
+<text x="44.0" y="390.0" font-size="13.5" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">基础模型：顺着往下续写</text>
+<text x="44.0" y="416.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">请解释这段 merge 代码。</text>
+<text x="44.0" y="437.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">请解释这段 pivot 代码。</text>
+<text x="44.0" y="458.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">第 3 章 习题……</text>
+<text x="44.0" y="488.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">像在续写一份习题集</text>
+<rect x="310.0" y="368.0" width="220.0" height="140.0" rx="10" fill="#FDEBD8" stroke="#E07B24" stroke-width="1.1" />
+<text x="324.0" y="390.0" font-size="13.5" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">指令模型：开始回答问题</text>
+<text x="324.0" y="416.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">这行代码先按 a 分组，</text>
+<text x="324.0" y="437.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">再对每组的其余列求和，</text>
+<text x="324.0" y="458.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">返回一个新表。</text>
+<text x="324.0" y="488.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">学会了“问—答”的格式</text>
+<rect x="590.0" y="368.0" width="240.0" height="140.0" rx="10" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="604.0" y="390.0" font-size="13.5" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">可用模型：回答更好、更对</text>
+<text x="604.0" y="416.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">先说结论，再给一个小例子；</text>
+<text x="604.0" y="437.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">指出 a 会变成索引，</text>
+<text x="604.0" y="458.0" font-size="12.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">代码示例能直接运行。</text>
+<text x="604.0" y="488.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">偏好管表达，验证管正确</text>
+<rect x="890.0" y="368.0" width="180.0" height="140.0" rx="10" fill="#F6F7F9" stroke="#D1D5DB" stroke-width="1.2" />
+<text x="980.0" y="396.0" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">同一组权重</text>
+<path d="M969,432 L969,423 A11,11 0 0 1 991,423 L991,432" stroke="#2A9D66" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="963.0" y="431.0" width="34.0" height="26.0" rx="4" fill="#2A9D66" stroke="none" stroke-width="1.2" />
+<text x="980.0" y="476.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">换提示、加资料、多想，</text>
+<text x="980.0" y="496.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">只改变本次上下文</text>
+<text x="550.0" y="534.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">后训练的几种方法可以组合：SFT 先教基本行为，偏好优化调整回答质量，可验证奖励提升可判定任务的正确率。</text></svg>

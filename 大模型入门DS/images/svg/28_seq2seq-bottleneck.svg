@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="380" viewBox="0 0 960 380">
+<rect width="960" height="380" fill="#ffffff"/>
+
+<text x="197.00" y="40.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#3a6ea5" font-weight="600">编码器 encoder：逐步读入原文</text>
+<text x="641.00" y="40.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="middle" fill="#6f63a5" font-weight="600">解码器 decoder：逐步输出译文</text>
+<rect x="47.00" y="66.00" width="60.00" height="24.00" rx="4" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="77.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e">I</text>
+<line x1="77.00" y1="91.00" x2="77.00" y2="124.60" stroke="#7c8a97" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="77.00,128.00 79.48,124.00 74.52,124.00" fill="#7c8a97"/>
+<rect x="46.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="77.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#3a6ea5">RNN</text>
+<text x="77.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">h1</text>
+<rect x="127.00" y="66.00" width="60.00" height="24.00" rx="4" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="157.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e">love</text>
+<line x1="157.00" y1="91.00" x2="157.00" y2="124.60" stroke="#7c8a97" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="157.00,128.00 159.48,124.00 154.52,124.00" fill="#7c8a97"/>
+<rect x="126.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="157.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#3a6ea5">RNN</text>
+<text x="157.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">h2</text>
+<line x1="108.00" y1="158.00" x2="119.60" y2="158.00" stroke="#3a6ea5" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="123.00,158.00 119.00,155.52 119.00,160.48" fill="#3a6ea5"/>
+<rect x="207.00" y="66.00" width="60.00" height="24.00" rx="4" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="237.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e">machine</text>
+<line x1="237.00" y1="91.00" x2="237.00" y2="124.60" stroke="#7c8a97" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="237.00,128.00 239.48,124.00 234.52,124.00" fill="#7c8a97"/>
+<rect x="206.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="237.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#3a6ea5">RNN</text>
+<text x="237.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">h3</text>
+<line x1="188.00" y1="158.00" x2="199.60" y2="158.00" stroke="#3a6ea5" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="203.00,158.00 199.00,155.52 199.00,160.48" fill="#3a6ea5"/>
+<rect x="287.00" y="66.00" width="60.00" height="24.00" rx="4" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="317.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e">learning</text>
+<line x1="317.00" y1="91.00" x2="317.00" y2="124.60" stroke="#7c8a97" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="317.00,128.00 319.48,124.00 314.52,124.00" fill="#7c8a97"/>
+<rect x="286.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="317.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#3a6ea5">RNN</text>
+<text x="317.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">h4</text>
+<line x1="268.00" y1="158.00" x2="279.60" y2="158.00" stroke="#3a6ea5" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="283.00,158.00 279.00,155.52 279.00,160.48" fill="#3a6ea5"/>
+<rect x="404.00" y="106.00" width="16.00" height="104.00" rx="2" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<line x1="404.00" y1="106.00" x2="420.00" y2="106.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="404.00" y1="119.00" x2="420.00" y2="119.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="404.00" y1="132.00" x2="420.00" y2="132.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="404.00" y1="145.00" x2="420.00" y2="145.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="404.00" y1="158.00" x2="420.00" y2="158.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="404.00" y1="171.00" x2="420.00" y2="171.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="404.00" y1="184.00" x2="420.00" y2="184.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="404.00" y1="197.00" x2="420.00" y2="197.00" stroke="#d6d0ea" stroke-width="0.6" stroke-linecap="butt"/>
+<line x1="348.00" y1="158.00" x2="397.75" y2="158.00" stroke="#6f63a5" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="402.00,158.00 397.00,154.90 397.00,161.10" fill="#6f63a5"/>
+<text x="412.00" y="96.00" font-family="'Cambria Math','Times New Roman',Georgia,serif" font-size="12" text-anchor="middle" fill="#6f63a5" font-style="italic">c</text>
+<rect x="388.00" y="86.00" width="48.00" height="140.00" rx="6" fill="none" stroke="#6f63a5" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="388.00" y="240.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.8" text-anchor="start" fill="#6f63a5">瓶颈：整句只压成</text>
+<text x="388.00" y="254.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.8" text-anchor="start" fill="#6f63a5">这一个固定维数向量</text>
+<rect x="495.00" y="66.00" width="52.00" height="24.00" rx="4" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="521.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#6f63a5">我</text>
+<line x1="521.00" y1="128.00" x2="521.00" y2="95.40" stroke="#6f63a5" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="521.00,92.00 518.52,96.00 523.48,96.00" fill="#6f63a5"/>
+<rect x="490.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="521.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#6f63a5">RNN</text>
+<text x="521.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#6f63a5">s1</text>
+<rect x="575.00" y="66.00" width="52.00" height="24.00" rx="4" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="601.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#6f63a5">喜欢</text>
+<line x1="601.00" y1="128.00" x2="601.00" y2="95.40" stroke="#6f63a5" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="601.00,92.00 598.52,96.00 603.48,96.00" fill="#6f63a5"/>
+<rect x="570.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="601.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#6f63a5">RNN</text>
+<text x="601.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#6f63a5">s2</text>
+<line x1="552.00" y1="158.00" x2="563.60" y2="158.00" stroke="#6f63a5" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="567.00,158.00 563.00,155.52 563.00,160.48" fill="#6f63a5"/>
+<rect x="655.00" y="66.00" width="52.00" height="24.00" rx="4" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="681.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#6f63a5">机器</text>
+<line x1="681.00" y1="128.00" x2="681.00" y2="95.40" stroke="#6f63a5" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="681.00,92.00 678.52,96.00 683.48,96.00" fill="#6f63a5"/>
+<rect x="650.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="681.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#6f63a5">RNN</text>
+<text x="681.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#6f63a5">s3</text>
+<line x1="632.00" y1="158.00" x2="643.60" y2="158.00" stroke="#6f63a5" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="647.00,158.00 643.00,155.52 643.00,160.48" fill="#6f63a5"/>
+<rect x="735.00" y="66.00" width="52.00" height="24.00" rx="4" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="761.00" y="83.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#6f63a5">学习</text>
+<line x1="761.00" y1="128.00" x2="761.00" y2="95.40" stroke="#6f63a5" stroke-width="1.1" stroke-linecap="round"/>
+<polygon points="761.00,92.00 758.52,96.00 763.48,96.00" fill="#6f63a5"/>
+<rect x="730.00" y="130.00" width="62.00" height="56.00" rx="6" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="761.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#6f63a5">RNN</text>
+<text x="761.00" y="170.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#6f63a5">s4</text>
+<line x1="712.00" y1="158.00" x2="723.60" y2="158.00" stroke="#6f63a5" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="727.00,158.00 723.00,155.52 723.00,160.48" fill="#6f63a5"/>
+<line x1="422.00" y1="158.00" x2="482.75" y2="158.00" stroke="#6f63a5" stroke-width="1.3" stroke-linecap="round"/>
+<polygon points="487.00,158.00 482.00,154.90 482.00,161.10" fill="#6f63a5"/>
+<text x="46.00" y="214.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">h_t：编码器在第 t 步的隐藏状态，只沿序列向前传递</text>
+<text x="490.00" y="214.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">每一步都读取上一步的输出（teacher forcing 时读真实的前一词）</text>
+<text x="46.00" y="272.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#44525e">句子越长，需要塞进 c 的细节越多；而 c 的维数固定，信息只能被压缩。读取时也没有“看哪里”的选择。</text>
+<text x="46.00" y="294.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#44525e">这正是注意力机制要改的地方：把每个位置的隐藏状态都保留下来，让解码器在每一步按需读取（7.1 节）。</text>
+<text x="46.00" y="326.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#7c8a97">注意力版本里，编码器交出的是 T 个向量 h₁ … h_T，解码器每一步为它们分配权重，再汇总；seq2seq 的交出物只有一个 c。</text>
+</svg>

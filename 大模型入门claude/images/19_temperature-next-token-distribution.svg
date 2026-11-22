@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="470" viewBox="0 0 1080 470" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC','Source Han Sans SC','Hiragino Sans GB',sans-serif" role="img"><title>温度与截断采样</title><desc>温度缩放 logits 改变分布的集中程度；top-k 固定候选个数，top-p 固定累计概率。</desc><rect width="1080" height="470" fill="#FFFFFF"/><rect x="20.0" y="20.0" width="540.0" height="430.0" rx="12" fill="#F6F7F9" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="36.0" y="42.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">温度 τ：先把 logits 除以 τ，再做 softmax</text>
+<text x="40.0" y="62.0" font-size="14" fill="#1F2937" text-anchor="start" dominant-baseline="central">上下文：「今天天气很 ___」</text>
+<text x="40.0" y="86.0" font-size="13.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">候选 logits：好 = 2，热 = 1，冷 = 0，差 = −1</text>
+<text x="130.0" y="124.0" font-size="15" fill="#2F6FD0" text-anchor="middle" dominant-baseline="central" font-weight="bold">τ = 0.5</text>
+<text x="130.0" y="146.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">更尖锐、更确定</text>
+<rect x="60.0" y="205.7" width="26.0" height="164.3" rx="3" fill="#2F6FD0" stroke="none" stroke-width="1.2" />
+<text x="73.0" y="195.7" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">86%</text>
+<text x="73.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">好</text>
+<rect x="95.0" y="347.8" width="26.0" height="22.2" rx="3" fill="#8DB0E5" stroke="none" stroke-width="1.2" />
+<text x="108.0" y="337.8" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">12%</text>
+<text x="108.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">热</text>
+<rect x="130.0" y="367.0" width="26.0" height="3.0" rx="3" fill="#8DB0E5" stroke="none" stroke-width="1.2" />
+<text x="143.0" y="357.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">2%</text>
+<text x="143.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">冷</text>
+<rect x="165.0" y="369.6" width="26.0" height="0.4" rx="3" fill="#8DB0E5" stroke="none" stroke-width="1.2" />
+<text x="178.0" y="359.6" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">&lt;1%</text>
+<text x="178.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">差</text>
+<line x1="54.0" y1="370.0" x2="197.0" y2="370.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="300.0" y="124.0" font-size="15" fill="#7B4FC9" text-anchor="middle" dominant-baseline="central" font-weight="bold">τ = 1</text>
+<text x="300.0" y="146.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">原始分布</text>
+<rect x="230.0" y="247.7" width="26.0" height="122.3" rx="3" fill="#7B4FC9" stroke="none" stroke-width="1.2" />
+<text x="243.0" y="237.7" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">64%</text>
+<text x="243.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">好</text>
+<rect x="265.0" y="325.0" width="26.0" height="45.0" rx="3" fill="#B69EE1" stroke="none" stroke-width="1.2" />
+<text x="278.0" y="315.0" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">24%</text>
+<text x="278.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">热</text>
+<rect x="300.0" y="353.4" width="26.0" height="16.6" rx="3" fill="#B69EE1" stroke="none" stroke-width="1.2" />
+<text x="313.0" y="343.4" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">9%</text>
+<text x="313.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">冷</text>
+<rect x="335.0" y="363.9" width="26.0" height="6.1" rx="3" fill="#B69EE1" stroke="none" stroke-width="1.2" />
+<text x="348.0" y="353.9" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">3%</text>
+<text x="348.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">差</text>
+<line x1="224.0" y1="370.0" x2="367.0" y2="370.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="470.0" y="124.0" font-size="15" fill="#E07B24" text-anchor="middle" dominant-baseline="central" font-weight="bold">τ = 2</text>
+<text x="470.0" y="146.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">更平坦、更多样</text>
+<rect x="400.0" y="283.5" width="26.0" height="86.5" rx="3" fill="#E07B24" stroke="none" stroke-width="1.2" />
+<text x="413.0" y="273.5" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">46%</text>
+<text x="413.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">好</text>
+<rect x="435.0" y="317.6" width="26.0" height="52.4" rx="3" fill="#EEB687" stroke="none" stroke-width="1.2" />
+<text x="448.0" y="307.6" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">28%</text>
+<text x="448.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">热</text>
+<rect x="470.0" y="338.2" width="26.0" height="31.8" rx="3" fill="#EEB687" stroke="none" stroke-width="1.2" />
+<text x="483.0" y="328.2" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">17%</text>
+<text x="483.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">冷</text>
+<rect x="505.0" y="350.7" width="26.0" height="19.3" rx="3" fill="#EEB687" stroke="none" stroke-width="1.2" />
+<text x="518.0" y="340.7" font-size="12" fill="#1F2937" text-anchor="middle" dominant-baseline="central">10%</text>
+<text x="518.0" y="386.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">差</text>
+<line x1="394.0" y1="370.0" x2="537.0" y2="370.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="290.0" y="418.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">τ 越小越接近贪心（总选「好」）；τ 越大，低概率词越容易被抽中</text>
+<rect x="580.0" y="20.0" width="480.0" height="430.0" rx="12" fill="#F6F7F9" stroke="#E07B24" stroke-width="1.1" />
+<text x="596.0" y="42.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">截断后再采样：top-k 与 top-p</text>
+<text x="624.0" y="62.0" font-size="13.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">五个候选（已按概率排序）</text>
+<rect x="640.0" y="90.0" width="54.0" height="120.0" rx="3" fill="#EEF0F3" stroke="#6B7280" stroke-width="1" />
+<text x="667.0" y="80.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">0.40</text>
+<text x="667.0" y="225.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">A</text>
+<text x="667.0" y="245.0" font-size="11.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">累计 0.40</text>
+<rect x="712.0" y="135.0" width="54.0" height="75.0" rx="3" fill="#EEF0F3" stroke="#6B7280" stroke-width="1" />
+<text x="739.0" y="125.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">0.25</text>
+<text x="739.0" y="225.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">B</text>
+<text x="739.0" y="245.0" font-size="11.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">累计 0.65</text>
+<rect x="784.0" y="150.0" width="54.0" height="60.0" rx="3" fill="#EEF0F3" stroke="#6B7280" stroke-width="1" />
+<text x="811.0" y="140.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">0.20</text>
+<text x="811.0" y="225.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">C</text>
+<text x="811.0" y="245.0" font-size="11.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">累计 0.85</text>
+<rect x="856.0" y="180.0" width="54.0" height="30.0" rx="3" fill="#EEF0F3" stroke="#6B7280" stroke-width="1" />
+<text x="883.0" y="170.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">0.10</text>
+<text x="883.0" y="225.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">D</text>
+<text x="883.0" y="245.0" font-size="11.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">累计 0.95</text>
+<rect x="928.0" y="195.0" width="54.0" height="15.0" rx="3" fill="#EEF0F3" stroke="#6B7280" stroke-width="1" />
+<text x="955.0" y="185.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">0.05</text>
+<text x="955.0" y="225.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">E</text>
+<text x="955.0" y="245.0" font-size="11.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">累计 1.00</text>
+<line x1="632.0" y1="210.0" x2="990.0" y2="210.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="775.0" y1="82.0" x2="775.0" y2="212.0" stroke="#2F6FD0" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="5 4"/>
+<text x="769.0" y="92.0" font-size="12.5" fill="#2F6FD0" text-anchor="end" dominant-baseline="central" font-weight="bold">top-k：k = 2</text>
+<line x1="847.0" y1="82.0" x2="847.0" y2="212.0" stroke="#E07B24" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="5 4"/>
+<text x="853.0" y="92.0" font-size="12.5" fill="#E07B24" text-anchor="start" dominant-baseline="central" font-weight="bold">top-p：累计 ≥ 0.8</text>
+<text x="600.0" y="272.0" font-size="13.5" fill="#2F6FD0" text-anchor="start" dominant-baseline="central" font-weight="bold">top-k（k = 2）：保留 A、B</text>
+<text x="1040.0" y="272.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">0.40/0.65，0.25/0.65</text>
+<rect x="600.0" y="285.0" width="267.8" height="30.0" rx="4" fill="#4E85D7" stroke="none" stroke-width="1.2" />
+<text x="733.9" y="300.0" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">A  61.5%</text>
+<rect x="870.8" y="285.0" width="166.2" height="30.0" rx="4" fill="#82A9E3" stroke="none" stroke-width="1.2" />
+<text x="953.9" y="300.0" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">B  38.5%</text>
+<text x="600.0" y="352.0" font-size="13.5" fill="#E07B24" text-anchor="start" dominant-baseline="central" font-weight="bold">top-p（p = 0.8）：保留 A、B、C</text>
+<text x="1040.0" y="352.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">累计 0.85，除以 0.85</text>
+<rect x="600.0" y="365.0" width="204.1" height="30.0" rx="4" fill="#E58F45" stroke="none" stroke-width="1.2" />
+<text x="702.0" y="380.0" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">A  47.1%</text>
+<rect x="807.1" y="365.0" width="126.4" height="30.0" rx="4" fill="#ECB07C" stroke="none" stroke-width="1.2" />
+<text x="870.3" y="380.0" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">B  29.4%</text>
+<rect x="936.5" y="365.0" width="100.5" height="30.0" rx="4" fill="#F4D1B2" stroke="none" stroke-width="1.2" />
+<text x="986.7" y="380.0" font-size="13" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">C  23.5%</text>
+<text x="820.0" y="422.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">两者都在保留的候选里重新归一化，再按新概率抽取</text></svg>

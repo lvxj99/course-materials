@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+<rect width="960" height="420" fill="#ffffff"/>
+
+<text x="40.00" y="34.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#44525e" font-weight="600">只有被尝试过的动作才有估计——贪心可能一直错过真正最好的那个</text>
+<circle cx="150.00" cy="60.00" r="3.00" fill="#44525e"/>
+<text x="159.00" y="64.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="start" fill="#7c8a97">样本</text>
+<line x1="202.00" y1="54.00" x2="202.00" y2="66.00" stroke="#3a6ea5" stroke-width="2" stroke-linecap="butt"/>
+<text x="210.00" y="64.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="start" fill="#7c8a97">当前估计</text>
+<rect x="284.00" y="54.00" width="20.00" height="12.00" rx="2" fill="#eef4f8" stroke="#dde5ec" stroke-width="1"/>
+<text x="312.00" y="64.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="start" fill="#7c8a97">真实分布（均值 ± 1σ）</text>
+<text x="72.00" y="110.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12" text-anchor="middle" fill="#1f2a33" font-weight="600">A</text>
+<text x="112.00" y="110.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="end" fill="#7c8a97">n = 5</text>
+<rect x="524.40" y="95.00" width="144.00" height="22.00" rx="3" fill="#eef4f8" stroke="#dde5ec" stroke-width="1"/>
+<circle cx="567.60" cy="106.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="625.20" cy="106.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="589.20" cy="106.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="646.80" cy="106.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="603.60" cy="106.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<line x1="606.48" y1="93.00" x2="606.48" y2="119.00" stroke="#3a6ea5" stroke-width="2" stroke-linecap="butt"/>
+<text x="606.48" y="88.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="middle" fill="#3a6ea5">0.63</text>
+<text x="72.00" y="172.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12" text-anchor="middle" fill="#1f2a33" font-weight="600">B</text>
+<text x="112.00" y="172.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="end" fill="#7c8a97">n = 5</text>
+<rect x="416.40" y="157.00" width="115.20" height="22.00" rx="3" fill="#eef4f8" stroke="#dde5ec" stroke-width="1"/>
+<circle cx="445.20" cy="168.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="466.80" cy="168.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="488.40" cy="168.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="459.60" cy="168.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="481.20" cy="168.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<line x1="468.24" y1="155.00" x2="468.24" y2="181.00" stroke="#3a6ea5" stroke-width="2" stroke-linecap="butt"/>
+<text x="468.24" y="150.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="middle" fill="#3a6ea5">0.44</text>
+<text x="72.00" y="234.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12" text-anchor="middle" fill="#1f2a33" font-weight="600">C</text>
+<text x="112.00" y="234.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="end" fill="#7c8a97">n = 2</text>
+<rect x="538.80" y="219.00" width="259.20" height="22.00" rx="3" fill="#eef4f8" stroke="#dde5ec" stroke-width="1"/>
+<circle cx="553.20" cy="230.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<circle cx="618.00" cy="230.00" r="3.20" fill="#44525e" opacity="0.55"/>
+<line x1="585.60" y1="217.00" x2="585.60" y2="243.00" stroke="#3a6ea5" stroke-width="2" stroke-linecap="butt"/>
+<text x="585.60" y="212.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9" text-anchor="middle" fill="#3a6ea5">0.60</text>
+<text x="72.00" y="296.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12" text-anchor="middle" fill="#1f2a33" font-weight="600">D</text>
+<text x="112.00" y="296.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="end" fill="#b04a4e">n = 0</text>
+<text x="510.00" y="296.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#b6c1ca">从未尝试 → 没有估计，也就不知道它有多好</text>
+<line x1="150.00" y1="320.00" x2="870.00" y2="320.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<line x1="150.00" y1="320.00" x2="150.00" y2="325.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="150.00" y="340.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#7c8a97">0.0</text>
+<line x1="294.00" y1="320.00" x2="294.00" y2="325.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="294.00" y="340.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#7c8a97">0.2</text>
+<line x1="438.00" y1="320.00" x2="438.00" y2="325.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="438.00" y="340.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#7c8a97">0.4</text>
+<line x1="582.00" y1="320.00" x2="582.00" y2="325.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="582.00" y="340.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#7c8a97">0.6</text>
+<line x1="726.00" y1="320.00" x2="726.00" y2="325.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="726.00" y="340.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#7c8a97">0.8</text>
+<line x1="870.00" y1="320.00" x2="870.00" y2="325.00" stroke="#44525e" stroke-width="1" stroke-linecap="butt"/>
+<text x="870.00" y="340.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#7c8a97">1.0</text>
+<text x="870.00" y="358.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="end" fill="#7c8a97">单次奖励 r</text>
+<line x1="668.40" y1="78.00" x2="668.40" y2="306.00" stroke="#6f63a5" stroke-width="1" stroke-linecap="butt" stroke-dasharray="3 3"/>
+<text x="674.40" y="92.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="start" fill="#6f63a5">C 的真实均值 0.72（尝试少、估计偏低）</text>
+<text x="726.00" y="274.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="start" fill="#c2703a">换成贪心：会继续选 A，C 再也没机会被尝试</text>
+<text x="40.00" y="384.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#44525e">按估计贪心 → 选 A（0.63）；但 A 的真实均值 0.62 低于 C 的 0.72。想让 C 被多试几次，就必须主动探索。</text>
+<text x="40.00" y="404.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">两种常见做法：ε-greedy 以 ε 的概率随机试；UCB 选「估计 + c·√(ln t / n)」，不确定性 n 小的动作探索奖励更高。</text>
+</svg>

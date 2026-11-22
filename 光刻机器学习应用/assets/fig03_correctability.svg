@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">预测出来的误差，设备能修正多少？</title><desc id="desc">总误差2、0、5、2、6纳米，分解为线性可补偿项1、2、3、4、5纳米与残差1、负2、2、负2、1纳米。修正参数为平移负3纳米和线性项负2纳米每单位归一化坐标。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#60778a"/></marker></defs>
+<g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<rect x="0" y="0" width="1200" height="700" rx="0" fill="white" stroke="none" stroke-width="1"/>
+<text x="40" y="53" font-size="29" fill="#183247" font-weight="700" text-anchor="start" >预测出来的误差，设备能修正多少？</text>
+<text x="40" y="89" font-size="19" fill="#60778a" font-weight="400" text-anchor="start" >五个测点等权；设备的补偿模型仅包含平移项和线性项</text>
+<rect x="40" y="122" width="360" height="438" rx="14" fill="#f5f8fb" stroke="none" stroke-width="1"/>
+<text x="60" y="158" font-size="22" fill="#183247" font-weight="700" text-anchor="start" >① 预测总误差 u</text>
+<line x1="88" y1="441.3" x2="373" y2="441.3" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="76" y="447.3" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >−2</text>
+<line x1="88" y1="387.9" x2="373" y2="387.9" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="76" y="393.9" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >0</text>
+<line x1="88" y1="334.5" x2="373" y2="334.5" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="76" y="340.5" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >2</text>
+<line x1="88" y1="281.1" x2="373" y2="281.1" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="76" y="287.1" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >4</text>
+<line x1="88" y1="227.7" x2="373" y2="227.7" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="76" y="233.7" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >6</text>
+<line x1="100.95454545454547" y1="468" x2="100.95454545454547" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="100.95454545454547" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >−1</text>
+<line x1="230.5" y1="468" x2="230.5" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="230.5" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >0</text>
+<line x1="360.0454545454545" y1="468" x2="360.0454545454545" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="360.0454545454545" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >1</text>
+<line x1="88" y1="201" x2="88" y2="468" stroke="#60778a" stroke-width="1.5" stroke-dasharray=""/>
+<line x1="88" y1="468" x2="373" y2="468" stroke="#60778a" stroke-width="1.5" stroke-dasharray=""/>
+<text x="88" y="185" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >位移 / nm</text>
+<text x="230.5" y="526" font-size="17" fill="#60778a" font-weight="400" text-anchor="middle" >归一化位置 x</text>
+<line x1="88.0" y1="387.9" x2="373.0" y2="387.9" stroke="#60778a" stroke-width="1.3" stroke-dasharray="5 4"/>
+<path d="M100.955,334.500 L165.727,387.900 L230.500,254.400 L295.273,334.500 L360.045,227.700" fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray=""/>
+<circle cx="100.95454545454547" cy="334.5" r="5.5" fill="#2563eb" stroke="white" stroke-width="2"/>
+<circle cx="165.72727272727275" cy="387.9" r="5.5" fill="#2563eb" stroke="white" stroke-width="2"/>
+<circle cx="230.5" cy="254.39999999999998" r="5.5" fill="#2563eb" stroke="white" stroke-width="2"/>
+<circle cx="295.27272727272725" cy="334.5" r="5.5" fill="#2563eb" stroke="white" stroke-width="2"/>
+<circle cx="360.0454545454545" cy="227.7" r="5.5" fill="#2563eb" stroke="white" stroke-width="2"/>
+<text x="220" y="548" font-size="19" fill="#2563eb" font-weight="600" text-anchor="middle" >[2, 0, 5, 2, 6] nm</text>
+<rect x="420" y="122" width="360" height="438" rx="14" fill="#f5f8fb" stroke="none" stroke-width="1"/>
+<text x="440" y="158" font-size="22" fill="#183247" font-weight="700" text-anchor="start" >② 可补偿部分 3 + 2x</text>
+<line x1="468" y1="441.3" x2="753" y2="441.3" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="456" y="447.3" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >−2</text>
+<line x1="468" y1="387.9" x2="753" y2="387.9" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="456" y="393.9" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >0</text>
+<line x1="468" y1="334.5" x2="753" y2="334.5" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="456" y="340.5" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >2</text>
+<line x1="468" y1="281.1" x2="753" y2="281.1" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="456" y="287.1" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >4</text>
+<line x1="468" y1="227.7" x2="753" y2="227.7" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="456" y="233.7" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >6</text>
+<line x1="480.95454545454544" y1="468" x2="480.95454545454544" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="480.95454545454544" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >−1</text>
+<line x1="610.5" y1="468" x2="610.5" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="610.5" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >0</text>
+<line x1="740.0454545454545" y1="468" x2="740.0454545454545" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="740.0454545454545" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >1</text>
+<line x1="468" y1="201" x2="468" y2="468" stroke="#60778a" stroke-width="1.5" stroke-dasharray=""/>
+<line x1="468" y1="468" x2="753" y2="468" stroke="#60778a" stroke-width="1.5" stroke-dasharray=""/>
+<text x="468" y="185" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >位移 / nm</text>
+<text x="610.5" y="526" font-size="17" fill="#60778a" font-weight="400" text-anchor="middle" >归一化位置 x</text>
+<line x1="468.0" y1="387.9" x2="753.0" y2="387.9" stroke="#60778a" stroke-width="1.3" stroke-dasharray="5 4"/>
+<path d="M480.955,361.200 L545.727,334.500 L610.500,307.800 L675.273,281.100 L740.045,254.400" fill="none" stroke="#0f766e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray=""/>
+<circle cx="480.95454545454544" cy="361.2" r="5.5" fill="#0f766e" stroke="white" stroke-width="2"/>
+<circle cx="545.7272727272727" cy="334.5" r="5.5" fill="#0f766e" stroke="white" stroke-width="2"/>
+<circle cx="610.5" cy="307.8" r="5.5" fill="#0f766e" stroke="white" stroke-width="2"/>
+<circle cx="675.2727272727273" cy="281.1" r="5.5" fill="#0f766e" stroke="white" stroke-width="2"/>
+<circle cx="740.0454545454545" cy="254.39999999999998" r="5.5" fill="#0f766e" stroke="white" stroke-width="2"/>
+<text x="600" y="548" font-size="19" fill="#0f766e" font-weight="600" text-anchor="middle" >[1, 2, 3, 4, 5] nm</text>
+<rect x="800" y="122" width="360" height="438" rx="14" fill="#f5f8fb" stroke="none" stroke-width="1"/>
+<text x="820" y="158" font-size="22" fill="#183247" font-weight="700" text-anchor="start" >③ 补偿后的残差 r</text>
+<line x1="848" y1="441.3" x2="1133" y2="441.3" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="836" y="447.3" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >−2</text>
+<line x1="848" y1="387.9" x2="1133" y2="387.9" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="836" y="393.9" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >0</text>
+<line x1="848" y1="334.5" x2="1133" y2="334.5" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="836" y="340.5" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >2</text>
+<line x1="848" y1="281.1" x2="1133" y2="281.1" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="836" y="287.1" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >4</text>
+<line x1="848" y1="227.7" x2="1133" y2="227.7" stroke="#cfdae3" stroke-width="1" stroke-dasharray=""/>
+<text x="836" y="233.7" font-size="16" fill="#60778a" font-weight="400" text-anchor="end" >6</text>
+<line x1="860.9545454545455" y1="468" x2="860.9545454545455" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="860.9545454545455" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >−1</text>
+<line x1="990.5" y1="468" x2="990.5" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="990.5" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >0</text>
+<line x1="1120.0454545454545" y1="468" x2="1120.0454545454545" y2="474" stroke="#60778a" stroke-width="1.2" stroke-dasharray=""/>
+<text x="1120.0454545454545" y="496" font-size="16" fill="#60778a" font-weight="400" text-anchor="middle" >1</text>
+<line x1="848" y1="201" x2="848" y2="468" stroke="#60778a" stroke-width="1.5" stroke-dasharray=""/>
+<line x1="848" y1="468" x2="1133" y2="468" stroke="#60778a" stroke-width="1.5" stroke-dasharray=""/>
+<text x="848" y="185" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >位移 / nm</text>
+<text x="990.5" y="526" font-size="17" fill="#60778a" font-weight="400" text-anchor="middle" >归一化位置 x</text>
+<line x1="848.0" y1="387.9" x2="1133.0" y2="387.9" stroke="#60778a" stroke-width="1.3" stroke-dasharray="5 4"/>
+<path d="M860.955,361.200 L925.727,441.300 L990.500,334.500 L1055.273,441.300 L1120.045,361.200" fill="none" stroke="#d97706" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray=""/>
+<circle cx="860.9545454545455" cy="361.2" r="5.5" fill="#d97706" stroke="white" stroke-width="2"/>
+<circle cx="925.7272727272727" cy="441.3" r="5.5" fill="#d97706" stroke="white" stroke-width="2"/>
+<circle cx="990.5" cy="334.5" r="5.5" fill="#d97706" stroke="white" stroke-width="2"/>
+<circle cx="1055.2727272727273" cy="441.3" r="5.5" fill="#d97706" stroke="white" stroke-width="2"/>
+<circle cx="1120.0454545454545" cy="361.2" r="5.5" fill="#d97706" stroke="white" stroke-width="2"/>
+<text x="980" y="548" font-size="19" fill="#d97706" font-weight="600" text-anchor="middle" >[1, −2, 2, −2, 1] nm</text>
+<text x="40" y="603" font-size="22" fill="#183247" font-weight="600" text-anchor="start" >执行修正：c₀ = −3 nm，c₁ = −2 nm / 单位 x</text>
+<text x="40" y="639" font-size="21" fill="#0f766e" font-weight="600" text-anchor="start" >修正前 RMS 3.71 nm → 修正后 1.67 nm；剩余起伏需要其他工艺措施。</text>
+<text x="40" y="676" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >教学离散模型。折线仅连接测点；残差与常量项、线性项均正交。</text>
+</g></svg>

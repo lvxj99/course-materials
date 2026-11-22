@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="530" viewBox="0 0 1060 530" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC','Source Han Sans SC','Hiragino Sans GB',sans-serif" role="img"><title>BPE：反复合并最高频的相邻对</title><desc>在带词频的小语料上，每轮统计相邻 token 对的出现次数，合并最高频的一对并加入词表。</desc><rect width="1060" height="530" fill="#FFFFFF"/><text x="530.0" y="26.0" font-size="17" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">BPE：每一轮把「出现最多的相邻一对」合并成一个新 token</text>
+<text x="40.0" y="64.0" font-size="14" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">语料中的每个词（括号内是出现次数）及其当前切分</text>
+<text x="755.0" y="64.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">相邻对计数（前三）</text>
+<text x="982.0" y="64.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">词表新增</text>
+<text x="36.0" y="86.0" font-size="13" fill="#6B7280" text-anchor="start" dominant-baseline="central">初始：按单字切开</text>
+<rect x="40.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="52.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机</text>
+<rect x="67.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="79.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">器</text>
+<rect x="94.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="106.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学</text>
+<rect x="121.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="133.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">习</text>
+<text x="150.0" y="112.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×6</text>
+<rect x="188.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="200.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="215.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="227.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<rect x="242.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="254.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学</text>
+<rect x="269.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="281.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">习</text>
+<text x="298.0" y="112.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×4</text>
+<rect x="336.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="348.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学</text>
+<rect x="363.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="375.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">习</text>
+<rect x="390.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="402.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">率</text>
+<text x="419.0" y="112.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×3</text>
+<rect x="457.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="469.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机</text>
+<rect x="484.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="496.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">器</text>
+<rect x="511.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="523.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">人</text>
+<text x="540.0" y="112.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×2</text>
+<rect x="578.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="590.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="605.0" y="99.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="617.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<text x="634.0" y="112.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×1</text>
+<text x="982.0" y="86.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">基础字符（8 个）</text>
+<text x="982.0" y="112.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机 器 学 习 深 度 率 人</text>
+<line x1="30.0" y1="148.0" x2="1030.0" y2="148.0" stroke="#D1D5DB" stroke-width="1" stroke-linecap="round"/>
+<rect x="24.0" y="145.0" width="1012.0" height="66.0" rx="8" fill="#F6F7F9" stroke="none" stroke-width="1.2" />
+<circle cx="46.0" cy="156.0" r="10.0" fill="#E07B24" stroke="none" stroke-width="1.2"/>
+<text x="46.0" y="156.5" font-size="12" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">1</text>
+<text x="62.0" y="156.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">第 1 轮</text>
+<rect x="40.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="52.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机</text>
+<rect x="67.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="79.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">器</text>
+<rect x="94.0" y="175.0" width="46.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="117.0" y="188.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">学习</text>
+<text x="145.0" y="188.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×6</text>
+<rect x="188.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="200.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="215.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="227.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<rect x="242.0" y="175.0" width="46.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="265.0" y="188.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">学习</text>
+<text x="293.0" y="188.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×4</text>
+<rect x="336.0" y="175.0" width="46.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="359.0" y="188.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">学习</text>
+<rect x="385.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="397.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">率</text>
+<text x="414.0" y="188.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×3</text>
+<rect x="457.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="469.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机</text>
+<rect x="484.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="496.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">器</text>
+<rect x="511.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="523.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">人</text>
+<text x="540.0" y="188.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×2</text>
+<rect x="578.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="590.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="605.0" y="175.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="617.0" y="188.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<text x="634.0" y="188.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×1</text>
+<text x="770.0" y="158.0" font-size="13" fill="#E07B24" text-anchor="end" dominant-baseline="central" font-weight="bold">学 + 习</text>
+<rect x="778.0" y="152.0" width="91.0" height="12.0" rx="2" fill="#E07B24" stroke="none" stroke-width="1.2" />
+<text x="875.0" y="158.0" font-size="12.5" fill="#E07B24" text-anchor="start" dominant-baseline="central" font-weight="bold">13</text>
+<text x="770.0" y="176.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">机 + 器</text>
+<rect x="778.0" y="170.0" width="56.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="840.0" y="176.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">8</text>
+<text x="770.0" y="194.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">器 + 学</text>
+<rect x="778.0" y="188.0" width="42.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="826.0" y="194.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">6</text>
+<rect x="952.0" y="160.7" width="59.9" height="26.6" rx="10.23076923076923" fill="#FDEBD8" stroke="#E07B24" stroke-width="1.1" />
+<text x="982.0" y="174.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">+ 学习</text>
+<text x="982.0" y="200.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">词表大小 9</text>
+<circle cx="46.0" cy="230.0" r="10.0" fill="#E07B24" stroke="none" stroke-width="1.2"/>
+<text x="46.0" y="230.5" font-size="12" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">2</text>
+<text x="62.0" y="230.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">第 2 轮</text>
+<rect x="40.0" y="249.0" width="46.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="63.0" y="262.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">机器</text>
+<rect x="89.0" y="249.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="112.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学习</text>
+<text x="140.0" y="262.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×6</text>
+<rect x="188.0" y="249.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="200.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="215.0" y="249.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="227.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<rect x="242.0" y="249.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="265.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学习</text>
+<text x="293.0" y="262.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×4</text>
+<rect x="336.0" y="249.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="359.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学习</text>
+<rect x="385.0" y="249.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="397.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">率</text>
+<text x="414.0" y="262.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×3</text>
+<rect x="457.0" y="249.0" width="46.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="480.0" y="262.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">机器</text>
+<rect x="506.0" y="249.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="518.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">人</text>
+<text x="535.0" y="262.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×2</text>
+<rect x="578.0" y="249.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="590.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="605.0" y="249.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="617.0" y="262.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<text x="634.0" y="262.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×1</text>
+<text x="770.0" y="232.0" font-size="13" fill="#E07B24" text-anchor="end" dominant-baseline="central" font-weight="bold">机 + 器</text>
+<rect x="778.0" y="226.0" width="56.0" height="12.0" rx="2" fill="#E07B24" stroke="none" stroke-width="1.2" />
+<text x="840.0" y="232.0" font-size="12.5" fill="#E07B24" text-anchor="start" dominant-baseline="central" font-weight="bold">8</text>
+<text x="770.0" y="250.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">器 + 学习</text>
+<rect x="778.0" y="244.0" width="42.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="826.0" y="250.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">6</text>
+<text x="770.0" y="268.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">深 + 度</text>
+<rect x="778.0" y="262.0" width="35.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="819.0" y="268.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">5</text>
+<rect x="952.0" y="234.7" width="59.9" height="26.6" rx="10.23076923076923" fill="#FDEBD8" stroke="#E07B24" stroke-width="1.1" />
+<text x="982.0" y="248.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">+ 机器</text>
+<text x="982.0" y="274.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">词表大小 10</text>
+<rect x="24.0" y="293.0" width="1012.0" height="66.0" rx="8" fill="#F6F7F9" stroke="none" stroke-width="1.2" />
+<circle cx="46.0" cy="304.0" r="10.0" fill="#E07B24" stroke="none" stroke-width="1.2"/>
+<text x="46.0" y="304.5" font-size="12" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">3</text>
+<text x="62.0" y="304.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">第 3 轮</text>
+<rect x="40.0" y="323.0" width="90.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="85.0" y="336.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">机器学习</text>
+<text x="135.0" y="336.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×6</text>
+<rect x="188.0" y="323.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="200.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="215.0" y="323.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="227.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<rect x="242.0" y="323.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="265.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学习</text>
+<text x="293.0" y="336.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×4</text>
+<rect x="336.0" y="323.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="359.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学习</text>
+<rect x="385.0" y="323.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="397.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">率</text>
+<text x="414.0" y="336.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×3</text>
+<rect x="457.0" y="323.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="480.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机器</text>
+<rect x="506.0" y="323.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="518.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">人</text>
+<text x="535.0" y="336.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×2</text>
+<rect x="578.0" y="323.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="590.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">深</text>
+<rect x="605.0" y="323.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="617.0" y="336.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">度</text>
+<text x="634.0" y="336.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×1</text>
+<text x="770.0" y="306.0" font-size="13" fill="#E07B24" text-anchor="end" dominant-baseline="central" font-weight="bold">机器 + 学习</text>
+<rect x="778.0" y="300.0" width="42.0" height="12.0" rx="2" fill="#E07B24" stroke="none" stroke-width="1.2" />
+<text x="826.0" y="306.0" font-size="12.5" fill="#E07B24" text-anchor="start" dominant-baseline="central" font-weight="bold">6</text>
+<text x="770.0" y="324.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">深 + 度</text>
+<rect x="778.0" y="318.0" width="35.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="819.0" y="324.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">5</text>
+<text x="770.0" y="342.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">度 + 学习</text>
+<rect x="778.0" y="336.0" width="28.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="812.0" y="342.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">4</text>
+<rect x="938.0" y="308.7" width="87.9" height="26.6" rx="10.23076923076923" fill="#FDEBD8" stroke="#E07B24" stroke-width="1.1" />
+<text x="982.0" y="322.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">+ 机器学习</text>
+<text x="982.0" y="348.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">词表大小 11</text>
+<circle cx="46.0" cy="378.0" r="10.0" fill="#E07B24" stroke="none" stroke-width="1.2"/>
+<text x="46.0" y="378.5" font-size="12" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">4</text>
+<text x="62.0" y="378.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">第 4 轮</text>
+<rect x="40.0" y="397.0" width="90.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="85.0" y="410.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机器学习</text>
+<text x="135.0" y="410.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×6</text>
+<rect x="188.0" y="397.0" width="46.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="211.0" y="410.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">深度</text>
+<rect x="237.0" y="397.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="260.0" y="410.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学习</text>
+<text x="288.0" y="410.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×4</text>
+<rect x="336.0" y="397.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="359.0" y="410.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">学习</text>
+<rect x="385.0" y="397.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="397.0" y="410.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">率</text>
+<text x="414.0" y="410.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×3</text>
+<rect x="457.0" y="397.0" width="46.0" height="26.0" rx="5" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="480.0" y="410.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">机器</text>
+<rect x="506.0" y="397.0" width="24.0" height="26.0" rx="5" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="518.0" y="410.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central">人</text>
+<text x="535.0" y="410.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×2</text>
+<rect x="578.0" y="397.0" width="46.0" height="26.0" rx="5" fill="#E07B24" stroke="#E07B24" stroke-width="1.1" />
+<text x="601.0" y="410.0" font-size="14" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central" font-weight="bold">深度</text>
+<text x="629.0" y="410.0" font-size="12" fill="#6B7280" text-anchor="start" dominant-baseline="central">×1</text>
+<text x="770.0" y="380.0" font-size="13" fill="#E07B24" text-anchor="end" dominant-baseline="central" font-weight="bold">深 + 度</text>
+<rect x="778.0" y="374.0" width="35.0" height="12.0" rx="2" fill="#E07B24" stroke="none" stroke-width="1.2" />
+<text x="819.0" y="380.0" font-size="12.5" fill="#E07B24" text-anchor="start" dominant-baseline="central" font-weight="bold">5</text>
+<text x="770.0" y="398.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">度 + 学习</text>
+<rect x="778.0" y="392.0" width="28.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="812.0" y="398.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">4</text>
+<text x="770.0" y="416.0" font-size="12.5" fill="#6B7280" text-anchor="end" dominant-baseline="central">学习 + 率</text>
+<rect x="778.0" y="410.0" width="21.0" height="12.0" rx="2" fill="#EEF0F3" stroke="none" stroke-width="1.2" />
+<text x="805.0" y="416.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">3</text>
+<rect x="952.0" y="382.7" width="59.9" height="26.6" rx="10.23076923076923" fill="#FDEBD8" stroke="#E07B24" stroke-width="1.1" />
+<text x="982.0" y="396.0" font-size="14" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">+ 深度</text>
+<text x="982.0" y="422.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">词表大小 12</text>
+<text x="530.0" y="486.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">高频组合（学习、机器学习）成为整体 token；低频的「率」「人」仍单独成 token。真实分词器通常在字节或字符上做同样的事，合并数万轮。</text></svg>

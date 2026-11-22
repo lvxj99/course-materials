@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">边缘为什么会偏：位置与线宽共同决定 EPE</title><desc id="desc">三个面板分别展示纯平移、纯变宽及二者叠加。叠加时中心偏移4纳米、线宽增加6纳米，左边缘偏移1纳米、右边缘偏移7纳米。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 Z" fill="#60778a"/></marker></defs>
+<g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<rect x="0" y="0" width="1200" height="650" rx="0" fill="white" stroke="none" stroke-width="1"/>
+<text x="40" y="53" font-size="29" fill="#183247" font-weight="700" text-anchor="start" >边缘为什么会偏：位置与线宽共同决定 EPE</text>
+<text x="40" y="89" font-size="19" fill="#60778a" font-weight="400" text-anchor="start" >一维线条算例：目标左边缘 0 nm，右边缘 40 nm，目标中心 20 nm；坐标向右为正</text>
+<rect x="40" y="122" width="360" height="430" rx="14" fill="#f5f8fb" stroke="none" stroke-width="1"/>
+<text x="62" y="158" font-size="23" fill="#183247" font-weight="700" text-anchor="start" >① 纯平移</text>
+<text x="62" y="198" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >目标</text>
+<rect x="107" y="214" width="200" height="37" rx="0" fill="#eaf1ff" stroke="#2563eb" stroke-width="2"/>
+<text x="107" y="278" font-size="18" fill="#2563eb" font-weight="400" text-anchor="middle" >0</text>
+<text x="307" y="278" font-size="18" fill="#2563eb" font-weight="400" text-anchor="middle" >40</text>
+<text x="62" y="316" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >实际</text>
+<line x1="107" y1="208" x2="107" y2="379" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 5"/>
+<line x1="307" y1="208" x2="307" y2="379" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 5"/>
+<rect x="127" y="332" width="200" height="37" rx="0" fill="#fff3df" stroke="#d97706" stroke-width="2"/>
+<text x="127" y="397" font-size="18" fill="#d97706" font-weight="400" text-anchor="middle" >4</text>
+<text x="327" y="397" font-size="18" fill="#d97706" font-weight="400" text-anchor="middle" >44</text>
+<text x="62" y="440" font-size="20" fill="#183247" font-weight="400" text-anchor="start" >中心误差 Δc = +4 nm</text>
+<text x="62" y="473" font-size="20" fill="#183247" font-weight="400" text-anchor="start" >线宽误差 Δw = 0 nm</text>
+<text x="62" y="521" font-size="20" fill="#0f766e" font-weight="700" text-anchor="start" >左 EPE +4 nm　右 EPE +4 nm</text>
+<rect x="420" y="122" width="360" height="430" rx="14" fill="#f5f8fb" stroke="none" stroke-width="1"/>
+<text x="442" y="158" font-size="23" fill="#183247" font-weight="700" text-anchor="start" >② 纯变宽</text>
+<text x="442" y="198" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >目标</text>
+<rect x="487" y="214" width="200" height="37" rx="0" fill="#eaf1ff" stroke="#2563eb" stroke-width="2"/>
+<text x="487" y="278" font-size="18" fill="#2563eb" font-weight="400" text-anchor="middle" >0</text>
+<text x="687" y="278" font-size="18" fill="#2563eb" font-weight="400" text-anchor="middle" >40</text>
+<text x="442" y="316" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >实际</text>
+<line x1="487" y1="208" x2="487" y2="379" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 5"/>
+<line x1="687" y1="208" x2="687" y2="379" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 5"/>
+<rect x="472" y="332" width="230" height="37" rx="0" fill="#fff3df" stroke="#d97706" stroke-width="2"/>
+<text x="472" y="397" font-size="18" fill="#d97706" font-weight="400" text-anchor="middle" >−3</text>
+<text x="702" y="397" font-size="18" fill="#d97706" font-weight="400" text-anchor="middle" >43</text>
+<text x="442" y="440" font-size="20" fill="#183247" font-weight="400" text-anchor="start" >中心误差 Δc = 0 nm</text>
+<text x="442" y="473" font-size="20" fill="#183247" font-weight="400" text-anchor="start" >线宽误差 Δw = +6 nm</text>
+<text x="442" y="521" font-size="20" fill="#0f766e" font-weight="700" text-anchor="start" >左 EPE −3 nm　右 EPE +3 nm</text>
+<rect x="800" y="122" width="360" height="430" rx="14" fill="#f5f8fb" stroke="none" stroke-width="1"/>
+<text x="822" y="158" font-size="23" fill="#183247" font-weight="700" text-anchor="start" >③ 平移 + 变宽</text>
+<text x="822" y="198" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >目标</text>
+<rect x="867" y="214" width="200" height="37" rx="0" fill="#eaf1ff" stroke="#2563eb" stroke-width="2"/>
+<text x="867" y="278" font-size="18" fill="#2563eb" font-weight="400" text-anchor="middle" >0</text>
+<text x="1067" y="278" font-size="18" fill="#2563eb" font-weight="400" text-anchor="middle" >40</text>
+<text x="822" y="316" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >实际</text>
+<line x1="867" y1="208" x2="867" y2="379" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 5"/>
+<line x1="1067" y1="208" x2="1067" y2="379" stroke="#2563eb" stroke-width="1" stroke-dasharray="4 5"/>
+<rect x="872" y="332" width="230" height="37" rx="0" fill="#fff3df" stroke="#d97706" stroke-width="2"/>
+<text x="872" y="397" font-size="18" fill="#d97706" font-weight="400" text-anchor="middle" >1</text>
+<text x="1102" y="397" font-size="18" fill="#d97706" font-weight="400" text-anchor="middle" >47</text>
+<text x="822" y="440" font-size="20" fill="#183247" font-weight="400" text-anchor="start" >中心误差 Δc = +4 nm</text>
+<text x="822" y="473" font-size="20" fill="#183247" font-weight="400" text-anchor="start" >线宽误差 Δw = +6 nm</text>
+<text x="822" y="521" font-size="20" fill="#0f766e" font-weight="700" text-anchor="start" >左 EPE +1 nm　右 EPE +7 nm</text>
+<text x="40" y="594" font-size="23" fill="#2563eb" font-weight="600" text-anchor="start" >Δx左 = Δc − Δw / 2</text>
+<text x="430" y="594" font-size="23" fill="#d97706" font-weight="600" text-anchor="start" >Δx右 = Δc + Δw / 2</text>
+<text x="40" y="628" font-size="17" fill="#60778a" font-weight="400" text-anchor="start" >教学几何示意。Δc 是该线条相对目标的位置误差；两层相对位置才是 Overlay。</text>
+</g></svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="676" viewBox="0 0 1040 676" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC','Source Han Sans SC','Hiragino Sans GB',sans-serif" role="img"><title>Transformer Block（Pre-Norm）</title><desc>残差流贯穿整个 Block，注意力与 FFN 先归一化，再把结果加回残差流。</desc><defs><marker id="ah1F29371_0" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#1F2937"/></marker><marker id="ah14919B1_0" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#14919B"/></marker><marker id="ah7B4FC90_9" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="8.1" markerHeight="8.1" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#7B4FC9"/></marker></defs><rect width="1040" height="676" fill="#FFFFFF"/><text x="520.0" y="28.0" font-size="17" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">一个 Transformer Block（Pre-Norm）：两个子层，各自把结果加回残差流</text>
+<rect x="163.0" y="84.0" width="14.0" height="486.0" rx="7" fill="#BCC0C6" stroke="none" stroke-width="1.2" />
+<g transform="rotate(-90 124 328.0)">
+<text x="124.0" y="328.0" font-size="13" fill="#6B7280" text-anchor="middle" dominant-baseline="central">残差流：形状始终是 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">T</tspan>×<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">d</tspan></text>
+</g>
+<rect x="110.0" y="572.0" width="120.0" height="36.0" rx="8" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.4" />
+<text x="170.0" y="590.0" font-size="16" fill="#1F2937" text-anchor="middle" dominant-baseline="central"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">H</tspan><tspan font-size="11.5" dy="-6.1">(ℓ)</tspan><tspan dy="6.1" font-size="16.0">​</tspan></text>
+<rect x="110.0" y="48.0" width="120.0" height="36.0" rx="8" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.4" />
+<text x="170.0" y="66.0" font-size="16" fill="#1F2937" text-anchor="middle" dominant-baseline="central"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">H</tspan><tspan font-size="11.5" dy="-6.1">(ℓ+1)</tspan><tspan dy="6.1" font-size="16.0">​</tspan></text>
+<path d="M170.0,118.0 L170.0,86.0" stroke="#1F2937" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<circle cx="170.0" cy="360.0" r="17.0" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.8"/>
+<text x="170.0" y="360.5" font-size="22" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">+</text>
+<circle cx="170.0" cy="150.0" r="17.0" fill="#FFFFFF" stroke="#1F2937" stroke-width="1.8"/>
+<text x="170.0" y="150.5" font-size="22" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">+</text>
+<text x="192.0" y="285.0" font-size="17" fill="#1F2937" text-anchor="start" dominant-baseline="central"><tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">U</tspan></text>
+<path d="M170.0,545.0 L360.0,545.0 L360.0,527.0" stroke="#1F2937" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<rect x="265.0" y="495.0" width="190.0" height="32.0" rx="8" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.4" />
+<text x="360.0" y="511.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">Norm</text>
+<path d="M360.0,495.0 L360.0,461.0" stroke="#1F2937" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<rect x="265.0" y="410.0" width="190.0" height="50.0" rx="8" fill="#ECE4FA" stroke="#7B4FC9" stroke-width="1.4" />
+<text x="360.0" y="435.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">多头注意力</text>
+<path d="M360.0,410.0 L360.0,360.0 L189.0,360.0" stroke="#1F2937" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<circle cx="170.0" cy="545.0" r="4.0" fill="#1F2937" stroke="none" stroke-width="1.2"/>
+<path d="M170.0,320.0 L360.0,320.0 L360.0,302.0" stroke="#1F2937" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<rect x="265.0" y="270.0" width="190.0" height="32.0" rx="8" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.4" />
+<text x="360.0" y="286.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">Norm</text>
+<path d="M360.0,270.0 L360.0,241.0" stroke="#1F2937" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<rect x="265.0" y="190.0" width="190.0" height="50.0" rx="8" fill="#D4F0F1" stroke="#14919B" stroke-width="1.4" />
+<text x="360.0" y="215.0" font-size="15" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">FFN</text>
+<path d="M360.0,190.0 L360.0,150.0 L189.0,150.0" stroke="#1F2937" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah1F29371_0)"/>
+<circle cx="170.0" cy="320.0" r="4.0" fill="#1F2937" stroke="none" stroke-width="1.2"/>
+<text x="467.0" y="435.0" font-size="13" fill="#7B4FC9" text-anchor="start" dominant-baseline="central" font-weight="bold">位置之间交换信息</text>
+<text x="467.0" y="215.0" font-size="13" fill="#14919B" text-anchor="start" dominant-baseline="central" font-weight="bold">每个位置单独加工</text>
+<rect x="620.0" y="76.0" width="400.0" height="236.0" rx="12" fill="#F6F7F9" stroke="#14919B" stroke-width="1.1" />
+<text x="636.0" y="98.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">FFN：同一个 MLP，分别作用于每个位置</text>
+<rect x="679.0" y="194.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="679.0" y="207.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="679.0" y="220.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="679.0" y="233.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="690.0" y="260.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">I</text>
+<rect x="767.0" y="194.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="767.0" y="207.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="767.0" y="220.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="767.0" y="233.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="778.0" y="260.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">love</text>
+<rect x="855.0" y="194.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="855.0" y="207.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="855.0" y="220.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="855.0" y="233.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="866.0" y="260.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">machine</text>
+<rect x="943.0" y="194.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="943.0" y="207.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="943.0" y="220.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="943.0" y="233.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="954.0" y="260.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">learning</text>
+<rect x="660.0" y="122.0" width="60.0" height="30.0" rx="8" fill="#D4F0F1" stroke="#14919B" stroke-width="1.4" />
+<text x="690.0" y="137.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">MLP</text>
+<path d="M690.0,192.0 L690.0,156.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<path d="M690.0,120.0 L690.0,104.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<rect x="748.0" y="122.0" width="60.0" height="30.0" rx="8" fill="#D4F0F1" stroke="#14919B" stroke-width="1.4" />
+<text x="778.0" y="137.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">MLP</text>
+<path d="M778.0,192.0 L778.0,156.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<path d="M778.0,120.0 L778.0,104.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<rect x="836.0" y="122.0" width="60.0" height="30.0" rx="8" fill="#D4F0F1" stroke="#14919B" stroke-width="1.4" />
+<text x="866.0" y="137.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">MLP</text>
+<path d="M866.0,192.0 L866.0,156.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<path d="M866.0,120.0 L866.0,104.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<rect x="924.0" y="122.0" width="60.0" height="30.0" rx="8" fill="#D4F0F1" stroke="#14919B" stroke-width="1.4" />
+<text x="954.0" y="137.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">MLP</text>
+<path d="M954.0,192.0 L954.0,156.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<path d="M954.0,120.0 L954.0,104.0" stroke="#14919B" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah14919B1_0)"/>
+<text x="820.0" y="292.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">各列之间没有连线：位置之间不交流，参数共享</text>
+<rect x="620.0" y="330.0" width="400.0" height="250.0" rx="12" fill="#F6F7F9" stroke="#7B4FC9" stroke-width="1.1" />
+<text x="636.0" y="352.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">注意力：每个位置去读其他位置</text>
+<rect x="679.0" y="470.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="679.0" y="483.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="679.0" y="496.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="679.0" y="509.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="690.0" y="536.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">I</text>
+<rect x="767.0" y="470.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="767.0" y="483.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="767.0" y="496.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="767.0" y="509.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="778.0" y="536.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">love</text>
+<rect x="855.0" y="470.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="855.0" y="483.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="855.0" y="496.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="855.0" y="509.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="866.0" y="536.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">machine</text>
+<rect x="943.0" y="470.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="943.0" y="483.0" width="22.0" height="13.0" rx="0" fill="#B1B4BC" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="943.0" y="496.0" width="22.0" height="13.0" rx="0" fill="#C2C5CB" stroke="#FFFFFF" stroke-width="1.2" />
+<rect x="943.0" y="509.0" width="22.0" height="13.0" rx="0" fill="#9FA3AC" stroke="#FFFFFF" stroke-width="1.2" />
+<text x="954.0" y="536.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">learning</text>
+<path d="M690.0,466.0 Q822.0,277.2 950.0,466.0" stroke="#7B4FC9" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah7B4FC90_9)"/>
+<path d="M778.0,466.0 Q866.0,318.8 950.0,466.0" stroke="#7B4FC9" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah7B4FC90_9)"/>
+<path d="M866.0,466.0 Q910.0,360.4 950.0,466.0" stroke="#7B4FC9" stroke-width="3.4000000000000004" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah7B4FC90_9)"/>
+<text x="820.0" y="566.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">信息沿着箭头在位置之间流动（图示 learning 读取前面各词）</text>
+<rect x="20.0" y="626.0" width="1000.0" height="38.0" rx="8" fill="#F6F7F9" stroke="#D1D5DB" stroke-width="1.2" />
+<text x="40.0" y="645.0" font-size="13.5" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">对比</text>
+<text x="90.0" y="645.0" font-size="13.5" fill="#1F2937" text-anchor="start" dominant-baseline="central">Pre-Norm（本图，现代 LLM 常用）：<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan> ← <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan> + <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">F</tspan>(Norm(<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan>))</text>
+<text x="560.0" y="645.0" font-size="13.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">Post-Norm（原始 Transformer）：<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan> ← Norm(<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan> + <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">F</tspan>(<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">x</tspan>))</text></svg>

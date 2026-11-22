@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400">
+<rect width="960" height="400" fill="#ffffff"/>
+
+<text x="40.00" y="34.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#44525e" font-weight="600">检索增强生成：先找出相关片段，再把它们放进上下文</text>
+<rect x="30.00" y="96.00" width="120.00" height="62.00" rx="6" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="90.00" y="122.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e" font-weight="600">问题</text>
+<rect x="180.00" y="96.00" width="180.00" height="62.00" rx="6" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="270.00" y="122.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#3a6ea5" font-weight="600">检索器</text>
+<text x="270.00" y="140.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#44525e">向量相似度检索</text>
+<rect x="390.00" y="96.00" width="140.00" height="62.00" rx="6" fill="#edf3f9" stroke="#c9dcee" stroke-width="1"/>
+<text x="460.00" y="122.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#3a6ea5" font-weight="600">top-k 片段</text>
+<text x="460.00" y="140.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#44525e">取相关度最高的几段</text>
+<rect x="560.00" y="96.00" width="150.00" height="62.00" rx="6" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="635.00" y="122.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#6f63a5" font-weight="600">拼装 prompt</text>
+<text x="635.00" y="140.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#44525e">问题 + 片段 + 指令</text>
+<rect x="740.00" y="96.00" width="120.00" height="62.00" rx="6" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="800.00" y="122.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#6f63a5" font-weight="600">LLM</text>
+<line x1="152.00" y1="127.00" x2="173.75" y2="127.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="178.00,127.00 173.00,123.90 173.00,130.10" fill="#7c8a97"/>
+<line x1="362.00" y1="127.00" x2="383.75" y2="127.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="388.00,127.00 383.00,123.90 383.00,130.10" fill="#7c8a97"/>
+<line x1="532.00" y1="127.00" x2="553.75" y2="127.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="558.00,127.00 553.00,123.90 553.00,130.10" fill="#7c8a97"/>
+<line x1="712.00" y1="127.00" x2="733.75" y2="127.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="738.00,127.00 733.00,123.90 733.00,130.10" fill="#7c8a97"/>
+<rect x="884.00" y="96.00" width="56.00" height="62.00" rx="6" fill="#eef4f8" stroke="#dde5ec" stroke-width="1"/>
+<text x="912.00" y="126.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#44525e">回答</text>
+<text x="912.00" y="142.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.5" text-anchor="middle" fill="#7c8a97">带出处</text>
+<line x1="862.00" y1="127.00" x2="877.75" y2="127.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="882.00,127.00 877.00,123.90 877.00,130.10" fill="#7c8a97"/>
+<rect x="30.00" y="286.00" width="130.00" height="56.00" rx="6" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="95.00" y="319.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#44525e" font-weight="600">文档库</text>
+<rect x="190.00" y="286.00" width="130.00" height="56.00" rx="6" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="255.00" y="319.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#44525e" font-weight="600">切块 chunk</text>
+<rect x="350.00" y="286.00" width="140.00" height="56.00" rx="6" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="1"/>
+<text x="420.00" y="319.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#2f8b7f" font-weight="600">嵌入模型</text>
+<rect x="520.00" y="286.00" width="130.00" height="56.00" rx="6" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="1"/>
+<text x="585.00" y="319.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="middle" fill="#2f8b7f" font-weight="600">向量索引</text>
+<line x1="162.00" y1="314.00" x2="183.75" y2="314.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="188.00,314.00 183.00,310.90 183.00,317.10" fill="#7c8a97"/>
+<line x1="322.00" y1="314.00" x2="343.75" y2="314.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="348.00,314.00 343.00,310.90 343.00,317.10" fill="#7c8a97"/>
+<line x1="492.00" y1="314.00" x2="513.75" y2="314.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="518.00,314.00 513.00,310.90 513.00,317.10" fill="#7c8a97"/>
+<path d="M 650.00 314.00 L 700.00 314.00 L 700.00 220.00 L 270.00 220.00" fill="none" stroke="#2f8b7f" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 3"/>
+<line x1="270.00" y1="220.00" x2="270.00" y2="166.25" stroke="#2f8b7f" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 3"/>
+<polygon points="270.00,162.00 266.90,167.00 273.10,167.00" fill="#2f8b7f"/>
+<text x="708.00" y="214.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="start" fill="#2f8b7f">离线：建索引</text>
+<text x="40.00" y="372.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.2" text-anchor="start" fill="#7c8a97">检索可以和生成解耦：索引定期更新，问题实时检索；片段长度、k 的取值、是否重排，都会影响回答质量与成本。</text>
+</svg>

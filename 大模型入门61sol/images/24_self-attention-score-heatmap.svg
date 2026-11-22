@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="610" viewBox="0 0 1000 610" role="img" aria-labelledby="title desc"><title id="title">自注意力热图：一行就是一次读取</title><desc id="desc">高亮 learning 作为 Query 的一行；其对 machine 的归一化权重为 0.60。图中是人工构造的注意力权重，不是真实模型观测。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="610" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 24</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >自注意力热图：一行就是一次读取</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >这里显示 softmax 后的注意力权重 α，而非未经归一化的分数</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="200" y="222" width="61" height="61" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<text x="230.5" y="261.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.55</text>
+<rect x="264" y="222" width="61" height="61" rx="2" fill="#c8dfe0" stroke="#ffffff" />
+<text x="294.5" y="261.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.20</text>
+<rect x="328" y="222" width="61" height="61" rx="2" fill="#d3e5e5" stroke="#ffffff" />
+<text x="358.5" y="261.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.15</text>
+<rect x="392" y="222" width="61" height="61" rx="2" fill="#ddebeb" stroke="#ffffff" />
+<text x="422.5" y="261.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.10</text>
+<rect x="200" y="286" width="61" height="61" rx="2" fill="#d3e5e5" stroke="#ffffff" />
+<text x="230.5" y="325.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.15</text>
+<rect x="264" y="286" width="61" height="61" rx="2" fill="#80b4b7" stroke="#ffffff" />
+<text x="294.5" y="325.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.55</text>
+<rect x="328" y="286" width="61" height="61" rx="2" fill="#c8dfe0" stroke="#ffffff" />
+<text x="358.5" y="325.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.20</text>
+<rect x="392" y="286" width="61" height="61" rx="2" fill="#ddebeb" stroke="#ffffff" />
+<text x="422.5" y="325.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.10</text>
+<rect x="200" y="350" width="61" height="61" rx="2" fill="#e8f1f1" stroke="#ffffff" />
+<text x="230.5" y="389.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.05</text>
+<rect x="264" y="350" width="61" height="61" rx="2" fill="#ddebeb" stroke="#ffffff" />
+<text x="294.5" y="389.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.10</text>
+<rect x="328" y="350" width="61" height="61" rx="2" fill="#a9ccce" stroke="#ffffff" />
+<text x="358.5" y="389.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.35</text>
+<rect x="392" y="350" width="61" height="61" rx="2" fill="#8ababd" stroke="#ffffff" />
+<text x="422.5" y="389.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.50</text>
+<rect x="200" y="414" width="61" height="61" rx="2" fill="#e8f1f1" stroke="#ffffff" />
+<text x="230.5" y="453.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.05</text>
+<rect x="264" y="414" width="61" height="61" rx="2" fill="#ddebeb" stroke="#ffffff" />
+<text x="294.5" y="453.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.10</text>
+<rect x="328" y="414" width="61" height="61" rx="2" fill="#75aeb1" stroke="#ffffff" />
+<text x="358.5" y="453.04" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="400" >0.60</text>
+<rect x="392" y="414" width="61" height="61" rx="2" fill="#bed9da" stroke="#ffffff" />
+<text x="422.5" y="453.04" font-size="16" fill="#26343b" text-anchor="middle" font-weight="400" >0.25</text>
+<rect x="196" y="410" width="261" height="69" rx="4" fill="none" stroke="#b76343" stroke-width="2.5"/>
+<text x="230" y="205" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >I</text>
+<text x="180" y="261" font-size="17" fill="#647079" text-anchor="end" font-weight="400" >I</text>
+<text x="294" y="205" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >love</text>
+<text x="180" y="325" font-size="17" fill="#647079" text-anchor="end" font-weight="400" >love</text>
+<text x="358" y="205" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >machine</text>
+<text x="180" y="389" font-size="17" fill="#647079" text-anchor="end" font-weight="400" >machine</text>
+<text x="422" y="205" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >learning</text>
+<text x="180" y="453" font-size="17" fill="#b76343" text-anchor="end" font-weight="400" >learning</text>
+<text x="329" y="175" font-size="19" fill="#4c75a0" text-anchor="middle" font-weight="400" >Key：被读取的位置</text>
+<text x="45" y="197" font-size="18" fill="#227d82" text-anchor="start" font-weight="400" >Query</text>
+<text x="529" y="245" font-size="18" fill="#227d82" text-anchor="start" font-weight="600" >选中 learning 这一行</text>
+<text x="529" y="284" font-size="20" fill="#26343b" text-anchor="start" font-weight="400" >0.05 vI + 0.10 vlove</text>
+<text x="529" y="317" font-size="20" fill="#26343b" text-anchor="start" font-weight="400" >+ 0.60 vmachine + 0.25 vlearning</text>
+<text x="529" y="379" font-size="20" fill="#227d82" text-anchor="start" font-weight="400" >与 machine 的权重最大：0.60</text>
+<text x="529" y="417" font-size="20" fill="#26343b" text-anchor="start" font-weight="400" >四个权重相加 = 1.00</text>
+<rect x="529" y="457" width="5" height="15" rx="0" fill="#f2f7f7" stroke="none" />
+<rect x="534" y="457" width="5" height="15" rx="0" fill="#eef5f5" stroke="none" />
+<rect x="539" y="457" width="5" height="15" rx="0" fill="#ebf3f3" stroke="none" />
+<rect x="544" y="457" width="5" height="15" rx="0" fill="#e7f1f1" stroke="none" />
+<rect x="549" y="457" width="5" height="15" rx="0" fill="#e4efef" stroke="none" />
+<rect x="554" y="457" width="5" height="15" rx="0" fill="#e0eded" stroke="none" />
+<rect x="559" y="457" width="5" height="15" rx="0" fill="#ddebeb" stroke="none" />
+<rect x="564" y="457" width="5" height="15" rx="0" fill="#d9e9e9" stroke="none" />
+<rect x="569" y="457" width="5" height="15" rx="0" fill="#d6e6e7" stroke="none" />
+<rect x="574" y="457" width="5" height="15" rx="0" fill="#d2e4e5" stroke="none" />
+<rect x="579" y="457" width="5" height="15" rx="0" fill="#cfe2e3" stroke="none" />
+<rect x="584" y="457" width="5" height="15" rx="0" fill="#cbe0e1" stroke="none" />
+<rect x="589" y="457" width="5" height="15" rx="0" fill="#c8dedf" stroke="none" />
+<rect x="594" y="457" width="5" height="15" rx="0" fill="#c4dcdd" stroke="none" />
+<rect x="599" y="457" width="5" height="15" rx="0" fill="#c1dadb" stroke="none" />
+<rect x="604" y="457" width="5" height="15" rx="0" fill="#bdd8d9" stroke="none" />
+<rect x="609" y="457" width="5" height="15" rx="0" fill="#bad6d7" stroke="none" />
+<rect x="614" y="457" width="5" height="15" rx="0" fill="#b6d4d5" stroke="none" />
+<rect x="619" y="457" width="5" height="15" rx="0" fill="#b3d2d3" stroke="none" />
+<rect x="624" y="457" width="5" height="15" rx="0" fill="#afd0d1" stroke="none" />
+<rect x="629" y="457" width="5" height="15" rx="0" fill="#abcecf" stroke="none" />
+<rect x="634" y="457" width="5" height="15" rx="0" fill="#a8cccd" stroke="none" />
+<rect x="639" y="457" width="5" height="15" rx="0" fill="#a4cacb" stroke="none" />
+<rect x="644" y="457" width="5" height="15" rx="0" fill="#a1c7c9" stroke="none" />
+<rect x="649" y="457" width="5" height="15" rx="0" fill="#9dc5c7" stroke="none" />
+<rect x="654" y="457" width="5" height="15" rx="0" fill="#9ac3c5" stroke="none" />
+<rect x="659" y="457" width="5" height="15" rx="0" fill="#96c1c3" stroke="none" />
+<rect x="664" y="457" width="5" height="15" rx="0" fill="#93bfc1" stroke="none" />
+<rect x="669" y="457" width="5" height="15" rx="0" fill="#8fbdbf" stroke="none" />
+<rect x="674" y="457" width="5" height="15" rx="0" fill="#8cbbbd" stroke="none" />
+<rect x="679" y="457" width="5" height="15" rx="0" fill="#88b9bc" stroke="none" />
+<rect x="684" y="457" width="5" height="15" rx="0" fill="#85b7ba" stroke="none" />
+<rect x="689" y="457" width="5" height="15" rx="0" fill="#81b5b8" stroke="none" />
+<rect x="694" y="457" width="5" height="15" rx="0" fill="#7eb3b6" stroke="none" />
+<rect x="699" y="457" width="5" height="15" rx="0" fill="#7ab1b4" stroke="none" />
+<rect x="704" y="457" width="5" height="15" rx="0" fill="#77afb2" stroke="none" />
+<rect x="709" y="457" width="5" height="15" rx="0" fill="#73adb0" stroke="none" />
+<rect x="714" y="457" width="5" height="15" rx="0" fill="#70aaae" stroke="none" />
+<rect x="719" y="457" width="5" height="15" rx="0" fill="#6ca8ac" stroke="none" />
+<rect x="724" y="457" width="5" height="15" rx="0" fill="#69a6aa" stroke="none" />
+<rect x="729" y="457" width="5" height="15" rx="0" fill="#65a4a8" stroke="none" />
+<rect x="734" y="457" width="5" height="15" rx="0" fill="#61a2a6" stroke="none" />
+<rect x="739" y="457" width="5" height="15" rx="0" fill="#5ea0a4" stroke="none" />
+<rect x="744" y="457" width="5" height="15" rx="0" fill="#5a9ea2" stroke="none" />
+<rect x="749" y="457" width="5" height="15" rx="0" fill="#579ca0" stroke="none" />
+<rect x="754" y="457" width="5" height="15" rx="0" fill="#539a9e" stroke="none" />
+<rect x="759" y="457" width="5" height="15" rx="0" fill="#50989c" stroke="none" />
+<rect x="764" y="457" width="5" height="15" rx="0" fill="#4c969a" stroke="none" />
+<rect x="769" y="457" width="5" height="15" rx="0" fill="#499498" stroke="none" />
+<rect x="774" y="457" width="5" height="15" rx="0" fill="#459296" stroke="none" />
+<rect x="779" y="457" width="5" height="15" rx="0" fill="#429094" stroke="none" />
+<rect x="784" y="457" width="5" height="15" rx="0" fill="#3e8e92" stroke="none" />
+<rect x="789" y="457" width="5" height="15" rx="0" fill="#3b8b90" stroke="none" />
+<rect x="794" y="457" width="5" height="15" rx="0" fill="#37898e" stroke="none" />
+<rect x="799" y="457" width="5" height="15" rx="0" fill="#34878c" stroke="none" />
+<rect x="804" y="457" width="5" height="15" rx="0" fill="#30858a" stroke="none" />
+<rect x="809" y="457" width="5" height="15" rx="0" fill="#2d8388" stroke="none" />
+<rect x="814" y="457" width="5" height="15" rx="0" fill="#298186" stroke="none" />
+<rect x="819" y="457" width="5" height="15" rx="0" fill="#267f84" stroke="none" />
+<rect x="824" y="457" width="5" height="15" rx="0" fill="#227d82" stroke="none" />
+<text x="529" y="494" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >0</text>
+<text x="829" y="494" font-size="15" fill="#647079" text-anchor="end" font-weight="400" >1</text>
+<line x1="40" y1="538" x2="960" y2="538" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="567" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >这是可双向读取的单头、单层示意；数值人工构造，不是某个真实模型的测量结果。</text>
+<text x="40" y="592" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >高注意力权重表示该头更多读取该 Value，并不能单独证明语义关系或因果解释。</text></svg>

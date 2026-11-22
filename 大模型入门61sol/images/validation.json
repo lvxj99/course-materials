@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "figures": 30,
+  "originalPlaceholders": 27,
+  "addedFigures": 3,
+  "codeBlocks": 0,
+  "displayMathBlocks": 37,
+  "checks": [
+    {
+      "name": "全部 27 个原始文件名主体保留，全部 30 个 SVG 引用存在",
+      "passed": true
+    },
+    {
+      "name": "所有 SVG 与源码最新构建一致，无外链图像或脚本",
+      "passed": true
+    },
+    {
+      "name": "原有独立公式保留，新增公式完整，表格正常使用 Markdown",
+      "passed": true
+    },
+    {
+      "name": "原稿外部链接全部保留，UTF-8 无替代符，CRLF 格式保留",
+      "passed": true
+    },
+    {
+      "name": "拓展讲义链接可用，新增手算例子正确",
+      "passed": true
+    },
+    {
+      "name": "温度图每一个实际柱高对应 softmax，概率归一化且熵随温度增加",
+      "passed": true
+    },
+    {
+      "name": "注意力热图每行实际绘制权重和为 1",
+      "passed": true
+    },
+    {
+      "name": "QKV 加权例、MoE 归一化、缓存与 Bellman 数值一致",
+      "passed": true
+    },
+    {
+      "name": "BPE 三轮相邻对计数均为最高频 9，合并后词序列正确",
+      "passed": true
+    },
+    {
+      "name": "因果掩码是下三角，MAE 可见与遮挡数量匹配",
+      "passed": true
+    }
+  ]
+}

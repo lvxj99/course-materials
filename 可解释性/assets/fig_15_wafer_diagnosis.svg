@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 534" width="960" height="534" role="img" aria-labelledby="title desc" xml:lang="zh-CN"><title id="title">边缘误差大，温度响应差在哪儿</title>
+<desc id="desc">同一批诊断 wafer，左侧按位置看误差，右侧比较低温到高温的变化。</desc>
+<style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","WenQuanYi Zen Hei",system-ui,sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="960" height="534" fill="#f7f9fc"/>
+<rect x="36" y="24" width="64" height="38" rx="9" fill="#e7f0fa"/>
+<text x="68" y="50" fill="#2866a0" font-size="19" font-weight="650" text-anchor="middle">图 15</text>
+<text x="117" y="53" fill="#172b44" font-size="33" font-weight="700">边缘误差大，温度响应差在哪儿</text>
+<text x="36" y="94" fill="#485e75" font-size="22" font-weight="500">同一批诊断 wafer，左侧按位置看误差，右侧比较低温到高温的变化。</text>
+<rect x="36" y="125" width="432" height="382" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/>
+<rect x="492" y="125" width="432" height="382" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/>
+<text x="57" y="165" fill="#172b44" font-size="25" font-weight="650">按位置拆开 RMSE</text>
+<text x="104" y="190" fill="#485e75" font-size="21" font-weight="500">RMSE（nm）</text>
+<rect x="104" y="200" width="295" height="220" fill="#ffffff"/><line x1="104" y1="420" x2="399" y2="420" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="104" y1="358.89" x2="399" y2="358.89" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="104" y1="297.78" x2="399" y2="297.78" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="104" y1="236.67" x2="399" y2="236.67" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="143" y="351.68" width="80" height="68.32" rx="4" fill="#2866a0"/><text x="183" y="340.68" fill="#2866a0" font-size="23" font-weight="650" text-anchor="middle">0.22</text><text x="183" y="451" fill="#485e75" font-size="22" font-weight="500" text-anchor="middle">中心区</text>
+<rect x="286" y="234.14" width="80" height="185.86" rx="4" fill="#a74b22"/><text x="326" y="223.14" fill="#a74b22" font-size="23" font-weight="650" text-anchor="middle">0.61</text><text x="326" y="451" fill="#485e75" font-size="22" font-weight="500" text-anchor="middle">边缘</text>
+<line x1="104" y1="200" x2="104" y2="420" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><line x1="104" y1="420" x2="399" y2="420" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><text x="91" y="427" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">0</text><text x="91" y="365.89" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">0.2</text><text x="91" y="304.78" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">0.4</text><text x="91" y="243.67" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">0.6</text>
+<text x="252" y="484" fill="#485e75" font-size="21" font-weight="500" text-anchor="middle">全部测点的 RMSE 为 0.36 nm</text>
+<text x="513" y="165" fill="#172b44" font-size="25" font-weight="650">固定高压档，比温差响应</text>
+<text x="610" y="190" fill="#485e75" font-size="20" font-weight="500">低温到高温的增量（nm）</text>
+<rect x="610" y="200" width="260" height="220" fill="#ffffff"/><line x1="610" y1="200" x2="610" y2="420" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="696.67" y1="200" x2="696.67" y2="420" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="783.33" y1="200" x2="783.33" y2="420" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="870" y1="200" x2="870" y2="420" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/>
+<text x="514" y="257" fill="#172b44" font-size="22" font-weight="500">中心区</text><rect x="610" y="229" width="104" height="21" rx="4" fill="#2866a0"/><text x="723" y="247" fill="#2866a0" font-size="20" font-weight="650">1.2</text><rect x="610" y="262" width="138.67" height="21" rx="4" fill="#66529d"/><text x="757.67" y="280" fill="#66529d" font-size="20" font-weight="650">1.6</text>
+<text x="514" y="363" fill="#172b44" font-size="22" font-weight="500">边缘</text><rect x="610" y="335" width="242.67" height="21" rx="4" fill="#2866a0"/><text x="861.67" y="353" fill="#2866a0" font-size="20" font-weight="650">2.8</text><rect x="610" y="368" width="138.67" height="21" rx="4" fill="#66529d"/><text x="757.67" y="386" fill="#66529d" font-size="20" font-weight="650">1.6</text>
+<line x1="610" y1="200" x2="610" y2="420" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><line x1="610" y1="420" x2="870" y2="420" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><text x="610" y="448" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">0</text><text x="696.67" y="448" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">1</text><text x="783.33" y="448" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">2</text><text x="870" y="448" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">3</text>
+<rect x="527" y="468" width="23" height="15" rx="3" fill="#2866a0"/>
+<text x="559" y="483" fill="#485e75" font-size="20" font-weight="500">量测均值增量</text>
+<rect x="716" y="468" width="23" height="15" rx="3" fill="#66529d"/>
+<text x="748" y="483" fill="#485e75" font-size="20" font-weight="500">加法模型</text></svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="625" viewBox="0 0 1000 625" role="img" aria-labelledby="title desc"><title id="title">扩展能力的三处计算预算</title><desc id="desc">预训练、后训练和推理时计算在不同阶段增加预算；前两者调整参数，后者通常在固定参数下加深求解或增加候选与验证。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="625" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 21</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >扩展能力的三处计算预算</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >比较计算花在何时、改变什么；不是三条统一且必然成立的增长曲线</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="45" y="171" width="265" height="350" rx="6" fill="#ffffff" stroke="#d9dfdf" />
+<text x="177" y="209" font-size="25" fill="#227d82" text-anchor="middle" font-weight="600" >预训练</text>
+<rect x="367" y="171" width="265" height="350" rx="6" fill="#ffffff" stroke="#d9dfdf" />
+<text x="499" y="209" font-size="25" fill="#4c75a0" text-anchor="middle" font-weight="600" >后训练</text>
+<rect x="689" y="171" width="265" height="350" rx="6" fill="#ffffff" stroke="#d9dfdf" />
+<text x="821" y="209" font-size="25" fill="#b76343" text-anchor="middle" font-weight="600" >推理时计算</text>
+<rect x="78" y="360" width="29" height="65" rx="2" fill="#c1dbdc" stroke="#ffffff" />
+<rect x="121" y="340" width="29" height="85" rx="2" fill="#9ec6c8" stroke="#ffffff" />
+<rect x="164" y="320" width="29" height="105" rx="2" fill="#7ab1b4" stroke="#ffffff" />
+<rect x="207" y="300" width="29" height="125" rx="2" fill="#579ca0" stroke="#ffffff" />
+<text x="177" y="264" font-size="16" fill="#647079" text-anchor="middle" font-weight="400" >数据量 · 参数量 · 训练步数</text>
+<text x="177" y="451" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >广泛任务与分布</text>
+<text x="177" y="482" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >改变模型参数</text>
+<text x="499" y="264" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >更好的示范、偏好与奖励</text>
+<rect x="405" y="299" width="185" height="43" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="497.5" y="326.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >生成候选回答</text>
+<line x1="498" y1="342" x2="498" y2="369" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="405" y="373" width="185" height="43" rx="6" fill="#eaf0f8" stroke="#4c75a0" />
+<text x="497.5" y="400.5" font-size="18" fill="#26343b" text-anchor="middle" font-weight="400" >评价 → 更新</text>
+<text x="499" y="451" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >对齐任务目标</text>
+<text x="499" y="482" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >改变模型参数</text>
+<text x="821" y="264" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >更深的推导，或更多候选</text>
+<circle cx="732" cy="347" r="7" fill="#b76343" stroke="#b76343" stroke-width="1.5"/>
+<line x1="741" y1="347" x2="790" y2="300" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<circle cx="799" cy="300" r="7" fill="#faeee7" stroke="#b76343" stroke-width="1.5"/>
+<line x1="808" y1="300" x2="881" y2="347" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<line x1="741" y1="347" x2="790" y2="347" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<circle cx="799" cy="347" r="7" fill="#faeee7" stroke="#b76343" stroke-width="1.5"/>
+<line x1="808" y1="347" x2="881" y2="347" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<line x1="741" y1="347" x2="790" y2="394" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<circle cx="799" cy="394" r="7" fill="#faeee7" stroke="#b76343" stroke-width="1.5"/>
+<line x1="808" y1="394" x2="881" y2="347" stroke="#b76343" stroke-width="1.7" marker-end="url(#arrow-b76343)"/>
+<circle cx="891" cy="347" r="9" fill="#b76343" stroke="#b76343" stroke-width="1.5"/>
+<text x="821" y="451" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >一次任务内求解与验证</text>
+<text x="821" y="482" font-size="19" fill="#26343b" text-anchor="middle" font-weight="400" >通常保持参数固定</text>
+<line x1="40" y1="553" x2="960" y2="553" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="582" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >收益受数据质量、任务难度、预算分配与验证器质量影响；更多计算不保证更好的结果。</text>
+<text x="40" y="607" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >训练计算主要影响模型获得的能力；推理预算影响本次任务怎样使用已有能力。</text></svg>

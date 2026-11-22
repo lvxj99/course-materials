@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="539" viewBox="0 0 960 539" role="img">
+<title>并行计算与 KV cache</title>
+<desc>训练和 prefill 一次处理整段；decode 只为新 token 计算，并复用历史 K、V。</desc>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<defs><marker id="mk1F2A30" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#1F2A30"/></marker><marker id="mk3E9B96" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#3E9B96"/></marker><marker id="mk4C78A8" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4C78A8"/></marker><marker id="mk4E8C46" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#4E8C46"/></marker><marker id="mk8A847C" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8A847C"/></marker><marker id="mk8E6899" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#8E6899"/></marker><marker id="mkC4922A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C4922A"/></marker><marker id="mkC9C4BC" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#C9C4BC"/></marker><marker id="mkD4544E" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#D4544E"/></marker><marker id="mkE07B2A" viewBox="0 0 12 10" refX="10" refY="5" markerWidth="8" markerHeight="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L12,5 L0,10 Z" fill="#E07B2A"/></marker></defs>
+<rect x="28.0" y="24.0" width="440.0" height="300.0" rx="10" fill="#F6F5F2" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<text x="44.0" y="48.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="italic" font-family="Georgia, 'Palatino Linotype', 'Songti SC', serif" text-anchor="start" dominant-baseline="middle">(a)</text>
+<text x="72.0" y="48.0" fill="#1F2A30" fill-opacity="1.0" font-size="15" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">训练 / prefill：整段一起算</text>
+<rect x="44.0" y="78.0" width="55.6" height="28.0" rx="5" fill="#4C78A8" fill-opacity="0.12" stroke="#4C78A8" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="71.8" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;bos&gt;</text>
+<rect x="107.6" y="78.0" width="34.2" height="28.0" rx="5" fill="#4C78A8" fill-opacity="0.12" stroke="#4C78A8" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="124.7" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">我</text>
+<rect x="149.8" y="78.0" width="46.5" height="28.0" rx="5" fill="#4C78A8" fill-opacity="0.12" stroke="#4C78A8" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="173.1" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">喜欢</text>
+<rect x="204.3" y="78.0" width="46.5" height="28.0" rx="5" fill="#4C78A8" fill-opacity="0.12" stroke="#4C78A8" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="227.6" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">机器</text>
+<rect x="258.8" y="78.0" width="46.5" height="28.0" rx="5" fill="#4C78A8" fill-opacity="0.12" stroke="#4C78A8" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="282.0" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">学习</text>
+<text x="44.0" y="128.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">每个位置同时得到自己的 Q、K、V。</text>
+<rect x="44.0" y="156.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="58.0" y="156.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="72.0" y="156.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="86.0" y="156.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="100.0" y="156.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="44.0" y="170.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="58.0" y="170.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="72.0" y="170.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="86.0" y="170.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="100.0" y="170.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="44.0" y="184.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="58.0" y="184.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="72.0" y="184.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="86.0" y="184.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="100.0" y="184.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="44.0" y="198.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="58.0" y="198.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="72.0" y="198.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="86.0" y="198.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="100.0" y="198.0" width="12.5" height="12.5" rx="1" fill="#E7E4DE" fill-opacity="1.0" stroke="none"/>
+<rect x="44.0" y="212.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="58.0" y="212.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="72.0" y="212.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="86.0" y="212.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<rect x="100.0" y="212.0" width="12.5" height="12.5" rx="1" fill="#4C78A8" fill-opacity="1.0" stroke="none"/>
+<text x="130.0" y="186.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">因果掩码仍然生效</text>
+<text x="44.0" y="246.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">训练时，各位置的下一 token 损失一起算。</text>
+<text x="44.0" y="270.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">prefill 一次读完提示，决定首字延迟 TTFT。</text>
+<text x="44.0" y="294.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">这一步的计算可以铺满 GPU。</text>
+<rect x="484.0" y="24.0" width="448.0" height="300.0" rx="10" fill="#F6F5F2" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<text x="500.0" y="48.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="italic" font-family="Georgia, 'Palatino Linotype', 'Songti SC', serif" text-anchor="start" dominant-baseline="middle">(b)</text>
+<text x="528.0" y="48.0" fill="#1F2A30" fill-opacity="1.0" font-size="15" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">decode：只算新位置</text>
+<rect x="500.0" y="78.0" width="55.6" height="28.0" rx="5" fill="#8A847C" fill-opacity="0.12" stroke="#8A847C" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="527.8" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">&lt;bos&gt;</text>
+<rect x="563.6" y="78.0" width="34.2" height="28.0" rx="5" fill="#8A847C" fill-opacity="0.12" stroke="#8A847C" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="580.7" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">我</text>
+<rect x="605.8" y="78.0" width="46.5" height="28.0" rx="5" fill="#8A847C" fill-opacity="0.12" stroke="#8A847C" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="629.1" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">喜欢</text>
+<rect x="660.3" y="78.0" width="46.5" height="28.0" rx="5" fill="#8A847C" fill-opacity="0.12" stroke="#8A847C" stroke-width="1.2" stroke-opacity="1.0"/>
+<text x="683.6" y="92.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="500" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">机器</text>
+<rect x="500.0" y="116.0" width="46.5" height="28.0" rx="5" fill="#E07B2A" fill-opacity="0.18" stroke="#E07B2A" stroke-width="1.7" stroke-opacity="1.0"/>
+<text x="523.2" y="130.0" fill="#1F2A30" fill-opacity="1.0" font-size="12" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">学习</text>
+<text x="560.0" y="130.0" fill="#E07B2A" fill-opacity="1.0" font-size="12" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">新 token</text>
+<text x="500.0" y="168.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">历史位置的 K、V 留在缓存里，直接拼接。</text>
+<text x="500.0" y="192.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">这一步只算新的 q、k、v，再把 k、v 追加进去。</text>
+<text x="500.0" y="216.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">新的 q 读取缓存中的全部 K、V。</text>
+<text x="500.0" y="250.0" fill="#1F2A30" fill-opacity="1.0" font-size="13" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">每步耗时是 TPOT。</text>
+<text x="500.0" y="274.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">省掉的是重算，省不掉把缓存从显存读出来。</text>
+<rect x="28.0" y="340.0" width="904.0" height="150.0" rx="10" fill="#F6F5F2" fill-opacity="1.0" stroke="#E3E0DA" stroke-width="1" stroke-opacity="1.0"/>
+<text x="44.0" y="364.0" fill="#526068" fill-opacity="1.0" font-size="13" font-weight="400" font-style="italic" font-family="Georgia, 'Palatino Linotype', 'Songti SC', serif" text-anchor="start" dominant-baseline="middle">(c)</text>
+<text x="72.0" y="364.0" fill="#1F2A30" fill-opacity="1.0" font-size="15" font-weight="650" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">这条序列的 KV 缓存有多大</text>
+<rect x="44.0" y="386.0" width="108.0" height="52.0" rx="6" fill="#3E9B96" fill-opacity="0.14" stroke="#3E9B96" stroke-width="1.35" stroke-opacity="1.0"/>
+<text x="98.0" y="403.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">2</text>
+<text x="98.0" y="423.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">K 和 V</text>
+<text x="154.0" y="412.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">×</text>
+<rect x="170.0" y="386.0" width="108.0" height="52.0" rx="6" fill="#8A847C" fill-opacity="0.14" stroke="#8A847C" stroke-width="1.35" stroke-opacity="1.0"/>
+<text x="224.0" y="403.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">B=1</text>
+<text x="224.0" y="423.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">序列数</text>
+<text x="280.0" y="412.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">×</text>
+<rect x="296.0" y="386.0" width="108.0" height="52.0" rx="6" fill="#8A847C" fill-opacity="0.14" stroke="#8A847C" stroke-width="1.35" stroke-opacity="1.0"/>
+<text x="350.0" y="403.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">L=32</text>
+<text x="350.0" y="423.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">层数</text>
+<text x="406.0" y="412.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">×</text>
+<rect x="422.0" y="386.0" width="108.0" height="52.0" rx="6" fill="#8A847C" fill-opacity="0.14" stroke="#8A847C" stroke-width="1.35" stroke-opacity="1.0"/>
+<text x="476.0" y="403.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">T=8192</text>
+<text x="476.0" y="423.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">长度</text>
+<text x="532.0" y="412.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">×</text>
+<rect x="548.0" y="386.0" width="108.0" height="52.0" rx="6" fill="#8A847C" fill-opacity="0.14" stroke="#8A847C" stroke-width="1.35" stroke-opacity="1.0"/>
+<text x="602.0" y="403.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">H_kv=8</text>
+<text x="602.0" y="423.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">KV 头</text>
+<text x="658.0" y="412.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">×</text>
+<rect x="674.0" y="386.0" width="108.0" height="52.0" rx="6" fill="#8A847C" fill-opacity="0.14" stroke="#8A847C" stroke-width="1.35" stroke-opacity="1.0"/>
+<text x="728.0" y="403.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">d=128</text>
+<text x="728.0" y="423.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">每头维数</text>
+<text x="784.0" y="412.0" fill="#1F2A30" fill-opacity="1.0" font-size="16" font-weight="700" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start" dominant-baseline="middle">×</text>
+<rect x="800.0" y="386.0" width="108.0" height="52.0" rx="6" fill="#8A847C" fill-opacity="0.14" stroke="#8A847C" stroke-width="1.35" stroke-opacity="1.0"/>
+<text x="854.0" y="403.0" fill="#1F2A30" fill-opacity="1.0" font-size="14" font-weight="600" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">2 字节</text>
+<text x="854.0" y="423.0" fill="#526068" fill-opacity="1.0" font-size="11" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">每个元素</text>
+<text x="44.0" y="462.0" fill="#1F2A30" fill-opacity="1.0" font-size="15" font-weight="400" font-style="italic" font-family="Georgia, 'Palatino Linotype', 'Songti SC', serif" text-anchor="start">2 × 1 × 32 × 8192 × 8 × 128 × 2  =  1,073,741,824 字节  =  1 GiB</text>
+<text x="28.0" y="508.0" fill="#526068" fill-opacity="1.0" font-size="11.5" font-weight="400" font-style="normal" font-family="'Segoe UI', 'Microsoft YaHei', Helvetica, Arial, sans-serif" text-anchor="start">公式假设每层的 KV 头数和每头维数相同，并且只统计这些 KV 张量，不含权重和其他激活。上下文或并发序列一变长，缓存就按比例变大。</text>
+</svg>

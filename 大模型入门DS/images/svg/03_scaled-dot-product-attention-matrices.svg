@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500">
+<rect width="960" height="500" fill="#ffffff"/>
+
+<text x="40.00" y="34.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#44525e" font-weight="600">① 整句一起算：所有位置的分数用一个矩阵乘法得到</text>
+<rect x="56.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="74.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="92.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="110.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="56.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="74.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="92.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="110.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="56.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="74.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="92.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="110.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="56.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="74.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="92.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="110.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="56.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="74.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="92.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<rect x="110.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#edf3f9" stroke="#c9dcee" stroke-width="0.5"/>
+<text x="92.00" y="93.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.5" text-anchor="middle" fill="#1f2a33" font-weight="600">Q</text>
+<text x="92.00" y="214.00" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.5" text-anchor="middle" fill="#7c8a97">T × d_k</text>
+<rect x="152.00" y="114.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="170.00" y="114.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="188.00" y="114.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="206.00" y="114.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="224.00" y="114.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="152.00" y="132.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="170.00" y="132.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="188.00" y="132.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="206.00" y="132.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="224.00" y="132.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="152.00" y="150.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="170.00" y="150.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="188.00" y="150.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="206.00" y="150.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="224.00" y="150.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="152.00" y="168.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="170.00" y="168.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="188.00" y="168.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="206.00" y="168.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<rect x="224.00" y="168.00" width="17.00" height="17.00" rx="1" fill="#fcf1e7" stroke="#f0d2b7" stroke-width="0.5"/>
+<text x="197.00" y="102.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.5" text-anchor="middle" fill="#1f2a33" font-weight="600">Kᵀ</text>
+<text x="197.00" y="214.00" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.5" text-anchor="middle" fill="#7c8a97">d_k × T</text>
+<rect x="268.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="286.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="304.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="322.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="340.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="268.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="286.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="304.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="322.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="340.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="268.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="286.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="304.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="322.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="340.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="268.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="286.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="304.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="322.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="340.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="268.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="286.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="304.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="322.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="340.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<text x="313.00" y="93.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.5" text-anchor="middle" fill="#1f2a33" font-weight="600">S = QKᵀ</text>
+<text x="313.00" y="214.00" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.5" text-anchor="middle" fill="#7c8a97">T × T</text>
+<text x="142.00" y="155.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="15" text-anchor="middle" fill="#7c8a97">×</text>
+<text x="256.00" y="155.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="15" text-anchor="middle" fill="#7c8a97">=</text>
+<rect x="380.00" y="137.00" width="70.00" height="26.00" rx="5" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="415.00" y="154.00" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="11" text-anchor="middle" fill="#44525e">÷ √d_k</text>
+<rect x="460.00" y="137.00" width="60.00" height="26.00" rx="5" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="490.00" y="154.00" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="11" text-anchor="middle" fill="#44525e">+ M</text>
+<rect x="530.00" y="137.00" width="70.00" height="26.00" rx="5" fill="#f6f9fb" stroke="#dde5ec" stroke-width="1"/>
+<text x="565.00" y="154.00" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="11" text-anchor="middle" fill="#44525e">softmax</text>
+<line x1="361.00" y1="150.00" x2="373.75" y2="150.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="378.00,150.00 373.00,146.90 373.00,153.10" fill="#7c8a97"/>
+<line x1="450.00" y1="150.00" x2="453.75" y2="150.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="458.00,150.00 453.00,146.90 453.00,153.10" fill="#7c8a97"/>
+<line x1="520.00" y1="150.00" x2="523.75" y2="150.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="528.00,150.00 523.00,146.90 523.00,153.10" fill="#7c8a97"/>
+<line x1="600.00" y1="150.00" x2="606.75" y2="150.00" stroke="#7c8a97" stroke-width="1.2" stroke-linecap="round"/>
+<polygon points="611.00,150.00 606.00,146.90 606.00,153.10" fill="#7c8a97"/>
+<rect x="614.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="632.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="650.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="668.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="686.00" y="105.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="614.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="632.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="650.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="668.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="686.00" y="123.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="614.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="632.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="650.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="668.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="686.00" y="141.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="614.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="632.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="650.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="668.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="686.00" y="159.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="614.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="632.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="650.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="668.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<rect x="686.00" y="177.00" width="17.00" height="17.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="0.5"/>
+<text x="659.00" y="93.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="12.5" text-anchor="middle" fill="#1f2a33" font-weight="600">A（权重）</text>
+<text x="659.00" y="214.00" font-family="'Cascadia Code','Consolas','SFMono-Regular',monospace" font-size="9.5" text-anchor="middle" fill="#7c8a97">T × T</text>
+<rect x="268.00" y="141.00" width="90.00" height="18.00" rx="1" fill="none" stroke="#6f63a5" stroke-width="1.6"/>
+<rect x="614.00" y="141.00" width="90.00" height="18.00" rx="1" fill="none" stroke="#6f63a5" stroke-width="1.6"/>
+<circle cx="726.00" cy="108.00" r="1.80" fill="#b6c1ca"/>
+<text x="736.00" y="112.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e" font-weight="600">S 的每一行</text>
+<text x="736.00" y="126.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="start" fill="#7c8a97">一个位置对全部位置的打分</text>
+<circle cx="726.00" cy="136.00" r="1.80" fill="#b6c1ca"/>
+<text x="736.00" y="140.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e" font-weight="600">softmax 按行归一化</text>
+<text x="736.00" y="154.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="start" fill="#7c8a97">每行相加为 1</text>
+<circle cx="726.00" cy="164.00" r="1.80" fill="#b6c1ca"/>
+<text x="736.00" y="168.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e" font-weight="600">M 是掩码矩阵</text>
+<text x="736.00" y="182.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="start" fill="#7c8a97">因果掩码时未来位置为 −∞</text>
+<circle cx="726.00" cy="192.00" r="1.80" fill="#b6c1ca"/>
+<text x="736.00" y="196.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#44525e" font-weight="600">÷ √d_k</text>
+<text x="736.00" y="210.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10" text-anchor="start" fill="#7c8a97">把点积拉回合适的尺度</text>
+<text x="40.00" y="256.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#44525e" font-weight="600">② 只看第 t 行：一个位置怎样把 Value 汇总成自己的输出</text>
+<rect x="56.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="69.00" y="348.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#6f63a5">0.62</text>
+<rect x="82.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="95.00" y="348.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#6f63a5">0.04</text>
+<rect x="108.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="121.00" y="348.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#6f63a5">0.05</text>
+<rect x="134.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="147.00" y="348.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#6f63a5">0.06</text>
+<rect x="160.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#f0eef8" stroke="#d6d0ea" stroke-width="1"/>
+<text x="173.00" y="348.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="8.6" text-anchor="middle" fill="#6f63a5">0.23</text>
+<text x="121.00" y="322.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e">αₜ：A 的第 t 行</text>
+<text x="200.00" y="349.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="15" text-anchor="middle" fill="#7c8a97">×</text>
+<rect x="214.00" y="280.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="240.00" y="280.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="266.00" y="280.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="292.00" y="280.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="214.00" y="306.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="240.00" y="306.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="266.00" y="306.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="292.00" y="306.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="214.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="240.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="266.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="292.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="214.00" y="358.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="240.00" y="358.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="266.00" y="358.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="292.00" y="358.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="214.00" y="384.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="240.00" y="384.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="266.00" y="384.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<rect x="292.00" y="384.00" width="25.00" height="25.00" rx="1" fill="#e9f5f2" stroke="#bfe0d9" stroke-width="0.5"/>
+<text x="266.00" y="270.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e">V（T × d_v）</text>
+<text x="327.00" y="349.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="15" text-anchor="middle" fill="#7c8a97">=</text>
+<rect x="344.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#bfe0d9" stroke="#2f8b7f" stroke-width="0.5"/>
+<rect x="370.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#bfe0d9" stroke="#2f8b7f" stroke-width="0.5"/>
+<rect x="396.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#bfe0d9" stroke="#2f8b7f" stroke-width="0.5"/>
+<rect x="422.00" y="332.00" width="25.00" height="25.00" rx="1" fill="#bfe0d9" stroke="#2f8b7f" stroke-width="0.5"/>
+<text x="396.00" y="322.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="middle" fill="#44525e">oₜ（d_v）</text>
+<text x="476.00" y="342.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="13" text-anchor="start" fill="#1f2a33">oₜ = Σₛ αₜₛ · vₛ</text>
+<text x="476.00" y="364.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#7c8a97">权重只作用在对应位置的 Value 行上，</text>
+<text x="476.00" y="380.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#7c8a97">再把 5 行向量按权重加起来。</text>
+<text x="40.00" y="452.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#7c8a97">Q、K、V 都来自同一组输入 X，只差三组投影参数：XW_Q、XW_K、XW_V。交叉注意力同理，只是 K、V 改由编码器的输出生成。</text>
+<text x="40.00" y="474.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#7c8a97">计算量：QKᵀ 约 T²·d_k，softmax 后与 V 相乘约 T²·d_v；保存 T×T 的权重还需要 O(T²) 的空间。</text>
+</svg>

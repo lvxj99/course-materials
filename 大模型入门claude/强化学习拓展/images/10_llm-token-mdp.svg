@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc"><title id="title">一段回答，就是一条决策轨迹</title><desc id="desc">回答概率分解为逐 token 概率，终局奖励通过加权 log-probability 梯度影响整段生成行为。</desc><defs><marker id="arrow-26343b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#26343b"/></marker><marker id="arrow-647079" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#647079"/></marker><marker id="arrow-d9dfdf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#d9dfdf"/></marker><marker id="arrow-ffffff" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#ffffff"/></marker><marker id="arrow-f5f7f7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f5f7f7"/></marker><marker id="arrow-227d82" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#227d82"/></marker><marker id="arrow-e4f1f0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#e4f1f0"/></marker><marker id="arrow-b76343" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#b76343"/></marker><marker id="arrow-faeee7" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#faeee7"/></marker><marker id="arrow-4c75a0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#4c75a0"/></marker><marker id="arrow-eaf0f8" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#eaf0f8"/></marker><marker id="arrow-7d6a9b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#7d6a9b"/></marker><marker id="arrow-f0edf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9 Z" fill="#f0edf6"/></marker><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f4f4f3"/><path d="M-2 2L2-2M0 8L8 0M6 10L10 6" stroke="#d9dedd" stroke-width="1"/></pattern></defs><style>text{font-family:"Segoe UI","Microsoft YaHei","Noto Sans CJK SC",sans-serif}svg{background:#fff}</style><rect width="1000" height="640" fill="white"/><text x="40" y="43" font-size="14" fill="#227d82" text-anchor="start" font-weight="650" >FIG 10</text>
+<text x="40" y="83" font-size="29" fill="#26343b" text-anchor="start" font-weight="650" >一段回答，就是一条决策轨迹</text>
+<text x="40" y="116" font-size="17" fill="#647079" text-anchor="start" font-weight="400" >状态是 prompt + 已生成前缀；动作是下一个 token</text>
+<line x1="40" y1="137" x2="960" y2="137" stroke="#d9dfdf" stroke-width="1" />
+<rect x="47" y="213" width="149" height="63" rx="6" fill="#f5f7f7" stroke="#d9dfdf" />
+<text x="121.5" y="250.5" font-size="23" fill="#26343b" text-anchor="middle" font-weight="400" >Prompt x</text>
+<line x1="196" y1="245" x2="247" y2="245" stroke="#647079" stroke-width="1.7" marker-end="url(#arrow-647079)"/>
+<rect x="255" y="213" width="113" height="63" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="311.5" y="250.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >先</text>
+<text x="311" y="314" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >动作 y1</text>
+<line x1="368" y1="245" x2="394" y2="245" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<rect x="394" y="213" width="113" height="63" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="450.5" y="250.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >检查</text>
+<text x="450" y="314" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >动作 y2</text>
+<line x1="507" y1="245" x2="533" y2="245" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<rect x="533" y="213" width="113" height="63" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="589.5" y="250.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >…</text>
+<text x="589" y="314" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >动作 y3</text>
+<line x1="646" y1="245" x2="672" y2="245" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<rect x="672" y="213" width="113" height="63" rx="6" fill="#e4f1f0" stroke="#227d82" />
+<text x="728.5" y="250.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >答案</text>
+<text x="728" y="314" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >动作 y4</text>
+<line x1="785" y1="245" x2="811" y2="245" stroke="#227d82" stroke-width="1.7" marker-end="url(#arrow-227d82)"/>
+<rect x="811" y="213" width="113" height="63" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="867.5" y="250.5" font-size="21" fill="#26343b" text-anchor="middle" font-weight="400" >〈EOS〉</text>
+<text x="867" y="314" font-size="17" fill="#647079" text-anchor="middle" font-weight="400" >动作 y5</text>
+<text x="500" y="371" font-size="25" fill="#26343b" text-anchor="middle" font-weight="400" >log πθ(y | x) = Σᵢ log πθ(yᵢ | x, y&lt;ᵢ)</text>
+<path d="M924,276 L924,431 L191,431" stroke="#b76343" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow-b76343)"/>
+<rect x="48" y="400" width="140" height="63" rx="6" fill="#faeee7" stroke="#b76343" />
+<text x="118" y="437.5" font-size="20" fill="#26343b" text-anchor="middle" font-weight="400" >终局奖励 R</text>
+<line x1="311" y1="431" x2="311" y2="459" stroke="#b76343" stroke-width="1.5" marker-end="url(#arrow-b76343)"/>
+<line x1="450" y1="431" x2="450" y2="459" stroke="#b76343" stroke-width="1.5" marker-end="url(#arrow-b76343)"/>
+<line x1="589" y1="431" x2="589" y2="459" stroke="#b76343" stroke-width="1.5" marker-end="url(#arrow-b76343)"/>
+<line x1="728" y1="431" x2="728" y2="459" stroke="#b76343" stroke-width="1.5" marker-end="url(#arrow-b76343)"/>
+<line x1="867" y1="431" x2="867" y2="459" stroke="#b76343" stroke-width="1.5" marker-end="url(#arrow-b76343)"/>
+<text x="585" y="492" font-size="20" fill="#b76343" text-anchor="middle" font-weight="400" >回报 / advantage 为生成动作提供训练权重</text>
+<line x1="40" y1="568" x2="960" y2="568" stroke="#d9dfdf" stroke-width="1" />
+<text x="40" y="597" font-size="16" fill="#647079" text-anchor="start" font-weight="400" >图中用词组示意生成位置；通常取 γ=1，终局回报沿整段回答提供学习信号。</text>
+<text x="40" y="622" font-size="15" fill="#647079" text-anchor="start" font-weight="400" >动作损失计算在模型生成的位置；prompt 与工具结果通过上下文影响后续动作概率。</text></svg>

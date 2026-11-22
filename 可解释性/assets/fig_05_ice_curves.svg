@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 536" width="960" height="536" role="img" aria-labelledby="title desc" xml:lang="zh-CN"><title id="title">平均是平的，每条线仍在变化</title>
+<desc id="desc">同一个 f(t,p) = t·p，每条线固定一条记录自己的压力偏差。</desc>
+<style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","WenQuanYi Zen Hei",system-ui,sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="960" height="536" fill="#f7f9fc"/>
+<rect x="36" y="24" width="64" height="38" rx="9" fill="#e7f0fa"/>
+<text x="68" y="50" fill="#2866a0" font-size="19" font-weight="650" text-anchor="middle">图 5</text>
+<text x="117" y="53" fill="#172b44" font-size="33" font-weight="700">平均是平的，每条线仍在变化</text>
+<text x="36" y="94" fill="#485e75" font-size="22" font-weight="500">同一个 f(t,p) = t·p，每条线固定一条记录自己的压力偏差。</text>
+<text x="111" y="155" fill="#485e75" font-size="21" font-weight="500">预测残差（nm）</text>
+<rect x="111" y="171" width="554" height="270" fill="#ffffff"/><line x1="111" y1="171" x2="111" y2="441" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="249.5" y1="171" x2="249.5" y2="441" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="388" y1="171" x2="388" y2="441" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="526.5" y1="171" x2="526.5" y2="441" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="665" y1="171" x2="665" y2="441" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="111" y1="426.9" x2="665" y2="426.9" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="111" y1="386.6" x2="665" y2="386.6" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="111" y1="346.3" x2="665" y2="346.3" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="111" y1="306" x2="665" y2="306" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="111" y1="265.7" x2="665" y2="265.7" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="111" y1="225.4" x2="665" y2="225.4" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="111" y1="185.1" x2="665" y2="185.1" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/>
+<polyline points="111,185.1 665,426.9" fill="none" stroke="#a74b22" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="111,265.7 665,346.3" fill="none" stroke="#66529d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="111,346.3 665,265.7" fill="none" stroke="#087e78" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="111,426.9 665,185.1" fill="none" stroke="#2866a0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="111" y1="306" x2="665" y2="306" stroke="#172b44" stroke-width="2.9" stroke-dasharray="8 7" stroke-linecap="round"/>
+<line x1="526.5" y1="171" x2="526.5" y2="441" stroke="#91a4b7" stroke-width="1.7" stroke-dasharray="5 5" stroke-linecap="round"/>
+<circle cx="526.5" cy="366.45" r="6.2" fill="#a74b22" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="526.5" cy="326.15" r="6.2" fill="#66529d" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="526.5" cy="285.85" r="6.2" fill="#087e78" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="526.5" cy="245.55" r="6.2" fill="#2866a0" stroke="#ffffff" stroke-width="1.6"/>
+<circle cx="526.5" cy="306" r="5.6" fill="#172b44" stroke="#ffffff" stroke-width="1.6"/>
+<line x1="111" y1="171" x2="111" y2="441" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><line x1="111" y1="441" x2="665" y2="441" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><text x="111" y="469" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">−2</text><text x="249.5" y="469" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">−1</text><text x="388" y="469" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">0</text><text x="526.5" y="469" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">1</text><text x="665" y="469" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">2</text><text x="98" y="433.9" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">−3</text><text x="98" y="393.6" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">−2</text><text x="98" y="353.3" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">−1</text><text x="98" y="313" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">0</text><text x="98" y="272.7" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">1</text><text x="98" y="232.4" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">2</text><text x="98" y="192.1" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">3</text>
+<text x="388" y="505" fill="#485e75" font-size="22" font-weight="500" text-anchor="middle">温差 t</text>
+<rect x="704" y="159" width="220" height="319" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/>
+<text x="725" y="197" fill="#172b44" font-size="25" font-weight="650">在 t = 1 时</text>
+<text x="761" y="230" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">压力 p</text>
+<text x="864" y="230" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">预测</text>
+<text x="761" y="266" fill="#a74b22" font-size="23" font-weight="650" text-anchor="middle">−1.5</text><text x="864" y="266" fill="#a74b22" font-size="23" font-weight="650" text-anchor="middle">−1.5</text>
+<text x="761" y="304" fill="#66529d" font-size="23" font-weight="650" text-anchor="middle">−0.5</text><text x="864" y="304" fill="#66529d" font-size="23" font-weight="650" text-anchor="middle">−0.5</text>
+<text x="761" y="342" fill="#087e78" font-size="23" font-weight="650" text-anchor="middle">+0.5</text><text x="864" y="342" fill="#087e78" font-size="23" font-weight="650" text-anchor="middle">+0.5</text>
+<text x="761" y="380" fill="#2866a0" font-size="23" font-weight="650" text-anchor="middle">+1.5</text><text x="864" y="380" fill="#2866a0" font-size="23" font-weight="650" text-anchor="middle">+1.5</text>
+<line x1="724" y1="404" x2="903" y2="404" stroke="#dce5ef" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="727" y1="437" x2="755" y2="437" stroke="#172b44" stroke-width="3.5" stroke-dasharray="7 6" stroke-linecap="round"/><text x="765" y="445" fill="#485e75" font-size="21" font-weight="500">PDP 平均为 0</text></svg>

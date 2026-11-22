@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="470" viewBox="0 0 1060 470" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC','Source Han Sans SC','Hiragino Sans GB',sans-serif" role="img"><title>合批提升吞吐，但会拉长每一步</title><desc>同一次权重读取服务更多请求，吞吐上升并趋于饱和；每一步的耗时随批次变大。</desc><defs><marker id="ah2F6FD01_0" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="9.0" markerHeight="9.0" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0.8 L9.6,5 L0,9.2 L2.6,5 Z" fill="#2F6FD0"/></marker></defs><rect width="1060" height="470" fill="#FFFFFF"/><rect x="20.0" y="20.0" width="400.0" height="430.0" rx="12" fill="#F6F7F9" stroke="#D1D5DB" stroke-width="1.1" />
+<text x="36.0" y="42.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">直觉：读一次权重，服务几个请求？</text>
+<text x="40.0" y="64.0" font-size="14" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">batch = 1</text>
+<rect x="52.0" y="86.0" width="86.0" height="108.0" rx="4" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<rect x="56.0" y="90.0" width="86.0" height="108.0" rx="4" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<rect x="60.0" y="94.0" width="86.0" height="108.0" rx="4" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="103.0" y="140.0" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">模型权重</text>
+<text x="103.0" y="162.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">（从显存读出）</text>
+<text x="103.0" y="214.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central" font-weight="bold">读 1 次</text>
+<path d="M148.0,144.0 L262.0,144.0" stroke="#2F6FD0" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah2F6FD01_0)"/>
+<rect x="258.8" y="132.1" width="118.5" height="23.8" rx="9.134615384615385" fill="#DDE8FA" stroke="#2F6FD0" stroke-width="1.1" />
+<text x="318.0" y="144.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">请求 1 的新 token</text>
+<text x="166.0" y="190.0" font-size="12.5" fill="#6B7280" text-anchor="start" dominant-baseline="central">大部分时间花在搬运权重上</text>
+<text x="40.0" y="250.0" font-size="14" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">batch = 4</text>
+<rect x="52.0" y="272.0" width="86.0" height="108.0" rx="4" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<rect x="56.0" y="276.0" width="86.0" height="108.0" rx="4" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<rect x="60.0" y="280.0" width="86.0" height="108.0" rx="4" fill="#EEF0F3" stroke="#6B7280" stroke-width="1.1" />
+<text x="103.0" y="326.0" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central" font-weight="bold">模型权重</text>
+<text x="103.0" y="348.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">（从显存读出）</text>
+<text x="103.0" y="400.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central" font-weight="bold">读 1 次</text>
+<path d="M148.0,330.0 L262.0,282.0" stroke="#2F6FD0" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah2F6FD01_0)"/>
+<rect x="258.8" y="270.1" width="118.5" height="23.8" rx="9.134615384615385" fill="#DDE8FA" stroke="#2F6FD0" stroke-width="1.1" />
+<text x="318.0" y="282.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">请求 1 的新 token</text>
+<path d="M148.0,330.0 L262.0,312.0" stroke="#2F6FD0" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah2F6FD01_0)"/>
+<rect x="258.8" y="300.1" width="118.5" height="23.8" rx="9.134615384615385" fill="#DDE8FA" stroke="#2F6FD0" stroke-width="1.1" />
+<text x="318.0" y="312.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">请求 2 的新 token</text>
+<path d="M148.0,330.0 L262.0,342.0" stroke="#2F6FD0" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah2F6FD01_0)"/>
+<rect x="258.8" y="330.1" width="118.5" height="23.8" rx="9.134615384615385" fill="#DDE8FA" stroke="#2F6FD0" stroke-width="1.1" />
+<text x="318.0" y="342.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">请求 3 的新 token</text>
+<path d="M148.0,330.0 L262.0,372.0" stroke="#2F6FD0" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah2F6FD01_0)"/>
+<rect x="258.8" y="360.1" width="118.5" height="23.8" rx="9.134615384615385" fill="#DDE8FA" stroke="#2F6FD0" stroke-width="1.1" />
+<text x="318.0" y="372.0" font-size="12.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">请求 4 的新 token</text>
+<text x="220.0" y="424.0" font-size="12.5" fill="#2A9D66" text-anchor="middle" dominant-baseline="central" font-weight="bold">同一份权重被 4 个请求共享</text>
+<rect x="440.0" y="20.0" width="600.0" height="430.0" rx="12" fill="#F6F7F9" stroke="#D1D5DB" stroke-width="1.1" />
+<text x="456.0" y="42.0" font-size="15" fill="#1F2937" text-anchor="start" dominant-baseline="central" font-weight="bold">一个简化成本模型</text>
+<text x="740.0" y="60.0" font-size="13.5" fill="#1F2937" text-anchor="middle" dominant-baseline="central">每步耗时 = 读权重 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">t</tspan><tspan font-size="9.7" dy="3.8">w</tspan><tspan dy="-3.8" font-size="13.5">​</tspan> + 批次 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">B</tspan> × 每条计算 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">c</tspan></text>
+<text x="740.0" y="82.0" font-size="12.5" fill="#6B7280" text-anchor="middle" dominant-baseline="central">（取 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">t</tspan><tspan font-size="9.0" dy="3.5">w</tspan><tspan dy="-3.5" font-size="12.5">​</tspan> = 20 ms，<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">c</tspan> = 1 ms；教学用简化模型，不代表真实设备测量）</text>
+<line x1="530.0" y1="248.0" x2="1016.0" y2="248.0" stroke="#1F2937" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="530.0" y1="248.0" x2="530.0" y2="118.0" stroke="#1F2937" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="526.0" y1="248.0" x2="530.0" y2="248.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="248.0" x2="1010.0" y2="248.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="248.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">0</text>
+<line x1="526.0" y1="217.0" x2="530.0" y2="217.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="217.0" x2="1010.0" y2="217.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="217.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">250</text>
+<line x1="526.0" y1="186.0" x2="530.0" y2="186.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="186.0" x2="1010.0" y2="186.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="186.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">500</text>
+<line x1="526.0" y1="155.0" x2="530.0" y2="155.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="155.0" x2="1010.0" y2="155.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="155.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">750</text>
+<line x1="526.0" y1="124.0" x2="530.0" y2="124.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="124.0" x2="1010.0" y2="124.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="124.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">1000</text>
+<g transform="rotate(-90 480 186.0)">
+<text x="480.0" y="186.0" font-size="13" fill="#2A9D66" text-anchor="middle" dominant-baseline="central" font-weight="bold">吞吐 tok/s</text>
+</g>
+<line x1="530.0" y1="124.0" x2="1010.0" y2="124.0" stroke="#2A9D66" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="6 4"/>
+<text x="544.0" y="114.0" font-size="12.5" fill="#2A9D66" text-anchor="start" dominant-baseline="central">上限 1/<tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">c</tspan> = 1000 tok/s</text>
+<path d="M530.0,242.1 L536.9,241.7 L543.7,241.3 L550.6,240.8 L557.4,240.3 L564.3,239.8 L571.1,239.3 L578.0,238.7 L584.9,238.1 L591.7,237.4 L598.6,236.7 L605.4,236.0 L612.3,235.2 L619.1,234.4 L626.0,233.5 L632.9,232.6 L639.7,231.7 L646.6,230.7 L653.4,229.6 L660.3,228.5 L667.1,227.3 L674.0,226.1 L680.9,224.8 L687.7,223.5 L694.6,222.1 L701.4,220.7 L708.3,219.2 L715.1,217.6 L722.0,216.0 L728.9,214.3 L735.7,212.6 L742.6,210.8 L749.4,209.0 L756.3,207.1 L763.1,205.2 L770.0,203.2 L776.9,201.2 L783.7,199.2 L790.6,197.1 L797.4,195.0 L804.3,192.9 L811.1,190.8 L818.0,188.6 L824.9,186.5 L831.7,184.3 L838.6,182.2 L845.4,180.0 L852.3,177.9 L859.1,175.8 L866.0,173.7 L872.9,171.7 L879.7,169.7 L886.6,167.7 L893.4,165.8 L900.3,163.9 L907.1,162.0 L914.0,160.2 L920.9,158.5 L927.7,156.8 L934.6,155.1 L941.4,153.5 L948.3,152.0 L955.1,150.5 L962.0,149.1 L968.9,147.7 L975.7,146.4 L982.6,145.2 L989.4,144.0 L996.3,142.9 L1003.1,141.8 L1010.0,140.8" stroke="#2A9D66" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="530.0" cy="242.1" r="4.0" fill="#2A9D66" stroke="none" stroke-width="1.2"/>
+<text x="540.0" y="230.1" font-size="12" fill="#2A9D66" text-anchor="start" dominant-baseline="central" font-weight="bold">48</text>
+<circle cx="735.7" cy="212.6" r="4.0" fill="#2A9D66" stroke="none" stroke-width="1.2"/>
+<text x="745.7" y="226.6" font-size="12" fill="#2A9D66" text-anchor="start" dominant-baseline="central" font-weight="bold">286</text>
+<circle cx="941.4" cy="153.5" r="4.0" fill="#2A9D66" stroke="none" stroke-width="1.2"/>
+<text x="933.4" y="169.5" font-size="12" fill="#2A9D66" text-anchor="end" dominant-baseline="central" font-weight="bold">762</text>
+<line x1="530.0" y1="400.0" x2="1016.0" y2="400.0" stroke="#1F2937" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="530.0" y1="400.0" x2="530.0" y2="274.0" stroke="#1F2937" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="526.0" y1="400.0" x2="530.0" y2="400.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="400.0" x2="1010.0" y2="400.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="400.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">0</text>
+<line x1="526.0" y1="360.0" x2="530.0" y2="360.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="360.0" x2="1010.0" y2="360.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="360.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">50</text>
+<line x1="526.0" y1="320.0" x2="530.0" y2="320.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="320.0" x2="1010.0" y2="320.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="320.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">100</text>
+<line x1="526.0" y1="280.0" x2="530.0" y2="280.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="530.0" y1="280.0" x2="1010.0" y2="280.0" stroke="#D1D5DB" stroke-width="0.8" stroke-linecap="round" stroke-dasharray="3 3"/>
+<text x="522.0" y="280.0" font-size="12" fill="#6B7280" text-anchor="end" dominant-baseline="central">150</text>
+<g transform="rotate(-90 480 340.0)">
+<text x="480.0" y="340.0" font-size="13" fill="#D64545" text-anchor="middle" dominant-baseline="central" font-weight="bold">每步耗时 ms</text>
+</g>
+<path d="M530.0,383.2 L536.9,383.1 L543.7,383.1 L550.6,383.0 L557.4,382.9 L564.3,382.9 L571.1,382.8 L578.0,382.7 L584.9,382.6 L591.7,382.5 L598.6,382.4 L605.4,382.3 L612.3,382.2 L619.1,382.0 L626.0,381.9 L632.9,381.7 L639.7,381.6 L646.6,381.4 L653.4,381.2 L660.3,381.0 L667.1,380.8 L674.0,380.6 L680.9,380.3 L687.7,380.1 L694.6,379.8 L701.4,379.5 L708.3,379.1 L715.1,378.8 L722.0,378.4 L728.9,378.0 L735.7,377.6 L742.6,377.1 L749.4,376.6 L756.3,376.1 L763.1,375.6 L770.0,374.9 L776.9,374.3 L783.7,373.6 L790.6,372.9 L797.4,372.1 L804.3,371.2 L811.1,370.3 L818.0,369.3 L824.9,368.2 L831.7,367.1 L838.6,365.9 L845.4,364.6 L852.3,363.2 L859.1,361.7 L866.0,360.1 L872.9,358.4 L879.7,356.6 L886.6,354.6 L893.4,352.5 L900.3,350.2 L907.1,347.8 L914.0,345.2 L920.9,342.4 L927.7,339.4 L934.6,336.2 L941.4,332.8 L948.3,329.1 L955.1,325.2 L962.0,321.0 L968.9,316.4 L975.7,311.6 L982.6,306.4 L989.4,300.8 L996.3,294.9 L1003.1,288.5 L1010.0,281.6" stroke="#D64545" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+<circle cx="530.0" cy="383.2" r="4.0" fill="#D64545" stroke="none" stroke-width="1.2"/>
+<text x="538.0" y="371.2" font-size="12" fill="#D64545" text-anchor="start" dominant-baseline="central" font-weight="bold">21</text>
+<circle cx="735.7" cy="377.6" r="4.0" fill="#D64545" stroke="none" stroke-width="1.2"/>
+<text x="743.7" y="365.6" font-size="12" fill="#D64545" text-anchor="start" dominant-baseline="central" font-weight="bold">28</text>
+<circle cx="941.4" cy="332.8" r="4.0" fill="#D64545" stroke="none" stroke-width="1.2"/>
+<text x="933.4" y="320.8" font-size="12" fill="#D64545" text-anchor="end" dominant-baseline="central" font-weight="bold">84</text>
+<line x1="530.0" y1="400.0" x2="530.0" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="530.0" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">1</text>
+<line x1="530.0" y1="248.0" x2="530.0" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="598.6" y1="400.0" x2="598.6" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="598.6" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">2</text>
+<line x1="598.6" y1="248.0" x2="598.6" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="667.1" y1="400.0" x2="667.1" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="667.1" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">4</text>
+<line x1="667.1" y1="248.0" x2="667.1" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="735.7" y1="400.0" x2="735.7" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="735.7" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">8</text>
+<line x1="735.7" y1="248.0" x2="735.7" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="804.3" y1="400.0" x2="804.3" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="804.3" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">16</text>
+<line x1="804.3" y1="248.0" x2="804.3" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="872.9" y1="400.0" x2="872.9" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="872.9" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">32</text>
+<line x1="872.9" y1="248.0" x2="872.9" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="941.4" y1="400.0" x2="941.4" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="941.4" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">64</text>
+<line x1="941.4" y1="248.0" x2="941.4" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<line x1="1010.0" y1="400.0" x2="1010.0" y2="404.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="1010.0" y="415.0" font-size="12" fill="#6B7280" text-anchor="middle" dominant-baseline="central">128</text>
+<line x1="1010.0" y1="248.0" x2="1010.0" y2="252.0" stroke="#1F2937" stroke-width="1" stroke-linecap="round"/>
+<text x="770.0" y="436.0" font-size="13" fill="#1F2937" text-anchor="middle" dominant-baseline="central">批次大小 <tspan font-family="'Cambria Math','STIX Two Math','Latin Modern Math','Times New Roman',serif" font-style="italic">B</tspan>（同时生成的请求数，对数刻度）</text>
+<text x="1010.0" y="270.0" font-size="12.5" fill="#D64545" text-anchor="end" dominant-baseline="central">再加上凑批的排队时间，单个用户等得更久</text></svg>

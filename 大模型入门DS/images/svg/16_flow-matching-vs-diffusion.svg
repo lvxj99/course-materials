@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="490" viewBox="0 0 960 490">
+<rect width="960" height="490" fill="#ffffff"/>
+
+<text x="40.00" y="40.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#b04a4e" font-weight="600">反向 SDE：每一步都注入新的随机噪声</text>
+<text x="40.00" y="58.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#7c8a97">同一起点，不同轨迹</text>
+<rect x="40.00" y="74.00" width="400.00" height="320.00" rx="8" fill="#ffffff" stroke="#dde5ec" stroke-width="1"/>
+<circle cx="170.00" cy="132.00" r="34.00" fill="#edf3f9" stroke="none" stroke-width="1"/>
+<circle cx="180.08" cy="142.87" r="1.70" fill="#5b8dc2"/>
+<circle cx="179.49" cy="111.63" r="1.70" fill="#5b8dc2"/>
+<circle cx="175.43" cy="128.88" r="1.70" fill="#5b8dc2"/>
+<circle cx="159.28" cy="116.47" r="1.70" fill="#5b8dc2"/>
+<circle cx="180.55" cy="116.99" r="1.70" fill="#5b8dc2"/>
+<circle cx="168.98" cy="128.53" r="1.70" fill="#5b8dc2"/>
+<circle cx="171.49" cy="153.29" r="1.70" fill="#5b8dc2"/>
+<circle cx="152.04" cy="126.21" r="1.70" fill="#5b8dc2"/>
+<circle cx="158.68" cy="125.65" r="1.70" fill="#5b8dc2"/>
+<circle cx="142.10" cy="125.42" r="1.70" fill="#5b8dc2"/>
+<circle cx="158.43" cy="127.35" r="1.70" fill="#5b8dc2"/>
+<circle cx="152.76" cy="136.60" r="1.70" fill="#5b8dc2"/>
+<circle cx="161.57" cy="145.12" r="1.70" fill="#5b8dc2"/>
+<circle cx="161.77" cy="132.90" r="1.70" fill="#5b8dc2"/>
+<circle cx="165.89" cy="138.53" r="1.70" fill="#5b8dc2"/>
+<circle cx="152.88" cy="118.46" r="1.70" fill="#5b8dc2"/>
+<circle cx="164.80" cy="119.65" r="1.70" fill="#5b8dc2"/>
+<circle cx="183.91" cy="122.41" r="1.70" fill="#5b8dc2"/>
+<circle cx="167.71" cy="138.75" r="1.70" fill="#5b8dc2"/>
+<circle cx="159.30" cy="136.92" r="1.70" fill="#5b8dc2"/>
+<circle cx="168.02" cy="149.09" r="1.70" fill="#5b8dc2"/>
+<circle cx="154.73" cy="135.01" r="1.70" fill="#5b8dc2"/>
+<circle cx="175.47" cy="122.42" r="1.70" fill="#5b8dc2"/>
+<circle cx="175.54" cy="124.30" r="1.70" fill="#5b8dc2"/>
+<circle cx="144.82" cy="124.34" r="1.70" fill="#5b8dc2"/>
+<circle cx="162.04" cy="112.09" r="1.70" fill="#5b8dc2"/>
+<circle cx="181.83" cy="145.33" r="1.70" fill="#5b8dc2"/>
+<circle cx="183.43" cy="118.46" r="1.70" fill="#5b8dc2"/>
+<circle cx="185.18" cy="114.83" r="1.70" fill="#5b8dc2"/>
+<circle cx="172.06" cy="113.77" r="1.70" fill="#5b8dc2"/>
+<circle cx="159.87" cy="141.32" r="1.70" fill="#5b8dc2"/>
+<circle cx="193.25" cy="122.32" r="1.70" fill="#5b8dc2"/>
+<circle cx="175.79" cy="133.01" r="1.70" fill="#5b8dc2"/>
+<circle cx="156.72" cy="116.83" r="1.70" fill="#5b8dc2"/>
+<text x="170.00" y="90.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">数据分布</text>
+<circle cx="325.00" cy="132.00" r="34.00" fill="#edf3f9" stroke="none" stroke-width="1"/>
+<circle cx="326.31" cy="130.61" r="1.70" fill="#5b8dc2"/>
+<circle cx="346.71" cy="135.69" r="1.70" fill="#5b8dc2"/>
+<circle cx="307.49" cy="136.70" r="1.70" fill="#5b8dc2"/>
+<circle cx="307.59" cy="142.70" r="1.70" fill="#5b8dc2"/>
+<circle cx="304.61" cy="147.15" r="1.70" fill="#5b8dc2"/>
+<circle cx="328.27" cy="135.13" r="1.70" fill="#5b8dc2"/>
+<circle cx="332.51" cy="138.01" r="1.70" fill="#5b8dc2"/>
+<circle cx="330.61" cy="138.15" r="1.70" fill="#5b8dc2"/>
+<circle cx="319.79" cy="112.75" r="1.70" fill="#5b8dc2"/>
+<circle cx="351.57" cy="124.49" r="1.70" fill="#5b8dc2"/>
+<circle cx="305.38" cy="145.41" r="1.70" fill="#5b8dc2"/>
+<circle cx="329.63" cy="141.75" r="1.70" fill="#5b8dc2"/>
+<circle cx="306.58" cy="132.98" r="1.70" fill="#5b8dc2"/>
+<circle cx="338.94" cy="118.48" r="1.70" fill="#5b8dc2"/>
+<circle cx="321.71" cy="146.90" r="1.70" fill="#5b8dc2"/>
+<circle cx="336.80" cy="147.58" r="1.70" fill="#5b8dc2"/>
+<circle cx="315.92" cy="122.72" r="1.70" fill="#5b8dc2"/>
+<circle cx="337.24" cy="113.50" r="1.70" fill="#5b8dc2"/>
+<circle cx="333.02" cy="116.40" r="1.70" fill="#5b8dc2"/>
+<circle cx="297.27" cy="137.07" r="1.70" fill="#5b8dc2"/>
+<circle cx="326.51" cy="130.33" r="1.70" fill="#5b8dc2"/>
+<circle cx="319.06" cy="117.58" r="1.70" fill="#5b8dc2"/>
+<circle cx="343.77" cy="144.56" r="1.70" fill="#5b8dc2"/>
+<circle cx="327.68" cy="132.34" r="1.70" fill="#5b8dc2"/>
+<circle cx="302.49" cy="126.06" r="1.70" fill="#5b8dc2"/>
+<circle cx="316.75" cy="130.28" r="1.70" fill="#5b8dc2"/>
+<circle cx="304.16" cy="117.50" r="1.70" fill="#5b8dc2"/>
+<circle cx="345.21" cy="143.76" r="1.70" fill="#5b8dc2"/>
+<circle cx="334.15" cy="147.86" r="1.70" fill="#5b8dc2"/>
+<circle cx="322.36" cy="112.68" r="1.70" fill="#5b8dc2"/>
+<circle cx="338.76" cy="131.95" r="1.70" fill="#5b8dc2"/>
+<circle cx="330.04" cy="122.74" r="1.70" fill="#5b8dc2"/>
+<circle cx="334.85" cy="131.19" r="1.70" fill="#5b8dc2"/>
+<circle cx="350.36" cy="136.14" r="1.70" fill="#5b8dc2"/>
+<text x="325.00" y="90.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">数据分布</text>
+<circle cx="245.00" cy="340.00" r="36.00" fill="#faeeee" stroke="none" stroke-width="1"/>
+<circle cx="227.17" cy="352.03" r="1.70" fill="#cf7b7e"/>
+<circle cx="257.08" cy="349.46" r="1.70" fill="#cf7b7e"/>
+<circle cx="242.02" cy="327.05" r="1.70" fill="#cf7b7e"/>
+<circle cx="218.32" cy="344.24" r="1.70" fill="#cf7b7e"/>
+<circle cx="253.80" cy="322.17" r="1.70" fill="#cf7b7e"/>
+<circle cx="257.54" cy="341.77" r="1.70" fill="#cf7b7e"/>
+<circle cx="260.38" cy="345.36" r="1.70" fill="#cf7b7e"/>
+<circle cx="263.54" cy="339.39" r="1.70" fill="#cf7b7e"/>
+<circle cx="262.45" cy="349.99" r="1.70" fill="#cf7b7e"/>
+<circle cx="254.44" cy="358.37" r="1.70" fill="#cf7b7e"/>
+<circle cx="257.71" cy="357.30" r="1.70" fill="#cf7b7e"/>
+<circle cx="236.71" cy="359.24" r="1.70" fill="#cf7b7e"/>
+<circle cx="246.31" cy="336.98" r="1.70" fill="#cf7b7e"/>
+<circle cx="237.70" cy="349.93" r="1.70" fill="#cf7b7e"/>
+<circle cx="258.38" cy="333.91" r="1.70" fill="#cf7b7e"/>
+<circle cx="244.63" cy="333.42" r="1.70" fill="#cf7b7e"/>
+<circle cx="235.23" cy="342.56" r="1.70" fill="#cf7b7e"/>
+<circle cx="259.55" cy="322.26" r="1.70" fill="#cf7b7e"/>
+<circle cx="254.97" cy="336.97" r="1.70" fill="#cf7b7e"/>
+<circle cx="232.97" cy="329.79" r="1.70" fill="#cf7b7e"/>
+<circle cx="263.28" cy="344.29" r="1.70" fill="#cf7b7e"/>
+<circle cx="251.81" cy="341.47" r="1.70" fill="#cf7b7e"/>
+<circle cx="225.16" cy="340.53" r="1.70" fill="#cf7b7e"/>
+<circle cx="220.50" cy="349.59" r="1.70" fill="#cf7b7e"/>
+<circle cx="240.26" cy="345.63" r="1.70" fill="#cf7b7e"/>
+<circle cx="233.77" cy="352.93" r="1.70" fill="#cf7b7e"/>
+<circle cx="253.08" cy="347.31" r="1.70" fill="#cf7b7e"/>
+<circle cx="243.00" cy="324.34" r="1.70" fill="#cf7b7e"/>
+<circle cx="260.88" cy="332.99" r="1.70" fill="#cf7b7e"/>
+<circle cx="260.27" cy="356.31" r="1.70" fill="#cf7b7e"/>
+<circle cx="229.90" cy="356.62" r="1.70" fill="#cf7b7e"/>
+<circle cx="234.61" cy="352.40" r="1.70" fill="#cf7b7e"/>
+<circle cx="241.93" cy="351.50" r="1.70" fill="#cf7b7e"/>
+<circle cx="257.28" cy="326.12" r="1.70" fill="#cf7b7e"/>
+<circle cx="258.61" cy="335.52" r="1.70" fill="#cf7b7e"/>
+<circle cx="264.29" cy="332.88" r="1.70" fill="#cf7b7e"/>
+<circle cx="244.68" cy="321.42" r="1.70" fill="#cf7b7e"/>
+<circle cx="225.17" cy="347.58" r="1.70" fill="#cf7b7e"/>
+<circle cx="236.33" cy="342.00" r="1.70" fill="#cf7b7e"/>
+<circle cx="252.93" cy="326.16" r="1.70" fill="#cf7b7e"/>
+<text x="245.00" y="388.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#b04a4e">噪声</text>
+<path d="M 255.00 330.00 L 253.19 324.22 L 252.11 318.14 L 251.57 311.85 L 251.26 305.47 L 250.83 299.14 L 249.90 293.01 L 248.17 287.19 L 245.44 281.77 L 241.63 276.77 L 236.81 272.17 L 231.22 267.88 L 225.19 263.75 L 219.15 259.64 L 213.51 255.36 L 208.67 250.77 L 204.95 245.74 L 202.50 240.20 L 201.35 234.16 L 201.35 227.66 L 202.21 220.82 L 203.57 213.78 L 205.01 206.72 L 206.09 199.79 L 206.49 193.13 L 205.95 186.84 L 204.40 180.95 L 201.87 175.45 L 198.57 170.25 L 194.78 165.25 L 190.86 160.29 L 187.17 155.25 L 184.00 150.00" fill="none" stroke="#cf7b7e" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<path d="M 241.77 330.00 L 245.43 324.95 L 248.96 319.84 L 252.02 314.55 L 254.33 308.97 L 255.76 303.04 L 256.27 296.75 L 256.01 290.16 L 255.23 283.36 L 254.29 276.50 L 253.60 269.74 L 253.55 263.23 L 254.48 257.11 L 256.61 251.45 L 260.00 246.29 L 264.59 241.60 L 270.13 237.29 L 276.29 233.21 L 282.62 229.20 L 288.70 225.10 L 294.12 220.73 L 298.56 215.98 L 301.85 210.78 L 303.97 205.12 L 305.03 199.05 L 305.30 192.67 L 305.12 186.11 L 304.87 179.52 L 304.93 173.05 L 305.59 166.82 L 307.04 160.90 L 309.32 155.30 L 312.34 150.00" fill="none" stroke="#cf7b7e" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<path d="M 237.09 330.00 L 235.66 324.25 L 233.39 318.77 L 230.32 313.55 L 226.61 308.54 L 222.54 303.64 L 218.47 298.74 L 214.80 293.72 L 211.88 288.45 L 209.97 282.85 L 209.22 276.88 L 209.62 270.54 L 211.00 263.88 L 213.05 257.00 L 215.38 250.04 L 217.54 243.12 L 219.09 236.41 L 219.66 230.01 L 219.01 224.01 L 217.04 218.43 L 213.82 213.26 L 209.56 208.42 L 204.61 203.81 L 199.36 199.30 L 194.24 194.74 L 189.64 190.02 L 185.84 185.03 L 182.99 179.74 L 181.11 174.13 L 180.05 168.26 L 179.56 162.21 L 179.29 156.08 L 178.89 150.00" fill="none" stroke="#cf7b7e" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<path d="M 253.35 330.00 L 254.22 323.90 L 254.78 317.68 L 255.40 311.48 L 256.43 305.43 L 258.17 299.66 L 260.82 294.23 L 264.45 289.18 L 269.00 284.47 L 274.25 280.02 L 279.85 275.71 L 285.41 271.39 L 290.51 266.89 L 294.76 262.06 L 297.87 256.81 L 299.71 251.07 L 300.25 244.85 L 299.68 238.20 L 298.28 231.23 L 296.44 224.10 L 294.62 216.98 L 293.22 210.01 L 292.61 203.35 L 293.03 197.07 L 294.58 191.23 L 297.19 185.78 L 300.68 180.67 L 304.73 175.78 L 308.99 170.96 L 313.07 166.07 L 316.66 161.00 L 319.53 155.65 L 321.59 150.00" fill="none" stroke="#cf7b7e" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<path d="M 247.51 330.00 L 243.98 324.83 L 241.08 319.38 L 238.98 313.57 L 237.72 307.40 L 237.16 300.90 L 237.08 294.19 L 237.14 287.43 L 236.96 280.76 L 236.16 274.38 L 234.44 268.40 L 231.59 262.93 L 227.57 257.98 L 222.45 253.52 L 216.47 249.44 L 209.99 245.59 L 203.42 241.77 L 197.21 237.80 L 191.73 233.50 L 187.29 228.73 L 184.06 223.43 L 182.05 217.58 L 181.12 211.26 L 181.01 204.56 L 181.36 197.66 L 181.78 190.73 L 181.89 183.94 L 181.37 177.43 L 180.03 171.29 L 177.81 165.53 L 174.80 160.13 L 171.19 155.00 L 167.28 150.00" fill="none" stroke="#cf7b7e" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<path d="M 235.03 330.00 L 238.76 324.73 L 243.10 319.80 L 247.80 315.07 L 252.55 310.36 L 257.00 305.49 L 260.83 300.28 L 263.81 294.60 L 265.81 288.39 L 266.84 281.65 L 267.06 274.46 L 266.74 266.99 L 266.25 259.42 L 265.99 251.97 L 266.35 244.87 L 267.66 238.28 L 270.14 232.33 L 273.84 227.05 L 278.70 222.41 L 284.51 218.27 L 290.92 214.47 L 297.56 210.80 L 304.02 207.02 L 309.93 202.95 L 315.03 198.43 L 319.15 193.37 L 322.29 187.79 L 324.58 181.74 L 326.26 175.35 L 327.65 168.81 L 329.09 162.29 L 330.90 155.98 L 333.33 150.00" fill="none" stroke="#cf7b7e" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<path d="M 248.93 330.00 L 247.45 323.68 L 245.66 317.52 L 243.29 311.65 L 240.14 306.17 L 236.13 301.14 L 231.32 296.50 L 225.92 292.17 L 220.21 287.99 L 214.58 283.78 L 209.41 279.33 L 205.04 274.47 L 201.73 269.08 L 199.62 263.08 L 198.69 256.48 L 198.76 249.37 L 199.54 241.90 L 200.66 234.27 L 201.68 226.68 L 202.19 219.35 L 201.87 212.44 L 200.47 206.08 L 197.92 200.30 L 194.27 195.08 L 189.72 190.31 L 184.59 185.85 L 179.22 181.50 L 174.00 177.07 L 169.25 172.41 L 165.20 167.39 L 161.96 161.96 L 159.50 156.14 L 157.66 150.00" fill="none" stroke="#cf7b7e" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<text x="500.00" y="40.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="11.5" text-anchor="start" fill="#3a6ea5" font-weight="600">概率流 ODE / Flow Matching：确定性的速度场</text>
+<text x="500.00" y="58.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#7c8a97">从同一处出发，路径彼此不交叉</text>
+<rect x="500.00" y="74.00" width="400.00" height="320.00" rx="8" fill="#ffffff" stroke="#dde5ec" stroke-width="1"/>
+<circle cx="630.00" cy="132.00" r="34.00" fill="#edf3f9" stroke="none" stroke-width="1"/>
+<circle cx="636.09" cy="142.66" r="1.70" fill="#5b8dc2"/>
+<circle cx="635.58" cy="113.60" r="1.70" fill="#5b8dc2"/>
+<circle cx="631.83" cy="145.33" r="1.70" fill="#5b8dc2"/>
+<circle cx="624.33" cy="130.10" r="1.70" fill="#5b8dc2"/>
+<circle cx="628.19" cy="118.50" r="1.70" fill="#5b8dc2"/>
+<circle cx="646.97" cy="119.85" r="1.70" fill="#5b8dc2"/>
+<circle cx="632.32" cy="119.58" r="1.70" fill="#5b8dc2"/>
+<circle cx="645.13" cy="115.68" r="1.70" fill="#5b8dc2"/>
+<circle cx="629.22" cy="145.55" r="1.70" fill="#5b8dc2"/>
+<circle cx="630.59" cy="141.54" r="1.70" fill="#5b8dc2"/>
+<circle cx="640.26" cy="147.55" r="1.70" fill="#5b8dc2"/>
+<circle cx="622.09" cy="131.84" r="1.70" fill="#5b8dc2"/>
+<circle cx="616.98" cy="119.08" r="1.70" fill="#5b8dc2"/>
+<circle cx="633.78" cy="146.97" r="1.70" fill="#5b8dc2"/>
+<circle cx="649.92" cy="128.61" r="1.70" fill="#5b8dc2"/>
+<circle cx="653.08" cy="140.12" r="1.70" fill="#5b8dc2"/>
+<circle cx="613.87" cy="141.30" r="1.70" fill="#5b8dc2"/>
+<circle cx="615.04" cy="115.87" r="1.70" fill="#5b8dc2"/>
+<circle cx="653.77" cy="123.54" r="1.70" fill="#5b8dc2"/>
+<circle cx="635.38" cy="144.07" r="1.70" fill="#5b8dc2"/>
+<circle cx="622.46" cy="119.03" r="1.70" fill="#5b8dc2"/>
+<circle cx="608.85" cy="119.20" r="1.70" fill="#5b8dc2"/>
+<circle cx="631.40" cy="137.33" r="1.70" fill="#5b8dc2"/>
+<circle cx="639.53" cy="118.32" r="1.70" fill="#5b8dc2"/>
+<circle cx="606.25" cy="141.04" r="1.70" fill="#5b8dc2"/>
+<circle cx="647.47" cy="128.74" r="1.70" fill="#5b8dc2"/>
+<circle cx="626.90" cy="150.69" r="1.70" fill="#5b8dc2"/>
+<circle cx="638.46" cy="147.97" r="1.70" fill="#5b8dc2"/>
+<circle cx="642.70" cy="137.44" r="1.70" fill="#5b8dc2"/>
+<circle cx="634.39" cy="127.96" r="1.70" fill="#5b8dc2"/>
+<circle cx="608.51" cy="120.88" r="1.70" fill="#5b8dc2"/>
+<circle cx="630.08" cy="126.89" r="1.70" fill="#5b8dc2"/>
+<circle cx="602.08" cy="136.39" r="1.70" fill="#5b8dc2"/>
+<circle cx="656.01" cy="140.27" r="1.70" fill="#5b8dc2"/>
+<text x="630.00" y="90.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">数据分布</text>
+<circle cx="785.00" cy="132.00" r="34.00" fill="#edf3f9" stroke="none" stroke-width="1"/>
+<circle cx="805.77" cy="117.31" r="1.70" fill="#5b8dc2"/>
+<circle cx="802.08" cy="133.48" r="1.70" fill="#5b8dc2"/>
+<circle cx="790.35" cy="113.96" r="1.70" fill="#5b8dc2"/>
+<circle cx="779.08" cy="153.46" r="1.70" fill="#5b8dc2"/>
+<circle cx="779.79" cy="150.37" r="1.70" fill="#5b8dc2"/>
+<circle cx="776.71" cy="148.38" r="1.70" fill="#5b8dc2"/>
+<circle cx="773.58" cy="118.47" r="1.70" fill="#5b8dc2"/>
+<circle cx="765.72" cy="138.10" r="1.70" fill="#5b8dc2"/>
+<circle cx="764.78" cy="147.48" r="1.70" fill="#5b8dc2"/>
+<circle cx="777.70" cy="125.94" r="1.70" fill="#5b8dc2"/>
+<circle cx="799.04" cy="130.63" r="1.70" fill="#5b8dc2"/>
+<circle cx="783.84" cy="153.04" r="1.70" fill="#5b8dc2"/>
+<circle cx="793.48" cy="118.12" r="1.70" fill="#5b8dc2"/>
+<circle cx="760.51" cy="119.38" r="1.70" fill="#5b8dc2"/>
+<circle cx="808.97" cy="122.40" r="1.70" fill="#5b8dc2"/>
+<circle cx="765.89" cy="120.49" r="1.70" fill="#5b8dc2"/>
+<circle cx="774.68" cy="143.51" r="1.70" fill="#5b8dc2"/>
+<circle cx="772.57" cy="125.64" r="1.70" fill="#5b8dc2"/>
+<circle cx="770.84" cy="135.61" r="1.70" fill="#5b8dc2"/>
+<circle cx="785.00" cy="137.55" r="1.70" fill="#5b8dc2"/>
+<circle cx="782.33" cy="151.72" r="1.70" fill="#5b8dc2"/>
+<circle cx="788.00" cy="129.16" r="1.70" fill="#5b8dc2"/>
+<circle cx="762.90" cy="129.50" r="1.70" fill="#5b8dc2"/>
+<circle cx="802.26" cy="134.03" r="1.70" fill="#5b8dc2"/>
+<circle cx="764.80" cy="140.60" r="1.70" fill="#5b8dc2"/>
+<circle cx="791.87" cy="116.43" r="1.70" fill="#5b8dc2"/>
+<circle cx="783.79" cy="124.21" r="1.70" fill="#5b8dc2"/>
+<circle cx="760.13" cy="138.22" r="1.70" fill="#5b8dc2"/>
+<circle cx="758.11" cy="141.45" r="1.70" fill="#5b8dc2"/>
+<circle cx="790.32" cy="124.68" r="1.70" fill="#5b8dc2"/>
+<circle cx="786.57" cy="150.18" r="1.70" fill="#5b8dc2"/>
+<circle cx="772.39" cy="120.19" r="1.70" fill="#5b8dc2"/>
+<circle cx="759.85" cy="143.49" r="1.70" fill="#5b8dc2"/>
+<circle cx="757.46" cy="139.89" r="1.70" fill="#5b8dc2"/>
+<text x="785.00" y="90.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#3a6ea5">数据分布</text>
+<circle cx="705.00" cy="340.00" r="36.00" fill="#faeeee" stroke="none" stroke-width="1"/>
+<circle cx="679.28" cy="339.39" r="1.70" fill="#cf7b7e"/>
+<circle cx="700.72" cy="353.01" r="1.70" fill="#cf7b7e"/>
+<circle cx="694.25" cy="328.51" r="1.70" fill="#cf7b7e"/>
+<circle cx="707.41" cy="346.85" r="1.70" fill="#cf7b7e"/>
+<circle cx="725.96" cy="341.31" r="1.70" fill="#cf7b7e"/>
+<circle cx="687.91" cy="347.45" r="1.70" fill="#cf7b7e"/>
+<circle cx="675.81" cy="341.05" r="1.70" fill="#cf7b7e"/>
+<circle cx="685.92" cy="342.92" r="1.70" fill="#cf7b7e"/>
+<circle cx="710.80" cy="349.18" r="1.70" fill="#cf7b7e"/>
+<circle cx="690.03" cy="326.72" r="1.70" fill="#cf7b7e"/>
+<circle cx="679.22" cy="329.14" r="1.70" fill="#cf7b7e"/>
+<circle cx="719.01" cy="331.40" r="1.70" fill="#cf7b7e"/>
+<circle cx="698.29" cy="349.20" r="1.70" fill="#cf7b7e"/>
+<circle cx="679.86" cy="341.72" r="1.70" fill="#cf7b7e"/>
+<circle cx="687.33" cy="332.07" r="1.70" fill="#cf7b7e"/>
+<circle cx="702.49" cy="356.72" r="1.70" fill="#cf7b7e"/>
+<circle cx="711.72" cy="336.78" r="1.70" fill="#cf7b7e"/>
+<circle cx="734.35" cy="338.48" r="1.70" fill="#cf7b7e"/>
+<circle cx="697.88" cy="327.60" r="1.70" fill="#cf7b7e"/>
+<circle cx="701.41" cy="324.95" r="1.70" fill="#cf7b7e"/>
+<circle cx="728.35" cy="340.09" r="1.70" fill="#cf7b7e"/>
+<circle cx="707.78" cy="333.27" r="1.70" fill="#cf7b7e"/>
+<circle cx="723.24" cy="341.32" r="1.70" fill="#cf7b7e"/>
+<circle cx="707.77" cy="355.87" r="1.70" fill="#cf7b7e"/>
+<circle cx="696.91" cy="326.02" r="1.70" fill="#cf7b7e"/>
+<circle cx="723.68" cy="354.17" r="1.70" fill="#cf7b7e"/>
+<circle cx="714.41" cy="338.79" r="1.70" fill="#cf7b7e"/>
+<circle cx="732.74" cy="342.89" r="1.70" fill="#cf7b7e"/>
+<circle cx="697.89" cy="361.20" r="1.70" fill="#cf7b7e"/>
+<circle cx="688.72" cy="329.97" r="1.70" fill="#cf7b7e"/>
+<circle cx="685.33" cy="350.39" r="1.70" fill="#cf7b7e"/>
+<circle cx="717.18" cy="330.37" r="1.70" fill="#cf7b7e"/>
+<circle cx="688.23" cy="340.16" r="1.70" fill="#cf7b7e"/>
+<circle cx="728.37" cy="340.49" r="1.70" fill="#cf7b7e"/>
+<circle cx="692.31" cy="327.36" r="1.70" fill="#cf7b7e"/>
+<circle cx="709.46" cy="360.68" r="1.70" fill="#cf7b7e"/>
+<circle cx="697.80" cy="345.79" r="1.70" fill="#cf7b7e"/>
+<circle cx="706.47" cy="334.58" r="1.70" fill="#cf7b7e"/>
+<circle cx="677.62" cy="339.44" r="1.70" fill="#cf7b7e"/>
+<circle cx="703.91" cy="351.75" r="1.70" fill="#cf7b7e"/>
+<text x="705.00" y="388.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="9.5" text-anchor="middle" fill="#b04a4e">噪声</text>
+<path d="M 696.00 330.00 L 695.84 326.69 L 695.45 322.66 L 694.95 318.30 L 694.35 313.71 L 693.67 308.95 L 692.91 304.04 L 692.06 299.00 L 691.12 293.85 L 690.10 288.61 L 688.99 283.28 L 687.78 277.87 L 686.48 272.38 L 685.08 266.83 L 683.58 261.21 L 681.98 255.53 L 680.28 249.79 L 678.48 244.00 L 676.58 238.15 L 674.59 232.26 L 672.50 226.32 L 670.33 220.34 L 668.06 214.31 L 665.72 208.25 L 663.30 202.14 L 660.81 195.99 L 658.26 189.81 L 655.64 183.59 L 652.98 177.34 L 650.28 171.05 L 647.54 164.73 L 644.78 158.38 L 642.00 152.00" fill="none" stroke="#5b8dc2" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 699.00 330.00 L 699.68 326.69 L 700.69 322.66 L 701.87 318.30 L 703.17 313.71 L 704.58 308.95 L 706.10 304.04 L 707.71 299.00 L 709.43 293.85 L 711.24 288.61 L 713.16 283.28 L 715.17 277.87 L 717.29 272.38 L 719.52 266.83 L 721.84 261.21 L 724.28 255.53 L 726.81 249.79 L 729.45 244.00 L 732.20 238.15 L 735.04 232.26 L 737.98 226.32 L 741.01 220.34 L 744.13 214.31 L 747.33 208.25 L 750.62 202.14 L 753.98 195.99 L 757.40 189.81 L 760.88 183.59 L 764.42 177.34 L 768.00 171.05 L 771.62 164.73 L 775.27 158.38 L 778.94 152.00" fill="none" stroke="#5b8dc2" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 702.00 330.00 L 699.74 326.69 L 697.18 322.66 L 694.49 318.30 L 691.72 313.71 L 688.90 308.95 L 686.06 304.04 L 683.21 299.00 L 680.35 293.85 L 677.52 288.61 L 674.70 283.28 L 671.92 277.87 L 669.17 272.38 L 666.47 266.83 L 663.81 261.21 L 661.21 255.53 L 658.66 249.79 L 656.16 244.00 L 653.73 238.15 L 651.34 232.26 L 649.02 226.32 L 646.75 220.34 L 644.53 214.31 L 642.35 208.25 L 640.22 202.14 L 638.13 195.99 L 636.08 189.81 L 634.05 183.59 L 632.05 177.34 L 630.06 171.05 L 628.08 164.73 L 626.10 158.38 L 624.12 152.00" fill="none" stroke="#5b8dc2" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 705.00 330.00 L 707.49 326.69 L 710.35 322.66 L 713.37 318.30 L 716.48 313.71 L 719.65 308.95 L 722.86 304.04 L 726.09 299.00 L 729.33 293.85 L 732.57 288.61 L 735.79 283.28 L 738.99 277.87 L 742.17 272.38 L 745.30 266.83 L 748.40 261.21 L 751.45 255.53 L 754.45 249.79 L 757.41 244.00 L 760.31 238.15 L 763.17 232.26 L 765.97 226.32 L 768.73 220.34 L 771.44 214.31 L 774.11 208.25 L 776.74 202.14 L 779.33 195.99 L 781.90 189.81 L 784.44 183.59 L 786.96 177.34 L 789.47 171.05 L 791.98 164.73 L 794.48 158.38 L 797.00 152.00" fill="none" stroke="#5b8dc2" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 708.00 330.00 L 705.64 326.69 L 702.94 322.66 L 700.10 318.30 L 697.18 313.71 L 694.20 308.95 L 691.19 304.04 L 688.17 299.00 L 685.14 293.85 L 682.13 288.61 L 679.13 283.28 L 676.16 277.87 L 673.22 272.38 L 670.32 266.83 L 667.47 261.21 L 664.66 255.53 L 661.91 249.79 L 659.21 244.00 L 656.56 238.15 L 653.96 232.26 L 651.42 226.32 L 648.93 220.34 L 646.49 214.31 L 644.10 208.25 L 641.74 202.14 L 639.43 195.99 L 637.14 189.81 L 634.88 183.59 L 632.65 177.34 L 630.42 171.05 L 628.21 164.73 L 625.99 158.38 L 623.77 152.00" fill="none" stroke="#5b8dc2" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 711.00 330.00 L 711.45 326.69 L 712.18 322.66 L 713.05 318.30 L 714.03 313.71 L 715.12 308.95 L 716.29 304.04 L 717.56 299.00 L 718.93 293.85 L 720.38 288.61 L 721.94 283.28 L 723.59 277.87 L 725.34 272.38 L 727.20 266.83 L 729.15 261.21 L 731.21 255.53 L 733.37 249.79 L 735.63 244.00 L 738.00 238.15 L 740.46 232.26 L 743.01 226.32 L 745.66 220.34 L 748.40 214.31 L 751.22 208.25 L 754.12 202.14 L 757.08 195.99 L 760.12 189.81 L 763.21 183.59 L 766.36 177.34 L 769.54 171.05 L 772.77 164.73 L 776.02 158.38 L 779.29 152.00" fill="none" stroke="#5b8dc2" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<path d="M 714.00 330.00 L 713.48 326.69 L 712.66 322.66 L 711.69 318.30 L 710.60 313.71 L 709.42 308.95 L 708.13 304.04 L 706.75 299.00 L 705.28 293.85 L 703.71 288.61 L 702.04 283.28 L 700.27 277.87 L 698.40 272.38 L 696.43 266.83 L 694.35 261.21 L 692.18 255.53 L 689.90 249.79 L 687.51 244.00 L 685.03 238.15 L 682.45 232.26 L 679.77 226.32 L 677.00 220.34 L 674.14 214.31 L 671.20 208.25 L 668.18 202.14 L 665.08 195.99 L 661.92 189.81 L 658.71 183.59 L 655.44 177.34 L 652.12 171.05 L 648.77 164.73 L 645.39 158.38 L 641.99 152.00" fill="none" stroke="#5b8dc2" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+<text x="40.00" y="424.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#44525e">SDE 的每条轨迹都不同，但在任一时刻，大量轨迹的边缘分布相同；概率流 ODE 去掉随机项、只保留调整后的漂移，诱导出同样的边缘分布。</text>
+<text x="40.00" y="446.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.8" text-anchor="start" fill="#44525e">Flow Matching 训练的正是这条 ODE 的速度场：给定时点与位置，预测该往哪里走；生成时做数值积分即可，不需要逐步注入噪声。</text>
+<text x="40.00" y="470.00" font-family="'Segoe UI','Microsoft YaHei','PingFang SC','Helvetica Neue',Arial,sans-serif" font-size="10.5" text-anchor="start" fill="#7c8a97">结果：采样路径更直、步数可以更少；代价是模型必须学好整个向量场，而不只是单步去噪。</text>
+</svg>

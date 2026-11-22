@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "reports": [
+    {
+      "document": "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\1106.md",
+      "displayMath": 37,
+      "inlineMath": 192,
+      "errors": [],
+      "tables": 7,
+      "images": 30,
+      "failedImages": 0,
+      "headings": 12,
+      "math": 229,
+      "overflow": false,
+      "visibleBackslashErrors": []
+    },
+    {
+      "document": "C:\\Users\\lvxin\\OneDrive\\Graduate_onedrive\\Work\\cxmt\\课程制作\\大模型入门\\强化学习拓展\\强化学习_从序贯决策到大模型后训练.md",
+      "displayMath": 75,
+      "inlineMath": 391,
+      "errors": [],
+      "tables": 12,
+      "images": 15,
+      "failedImages": 0,
+      "headings": 27,
+      "math": 466,
+      "overflow": false,
+      "visibleBackslashErrors": []
+    }
+  ]
+}

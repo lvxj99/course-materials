@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "file": "01_rl-feedback-loop.svg",
+    "title": "强化学习：行动产生数据，数据改变策略",
+    "caption": "行动、环境反馈与学习更新构成闭环。参数更新与部署时执行策略可以分开。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 600
+  },
+  {
+    "id": 2,
+    "file": "02_two-state-mdp.svg",
+    "title": "两状态 MDP：现在提交，还是继续完善？",
+    "caption": "两状态任务完整标出奖励、概率与终止，支持手算价值函数。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 660
+  },
+  {
+    "id": 3,
+    "file": "03_bellman-backup.svg",
+    "title": "Bellman 备份：用下一状态价值概括未来",
+    "caption": "Bellman 方程把递归的期望未来压缩为一个可解方程；解析值约为 5.804878。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 620
+  },
+  {
+    "id": 4,
+    "file": "04_mc-td-returns.svg",
+    "title": "MC、TD 与多步：奖励怎样传回前面？",
+    "caption": "从目标公式到三步算例：MC 使用完整回报，TD 每轮把已学到的后继价值向前传递。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 950
+  },
+  {
+    "id": 5,
+    "file": "05_dqn-learning-loop.svg",
+    "title": "DQN：预测在学习，目标慢一点变化",
+    "caption": "当前 Q 网络拟合从慢目标网络计算的 TD 目标；训练目标停止梯度，经验由回放池提供。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 665
+  },
+  {
+    "id": 6,
+    "file": "06_policy-gradient-baseline.svg",
+    "title": "策略梯度：平均方向不变，采样波动可以变小",
+    "caption": "直接求导、无基线 REINFORCE 与减基线估计具有相同期望，方差不同。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 620
+  },
+  {
+    "id": 7,
+    "file": "07_gae-credit-assignment.svg",
+    "title": "GAE：让终局反馈沿时间往前传",
+    "caption": "GAE 从后往前递推，把最终奖励通过 TD 误差传播到早期动作。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 640
+  },
+  {
+    "id": 8,
+    "file": "08_ppo-clipping.svg",
+    "title": "PPO 裁剪：正优势截右侧，负优势截左侧",
+    "caption": "正负优势下的 PPO surrogate 曲线由公式直接计算，显示两侧不同的饱和方向。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 630
+  },
+  {
+    "id": 9,
+    "file": "09_algorithm-map.svg",
+    "title": "算法演进：三种问题，反复连接",
+    "caption": "价值、策略梯度与更新约束的联系，解释 PPO 和 GRPO 等后训练方法的共同基础。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 680
+  },
+  {
+    "id": 10,
+    "file": "10_llm-token-mdp.svg",
+    "title": "一段回答，就是一条决策轨迹",
+    "caption": "回答概率分解为逐 token 概率，终局奖励通过加权 log-probability 梯度影响整段生成行为。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 640
+  },
+  {
+    "id": 11,
+    "file": "11_rlhf-model-roles.svg",
+    "title": "RLHF 里的不同模型，各自估计什么？",
+    "caption": "五种逻辑角色分别负责行动、未来估计、评分、参考正则和采样概率比。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 770
+  },
+  {
+    "id": 12,
+    "file": "12_dpo-reparameterization.svg",
+    "title": "DPO：把奖励差，改写成策略概率比之差",
+    "caption": "DPO 把 KL 奖励最优策略关系代入偏好模型，使用同题比较消去未知归一化常数。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 660
+  },
+  {
+    "id": 13,
+    "file": "13_grpo-group-advantages.svg",
+    "title": "GRPO：同一道题，让候选互相作参照",
+    "caption": "同题候选奖励经组内标准化得到相对优势，用于加权各回答的生成 token。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 650
+  },
+  {
+    "id": 14,
+    "file": "14_posttraining-dataflow.svg",
+    "title": "完整后训练闭环：从尝试到反馈，再到更新",
+    "caption": "沿着一批回答，连接采样、打分、优势估计、策略更新与新题目评测。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 670
+  },
+  {
+    "id": 15,
+    "file": "15_kl-bandit-experiment.svg",
+    "title": "一个能求出精确答案的 KL 正则化实验",
+    "caption": "数值梯度上升收敛至 KL 正则化目标的解析最优值；改变正则强度会改变最优策略。",
+    "refs": [],
+    "note": "概念示意，由代码绘制。",
+    "height": 640
+  }
+]

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 482" width="960" height="482" role="img" aria-labelledby="title desc" xml:lang="zh-CN"><title id="title">重复的温度信息，分到两列以后</title>
+<desc id="desc">A 只用温度。B 同时用温度和完全相同的备份。两个模型的原始 MSE 都为 0。</desc>
+<style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","WenQuanYi Zen Hei",system-ui,sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="960" height="482" fill="#f7f9fc"/>
+<rect x="36" y="24" width="64" height="38" rx="9" fill="#e7f0fa"/>
+<text x="68" y="50" fill="#2866a0" font-size="19" font-weight="650" text-anchor="middle">图 13</text>
+<text x="117" y="53" fill="#172b44" font-size="33" font-weight="700">重复的温度信息，分到两列以后</text>
+<text x="36" y="94" fill="#485e75" font-size="22" font-weight="500">A 只用温度。B 同时用温度和完全相同的备份。两个模型的原始 MSE 都为 0。</text>
+<rect x="36" y="119" width="888" height="343" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/>
+<rect x="281" y="132" width="538" height="252" fill="#ffffff"/><line x1="281" y1="132" x2="281" y2="384" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="415.5" y1="132" x2="415.5" y2="384" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="550" y1="132" x2="550" y2="384" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="684.5" y1="132" x2="684.5" y2="384" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="819" y1="132" x2="819" y2="384" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/>
+<text x="57" y="173" fill="#2866a0" font-size="23" font-weight="500">模型 A · 温度</text><rect x="281" y="150" width="538" height="30" rx="4" fill="#2866a0"/><text x="831" y="173" fill="#2866a0" font-size="23" font-weight="650">18</text>
+<text x="57" y="234" fill="#087e78" font-size="23" font-weight="500">模型 B · 温度</text><rect x="281" y="211" width="134.5" height="30" rx="4" fill="#087e78"/><text x="427.5" y="234" fill="#087e78" font-size="23" font-weight="650">4.5</text>
+<text x="57" y="295" fill="#087e78" font-size="23" font-weight="500">模型 B · 备份</text><rect x="281" y="272" width="134.5" height="30" rx="4" fill="#087e78"/><text x="427.5" y="295" fill="#087e78" font-size="23" font-weight="650">4.5</text>
+<text x="57" y="356" fill="#66529d" font-size="23" font-weight="500">模型 B · 两列成组</text><rect x="281" y="333" width="538" height="30" rx="4" fill="#66529d"/><text x="831" y="356" fill="#66529d" font-size="23" font-weight="650">18</text>
+<line x1="281" y1="132" x2="281" y2="384" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><line x1="281" y1="384" x2="819" y2="384" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><text x="281" y="412" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">0</text><text x="415.5" y="412" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">4.5</text><text x="550" y="412" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">9</text><text x="684.5" y="412" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">13.5</text><text x="819" y="412" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">18</text>
+<text x="550" y="445" fill="#485e75" font-size="22" font-weight="500" text-anchor="middle">打乱后的 MSE 增量（nm²）</text></svg>

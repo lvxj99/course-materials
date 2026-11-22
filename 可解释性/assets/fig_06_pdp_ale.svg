@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 542" width="960" height="542" role="img" aria-labelledby="title desc" xml:lang="zh-CN"><title id="title">把一列改成同一个值，还是只在附近比较？</title>
+<desc id="desc">同一个模型 f(t,p) = t·p。温差 t 和压力偏差 p 通常一起变。</desc>
+<style>text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","WenQuanYi Zen Hei",system-ui,sans-serif;font-variant-numeric:tabular-nums}</style>
+<rect x="0" y="0" width="960" height="542" fill="#f7f9fc"/>
+<rect x="36" y="24" width="64" height="38" rx="9" fill="#e7f0fa"/>
+<text x="68" y="50" fill="#2866a0" font-size="19" font-weight="650" text-anchor="middle">图 6</text>
+<text x="117" y="53" fill="#172b44" font-size="33" font-weight="700">把一列改成同一个值，还是只在附近比较？</text>
+<text x="36" y="94" fill="#485e75" font-size="22" font-weight="500">同一个模型 f(t,p) = t·p。温差 t 和压力偏差 p 通常一起变。</text>
+<rect x="36" y="125" width="432" height="399" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/>
+<rect x="492" y="125" width="432" height="399" rx="14" fill="#ffffff" stroke="#dce5ef" stroke-width="1.4"/>
+<text x="57" y="163" fill="#172b44" font-size="25" font-weight="650">先看输入组合</text>
+<text x="96" y="190" fill="#485e75" font-size="20" font-weight="500">压力偏差 p</text>
+<rect x="96" y="201" width="323" height="222" fill="#ffffff"/><line x1="110.68" y1="201" x2="110.68" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="184.09" y1="201" x2="184.09" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="257.5" y1="201" x2="257.5" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="330.91" y1="201" x2="330.91" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="404.32" y1="201" x2="404.32" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="96" y1="410.67" x2="419" y2="410.67" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="96" y1="361.33" x2="419" y2="361.33" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="96" y1="312" x2="419" y2="312" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="96" y1="262.67" x2="419" y2="262.67" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="96" y1="213.33" x2="419" y2="213.33" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="294.2" y="201" width="36.7" height="222" fill="#eee8f8" opacity="0.8"/>
+<circle cx="125.36" cy="410.17" r="4.4" fill="#2866a0"/>
+<circle cx="125.36" cy="391.43" r="4.4" fill="#2866a0"/>
+<circle cx="140.05" cy="396.36" r="4.4" fill="#2866a0"/>
+<circle cx="140.05" cy="385.51" r="4.4" fill="#2866a0"/>
+<circle cx="154.73" cy="398.33" r="4.4" fill="#2866a0"/>
+<circle cx="154.73" cy="363.8" r="4.4" fill="#2866a0"/>
+<circle cx="169.41" cy="384.52" r="4.4" fill="#2866a0"/>
+<circle cx="169.41" cy="357.88" r="4.4" fill="#2866a0"/>
+<circle cx="184.09" cy="370.71" r="4.4" fill="#2866a0"/>
+<circle cx="184.09" cy="351.96" r="4.4" fill="#2866a0"/>
+<circle cx="198.77" cy="356.89" r="4.4" fill="#2866a0"/>
+<circle cx="198.77" cy="346.04" r="4.4" fill="#2866a0"/>
+<circle cx="213.45" cy="358.87" r="4.4" fill="#2866a0"/>
+<circle cx="213.45" cy="324.33" r="4.4" fill="#2866a0"/>
+<circle cx="228.14" cy="345.05" r="4.4" fill="#2866a0"/>
+<circle cx="228.14" cy="318.41" r="4.4" fill="#2866a0"/>
+<circle cx="242.82" cy="331.24" r="4.4" fill="#2866a0"/>
+<circle cx="242.82" cy="312.49" r="4.4" fill="#2866a0"/>
+<circle cx="257.5" cy="317.43" r="4.4" fill="#2866a0"/>
+<circle cx="257.5" cy="306.57" r="4.4" fill="#2866a0"/>
+<circle cx="272.18" cy="311.51" r="4.4" fill="#2866a0"/>
+<circle cx="272.18" cy="292.76" r="4.4" fill="#2866a0"/>
+<circle cx="286.86" cy="305.59" r="4.4" fill="#2866a0"/>
+<circle cx="286.86" cy="278.95" r="4.4" fill="#2866a0"/>
+<circle cx="301.55" cy="299.67" r="4.4" fill="#2866a0"/>
+<circle cx="301.55" cy="265.13" r="4.4" fill="#2866a0"/>
+<circle cx="316.23" cy="277.96" r="4.4" fill="#2866a0"/>
+<circle cx="316.23" cy="267.11" r="4.4" fill="#2866a0"/>
+<circle cx="330.91" cy="272.04" r="4.4" fill="#2866a0"/>
+<circle cx="330.91" cy="253.29" r="4.4" fill="#2866a0"/>
+<circle cx="345.59" cy="266.12" r="4.4" fill="#2866a0"/>
+<circle cx="345.59" cy="239.48" r="4.4" fill="#2866a0"/>
+<circle cx="360.27" cy="260.2" r="4.4" fill="#2866a0"/>
+<circle cx="360.27" cy="225.67" r="4.4" fill="#2866a0"/>
+<circle cx="374.95" cy="238.49" r="4.4" fill="#2866a0"/>
+<circle cx="374.95" cy="227.64" r="4.4" fill="#2866a0"/>
+<circle cx="389.64" cy="232.57" r="4.4" fill="#2866a0"/>
+<circle cx="389.64" cy="213.83" r="4.4" fill="#2866a0"/>
+<line x1="349.26" y1="201" x2="349.26" y2="423" stroke="#a74b22" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
+<circle cx="349.26" cy="391.43" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="398.33" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="357.88" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="356.89" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="324.33" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="331.24" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="306.57" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="305.59" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="265.13" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="272.04" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="239.48" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="238.49" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<circle cx="349.26" cy="213.83" r="4.3" fill="#ffffff" stroke="#a74b22" stroke-width="1.7"/>
+<line x1="96" y1="201" x2="96" y2="423" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><line x1="96" y1="423" x2="419" y2="423" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><text x="110.68" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">−2</text><text x="184.09" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">−1</text><text x="257.5" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">0</text><text x="330.91" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">1</text><text x="404.32" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">2</text><text x="83" y="417.67" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">−2</text><text x="83" y="368.33" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">−1</text><text x="83" y="319" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">0</text><text x="83" y="269.67" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">1</text><text x="83" y="220.33" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">2</text>
+<text x="258" y="478" fill="#485e75" font-size="21" font-weight="500" text-anchor="middle">温差 t</text>
+<circle cx="66" cy="501" r="5" fill="#ffffff" stroke="#a74b22" stroke-width="1.8"/>
+<text x="79" y="508" fill="#a74b22" font-size="20" font-weight="500">PDP 替换</text>
+<rect x="231" y="492" width="14" height="16" rx="2" fill="#eee8f8" stroke="#66529d"/>
+<text x="253" y="508" fill="#66529d" font-size="20" font-weight="500">ALE 小区间</text>
+<text x="513" y="163" fill="#172b44" font-size="25" font-weight="650">再读两条响应曲线</text>
+<text x="556" y="190" fill="#485e75" font-size="20" font-weight="500">模型输出或效应（nm）</text>
+<rect x="556" y="201" width="325" height="222" fill="#ffffff"/><line x1="556" y1="201" x2="556" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="637.25" y1="201" x2="637.25" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="718.5" y1="201" x2="718.5" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="799.75" y1="201" x2="799.75" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="881" y1="201" x2="881" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="556" y1="423" x2="881" y2="423" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="556" y1="337.62" x2="881" y2="337.62" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/><line x1="556" y1="252.23" x2="881" y2="252.23" stroke="#dce5ef" stroke-width="1.2" stroke-linecap="round"/>
+<polyline points="556,223.77 560.06,232.2 564.13,240.42 568.19,248.42 572.25,256.22 576.31,263.79 580.38,271.16 584.44,278.31 588.5,285.25 592.56,291.97 596.63,298.48 600.69,304.78 604.75,310.86 608.81,316.73 612.88,322.39 616.94,327.83 621,333.06 625.06,338.08 629.13,342.88 633.19,347.47 637.25,351.85 641.31,356.01 645.38,359.96 649.44,363.69 653.5,367.22 657.56,370.52 661.63,373.62 665.69,376.5 669.75,379.17 673.81,381.62 677.88,383.87 681.94,385.89 686,387.71 690.06,389.31 694.13,390.7 698.19,391.87 702.25,392.83 706.31,393.58 710.38,394.11 714.44,394.43 718.5,394.54 722.56,394.43 726.63,394.11 730.69,393.58 734.75,392.83 738.81,391.87 742.88,390.7 746.94,389.31 751,387.71 755.06,385.89 759.13,383.87 763.19,381.62 767.25,379.17 771.31,376.5 775.38,373.62 779.44,370.52 783.5,367.22 787.56,363.69 791.63,359.96 795.69,356.01 799.75,351.85 803.81,347.47 807.88,342.88 811.94,338.08 816,333.06 820.06,327.83 824.13,322.39 828.19,316.73 832.25,310.86 836.31,304.78 840.38,298.48 844.44,291.97 848.5,285.25 852.56,278.31 856.63,271.16 860.69,263.79 864.75,256.22 868.81,248.42 872.88,240.42 876.94,232.2 881,223.77" fill="none" stroke="#66529d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="556" y1="337.62" x2="881" y2="337.62" stroke="#a74b22" stroke-width="3.4" stroke-dasharray="8 6" stroke-linecap="round"/>
+<line x1="556" y1="201" x2="556" y2="423" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><line x1="556" y1="423" x2="881" y2="423" stroke="#91a4b7" stroke-width="1.6" stroke-linecap="round"/><text x="556" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">−2</text><text x="637.25" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">−1</text><text x="718.5" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">0</text><text x="799.75" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">1</text><text x="881" y="451" fill="#485e75" font-size="20" font-weight="500" text-anchor="middle">2</text><text x="543" y="430" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">−1</text><text x="543" y="344.62" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">0</text><text x="543" y="259.23" fill="#485e75" font-size="20" font-weight="500" text-anchor="end">1</text>
+<text x="720" y="478" fill="#485e75" font-size="21" font-weight="500" text-anchor="middle">温差 t</text>
+<line x1="545" y1="500" x2="573" y2="500" stroke="#a74b22" stroke-width="3.5" stroke-dasharray="8 6" stroke-linecap="round"/><text x="583" y="508" fill="#485e75" font-size="21" font-weight="500">PDP</text>
+<line x1="698" y1="500" x2="726" y2="500" stroke="#66529d" stroke-width="3.5" stroke-linecap="round"/><text x="736" y="508" fill="#485e75" font-size="21" font-weight="500">ALE（居中）</text></svg>
